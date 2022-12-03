@@ -1,0 +1,564 @@
+@prefix ns1: <http://purl.org/ontology/chord/> .
+
+<http://example.org/fho/kb/A#:7> a ns1:Chord ;
+    ns1:interval <http://purl.org/ontology/mto/MajorSeventhInterval>,
+        <http://purl.org/ontology/mto/MajorThirdInterval>,
+        <http://purl.org/ontology/mto/PerfectFifthInterval> ;
+    ns1:root <http://purl.org/ontology/mto/kb/ASharp> .
+
+<http://example.org/fho/kb/A#:dim> a ns1:Chord ;
+    ns1:interval <http://purl.org/ontology/mto/DiminishedFifthInterval>,
+        <http://purl.org/ontology/mto/MinorThirdInterval> ;
+    ns1:root <http://purl.org/ontology/mto/kb/ASharp> .
+
+<http://example.org/fho/kb/A#:maj> a ns1:Chord ;
+    ns1:interval <http://purl.org/ontology/mto/MajorThirdInterval>,
+        <http://purl.org/ontology/mto/PerfectFifthInterval> ;
+    ns1:root <http://purl.org/ontology/mto/kb/ASharp> .
+
+<http://example.org/fho/kb/A#:maj7> a ns1:Chord ;
+    ns1:interval <http://purl.org/ontology/mto/MajorThirdInterval>,
+        <http://purl.org/ontology/mto/MinorSeventhInterval>,
+        <http://purl.org/ontology/mto/PerfectFifthInterval> ;
+    ns1:root <http://purl.org/ontology/mto/kb/ASharp> .
+
+<http://example.org/fho/kb/A#:min> a ns1:Chord ;
+    ns1:interval <http://purl.org/ontology/mto/MinorThirdInterval>,
+        <http://purl.org/ontology/mto/PerfectFifthInterval> ;
+    ns1:root <http://purl.org/ontology/mto/kb/ASharp> .
+
+<http://example.org/fho/kb/A#:min7> a ns1:Chord ;
+    ns1:interval <http://purl.org/ontology/mto/MinorSeventhInterval>,
+        <http://purl.org/ontology/mto/MinorThirdInterval>,
+        <http://purl.org/ontology/mto/PerfectFifthInterval> ;
+    ns1:root <http://purl.org/ontology/mto/kb/ASharp> .
+
+<http://example.org/fho/kb/A:7> a ns1:Chord ;
+    ns1:interval <http://purl.org/ontology/mto/MajorSeventhInterval>,
+        <http://purl.org/ontology/mto/MajorThirdInterval>,
+        <http://purl.org/ontology/mto/PerfectFifthInterval> ;
+    ns1:root <http://purl.org/ontology/mto/kb/A> .
+
+<http://example.org/fho/kb/A:dim> a ns1:Chord ;
+    ns1:interval <http://purl.org/ontology/mto/DiminishedFifthInterval>,
+        <http://purl.org/ontology/mto/MinorThirdInterval> ;
+    ns1:root <http://purl.org/ontology/mto/kb/A> .
+
+<http://example.org/fho/kb/A:maj> a ns1:Chord ;
+    ns1:interval <http://purl.org/ontology/mto/MajorThirdInterval>,
+        <http://purl.org/ontology/mto/PerfectFifthInterval> ;
+    ns1:root <http://purl.org/ontology/mto/kb/A> .
+
+<http://example.org/fho/kb/A:maj7> a ns1:Chord ;
+    ns1:interval <http://purl.org/ontology/mto/MajorThirdInterval>,
+        <http://purl.org/ontology/mto/MinorSeventhInterval>,
+        <http://purl.org/ontology/mto/PerfectFifthInterval> ;
+    ns1:root <http://purl.org/ontology/mto/kb/A> .
+
+<http://example.org/fho/kb/A:min> a ns1:Chord ;
+    ns1:interval <http://purl.org/ontology/mto/MinorThirdInterval>,
+        <http://purl.org/ontology/mto/PerfectFifthInterval> ;
+    ns1:root <http://purl.org/ontology/mto/kb/A> .
+
+<http://example.org/fho/kb/A:min7> a ns1:Chord ;
+    ns1:interval <http://purl.org/ontology/mto/MinorSeventhInterval>,
+        <http://purl.org/ontology/mto/MinorThirdInterval>,
+        <http://purl.org/ontology/mto/PerfectFifthInterval> ;
+    ns1:root <http://purl.org/ontology/mto/kb/A> .
+
+<http://example.org/fho/kb/Ab:7> a ns1:Chord ;
+    ns1:interval <http://purl.org/ontology/mto/MajorSeventhInterval>,
+        <http://purl.org/ontology/mto/MajorThirdInterval>,
+        <http://purl.org/ontology/mto/PerfectFifthInterval> ;
+    ns1:root <http://purl.org/ontology/mto/kb/AFlat> .
+
+<http://example.org/fho/kb/Ab:dim> a ns1:Chord ;
+    ns1:interval <http://purl.org/ontology/mto/DiminishedFifthInterval>,
+        <http://purl.org/ontology/mto/MinorThirdInterval> ;
+    ns1:root <http://purl.org/ontology/mto/kb/AFlat> .
+
+<http://example.org/fho/kb/Ab:maj> a ns1:Chord ;
+    ns1:interval <http://purl.org/ontology/mto/MajorThirdInterval>,
+        <http://purl.org/ontology/mto/PerfectFifthInterval> ;
+    ns1:root <http://purl.org/ontology/mto/kb/AFlat> .
+
+<http://example.org/fho/kb/Ab:maj7> a ns1:Chord ;
+    ns1:interval <http://purl.org/ontology/mto/MajorThirdInterval>,
+        <http://purl.org/ontology/mto/MinorSeventhInterval>,
+        <http://purl.org/ontology/mto/PerfectFifthInterval> ;
+    ns1:root <http://purl.org/ontology/mto/kb/AFlat> .
+
+<http://example.org/fho/kb/Ab:min> a ns1:Chord ;
+    ns1:interval <http://purl.org/ontology/mto/MinorThirdInterval>,
+        <http://purl.org/ontology/mto/PerfectFifthInterval> ;
+    ns1:root <http://purl.org/ontology/mto/kb/AFlat> .
+
+<http://example.org/fho/kb/Ab:min7> a ns1:Chord ;
+    ns1:interval <http://purl.org/ontology/mto/MinorSeventhInterval>,
+        <http://purl.org/ontology/mto/MinorThirdInterval>,
+        <http://purl.org/ontology/mto/PerfectFifthInterval> ;
+    ns1:root <http://purl.org/ontology/mto/kb/AFlat> .
+
+<http://example.org/fho/kb/B:7> a ns1:Chord ;
+    ns1:interval <http://purl.org/ontology/mto/MajorSeventhInterval>,
+        <http://purl.org/ontology/mto/MajorThirdInterval>,
+        <http://purl.org/ontology/mto/PerfectFifthInterval> ;
+    ns1:root <http://purl.org/ontology/mto/kb/B> .
+
+<http://example.org/fho/kb/B:dim> a ns1:Chord ;
+    ns1:interval <http://purl.org/ontology/mto/DiminishedFifthInterval>,
+        <http://purl.org/ontology/mto/MinorThirdInterval> ;
+    ns1:root <http://purl.org/ontology/mto/kb/B> .
+
+<http://example.org/fho/kb/B:maj> a ns1:Chord ;
+    ns1:interval <http://purl.org/ontology/mto/MajorThirdInterval>,
+        <http://purl.org/ontology/mto/PerfectFifthInterval> ;
+    ns1:root <http://purl.org/ontology/mto/kb/B> .
+
+<http://example.org/fho/kb/B:maj7> a ns1:Chord ;
+    ns1:interval <http://purl.org/ontology/mto/MajorThirdInterval>,
+        <http://purl.org/ontology/mto/MinorSeventhInterval>,
+        <http://purl.org/ontology/mto/PerfectFifthInterval> ;
+    ns1:root <http://purl.org/ontology/mto/kb/B> .
+
+<http://example.org/fho/kb/B:min> a ns1:Chord ;
+    ns1:interval <http://purl.org/ontology/mto/MinorThirdInterval>,
+        <http://purl.org/ontology/mto/PerfectFifthInterval> ;
+    ns1:root <http://purl.org/ontology/mto/kb/B> .
+
+<http://example.org/fho/kb/B:min7> a ns1:Chord ;
+    ns1:interval <http://purl.org/ontology/mto/MinorSeventhInterval>,
+        <http://purl.org/ontology/mto/MinorThirdInterval>,
+        <http://purl.org/ontology/mto/PerfectFifthInterval> ;
+    ns1:root <http://purl.org/ontology/mto/kb/B> .
+
+<http://example.org/fho/kb/Bb:7> a ns1:Chord ;
+    ns1:interval <http://purl.org/ontology/mto/MajorSeventhInterval>,
+        <http://purl.org/ontology/mto/MajorThirdInterval>,
+        <http://purl.org/ontology/mto/PerfectFifthInterval> ;
+    ns1:root <http://purl.org/ontology/mto/kb/BFlat> .
+
+<http://example.org/fho/kb/Bb:dim> a ns1:Chord ;
+    ns1:interval <http://purl.org/ontology/mto/DiminishedFifthInterval>,
+        <http://purl.org/ontology/mto/MinorThirdInterval> ;
+    ns1:root <http://purl.org/ontology/mto/kb/BFlat> .
+
+<http://example.org/fho/kb/Bb:maj> a ns1:Chord ;
+    ns1:interval <http://purl.org/ontology/mto/MajorThirdInterval>,
+        <http://purl.org/ontology/mto/PerfectFifthInterval> ;
+    ns1:root <http://purl.org/ontology/mto/kb/BFlat> .
+
+<http://example.org/fho/kb/Bb:maj7> a ns1:Chord ;
+    ns1:interval <http://purl.org/ontology/mto/MajorThirdInterval>,
+        <http://purl.org/ontology/mto/MinorSeventhInterval>,
+        <http://purl.org/ontology/mto/PerfectFifthInterval> ;
+    ns1:root <http://purl.org/ontology/mto/kb/BFlat> .
+
+<http://example.org/fho/kb/Bb:min> a ns1:Chord ;
+    ns1:interval <http://purl.org/ontology/mto/MinorThirdInterval>,
+        <http://purl.org/ontology/mto/PerfectFifthInterval> ;
+    ns1:root <http://purl.org/ontology/mto/kb/BFlat> .
+
+<http://example.org/fho/kb/Bb:min7> a ns1:Chord ;
+    ns1:interval <http://purl.org/ontology/mto/MinorSeventhInterval>,
+        <http://purl.org/ontology/mto/MinorThirdInterval>,
+        <http://purl.org/ontology/mto/PerfectFifthInterval> ;
+    ns1:root <http://purl.org/ontology/mto/kb/BFlat> .
+
+<http://example.org/fho/kb/C#:7> a ns1:Chord ;
+    ns1:interval <http://purl.org/ontology/mto/MajorSeventhInterval>,
+        <http://purl.org/ontology/mto/MajorThirdInterval>,
+        <http://purl.org/ontology/mto/PerfectFifthInterval> ;
+    ns1:root <http://purl.org/ontology/mto/kb/CSharp> .
+
+<http://example.org/fho/kb/C#:dim> a ns1:Chord ;
+    ns1:interval <http://purl.org/ontology/mto/DiminishedFifthInterval>,
+        <http://purl.org/ontology/mto/MinorThirdInterval> ;
+    ns1:root <http://purl.org/ontology/mto/kb/CSharp> .
+
+<http://example.org/fho/kb/C#:maj> a ns1:Chord ;
+    ns1:interval <http://purl.org/ontology/mto/MajorThirdInterval>,
+        <http://purl.org/ontology/mto/PerfectFifthInterval> ;
+    ns1:root <http://purl.org/ontology/mto/kb/CSharp> .
+
+<http://example.org/fho/kb/C#:maj7> a ns1:Chord ;
+    ns1:interval <http://purl.org/ontology/mto/MajorThirdInterval>,
+        <http://purl.org/ontology/mto/MinorSeventhInterval>,
+        <http://purl.org/ontology/mto/PerfectFifthInterval> ;
+    ns1:root <http://purl.org/ontology/mto/kb/CSharp> .
+
+<http://example.org/fho/kb/C#:min> a ns1:Chord ;
+    ns1:interval <http://purl.org/ontology/mto/MinorThirdInterval>,
+        <http://purl.org/ontology/mto/PerfectFifthInterval> ;
+    ns1:root <http://purl.org/ontology/mto/kb/CSharp> .
+
+<http://example.org/fho/kb/C#:min7> a ns1:Chord ;
+    ns1:interval <http://purl.org/ontology/mto/MinorSeventhInterval>,
+        <http://purl.org/ontology/mto/MinorThirdInterval>,
+        <http://purl.org/ontology/mto/PerfectFifthInterval> ;
+    ns1:root <http://purl.org/ontology/mto/kb/CSharp> .
+
+<http://example.org/fho/kb/C:7> a ns1:Chord ;
+    ns1:interval <http://purl.org/ontology/mto/MajorSeventhInterval>,
+        <http://purl.org/ontology/mto/MajorThirdInterval>,
+        <http://purl.org/ontology/mto/PerfectFifthInterval> ;
+    ns1:root <http://purl.org/ontology/mto/kb/C> .
+
+<http://example.org/fho/kb/C:dim> a ns1:Chord ;
+    ns1:interval <http://purl.org/ontology/mto/DiminishedFifthInterval>,
+        <http://purl.org/ontology/mto/MinorThirdInterval> ;
+    ns1:root <http://purl.org/ontology/mto/kb/C> .
+
+<http://example.org/fho/kb/C:maj> a ns1:Chord ;
+    ns1:interval <http://purl.org/ontology/mto/MajorThirdInterval>,
+        <http://purl.org/ontology/mto/PerfectFifthInterval> ;
+    ns1:root <http://purl.org/ontology/mto/kb/C> .
+
+<http://example.org/fho/kb/C:maj7> a ns1:Chord ;
+    ns1:interval <http://purl.org/ontology/mto/MajorThirdInterval>,
+        <http://purl.org/ontology/mto/MinorSeventhInterval>,
+        <http://purl.org/ontology/mto/PerfectFifthInterval> ;
+    ns1:root <http://purl.org/ontology/mto/kb/C> .
+
+<http://example.org/fho/kb/C:min> a ns1:Chord ;
+    ns1:interval <http://purl.org/ontology/mto/MinorThirdInterval>,
+        <http://purl.org/ontology/mto/PerfectFifthInterval> ;
+    ns1:root <http://purl.org/ontology/mto/kb/C> .
+
+<http://example.org/fho/kb/C:min7> a ns1:Chord ;
+    ns1:interval <http://purl.org/ontology/mto/MinorSeventhInterval>,
+        <http://purl.org/ontology/mto/MinorThirdInterval>,
+        <http://purl.org/ontology/mto/PerfectFifthInterval> ;
+    ns1:root <http://purl.org/ontology/mto/kb/C> .
+
+<http://example.org/fho/kb/D#:7> a ns1:Chord ;
+    ns1:interval <http://purl.org/ontology/mto/MajorSeventhInterval>,
+        <http://purl.org/ontology/mto/MajorThirdInterval>,
+        <http://purl.org/ontology/mto/PerfectFifthInterval> ;
+    ns1:root <http://purl.org/ontology/mto/kb/DSharp> .
+
+<http://example.org/fho/kb/D#:dim> a ns1:Chord ;
+    ns1:interval <http://purl.org/ontology/mto/DiminishedFifthInterval>,
+        <http://purl.org/ontology/mto/MinorThirdInterval> ;
+    ns1:root <http://purl.org/ontology/mto/kb/DSharp> .
+
+<http://example.org/fho/kb/D#:maj> a ns1:Chord ;
+    ns1:interval <http://purl.org/ontology/mto/MajorThirdInterval>,
+        <http://purl.org/ontology/mto/PerfectFifthInterval> ;
+    ns1:root <http://purl.org/ontology/mto/kb/DSharp> .
+
+<http://example.org/fho/kb/D#:maj7> a ns1:Chord ;
+    ns1:interval <http://purl.org/ontology/mto/MajorThirdInterval>,
+        <http://purl.org/ontology/mto/MinorSeventhInterval>,
+        <http://purl.org/ontology/mto/PerfectFifthInterval> ;
+    ns1:root <http://purl.org/ontology/mto/kb/DSharp> .
+
+<http://example.org/fho/kb/D#:min> a ns1:Chord ;
+    ns1:interval <http://purl.org/ontology/mto/MinorThirdInterval>,
+        <http://purl.org/ontology/mto/PerfectFifthInterval> ;
+    ns1:root <http://purl.org/ontology/mto/kb/DSharp> .
+
+<http://example.org/fho/kb/D#:min7> a ns1:Chord ;
+    ns1:interval <http://purl.org/ontology/mto/MinorSeventhInterval>,
+        <http://purl.org/ontology/mto/MinorThirdInterval>,
+        <http://purl.org/ontology/mto/PerfectFifthInterval> ;
+    ns1:root <http://purl.org/ontology/mto/kb/DSharp> .
+
+<http://example.org/fho/kb/D:7> a ns1:Chord ;
+    ns1:interval <http://purl.org/ontology/mto/MajorSeventhInterval>,
+        <http://purl.org/ontology/mto/MajorThirdInterval>,
+        <http://purl.org/ontology/mto/PerfectFifthInterval> ;
+    ns1:root <http://purl.org/ontology/mto/kb/D> .
+
+<http://example.org/fho/kb/D:dim> a ns1:Chord ;
+    ns1:interval <http://purl.org/ontology/mto/DiminishedFifthInterval>,
+        <http://purl.org/ontology/mto/MinorThirdInterval> ;
+    ns1:root <http://purl.org/ontology/mto/kb/D> .
+
+<http://example.org/fho/kb/D:maj> a ns1:Chord ;
+    ns1:interval <http://purl.org/ontology/mto/MajorThirdInterval>,
+        <http://purl.org/ontology/mto/PerfectFifthInterval> ;
+    ns1:root <http://purl.org/ontology/mto/kb/D> .
+
+<http://example.org/fho/kb/D:maj7> a ns1:Chord ;
+    ns1:interval <http://purl.org/ontology/mto/MajorThirdInterval>,
+        <http://purl.org/ontology/mto/MinorSeventhInterval>,
+        <http://purl.org/ontology/mto/PerfectFifthInterval> ;
+    ns1:root <http://purl.org/ontology/mto/kb/D> .
+
+<http://example.org/fho/kb/D:min> a ns1:Chord ;
+    ns1:interval <http://purl.org/ontology/mto/MinorThirdInterval>,
+        <http://purl.org/ontology/mto/PerfectFifthInterval> ;
+    ns1:root <http://purl.org/ontology/mto/kb/D> .
+
+<http://example.org/fho/kb/D:min7> a ns1:Chord ;
+    ns1:interval <http://purl.org/ontology/mto/MinorSeventhInterval>,
+        <http://purl.org/ontology/mto/MinorThirdInterval>,
+        <http://purl.org/ontology/mto/PerfectFifthInterval> ;
+    ns1:root <http://purl.org/ontology/mto/kb/D> .
+
+<http://example.org/fho/kb/Db:7> a ns1:Chord ;
+    ns1:interval <http://purl.org/ontology/mto/MajorSeventhInterval>,
+        <http://purl.org/ontology/mto/MajorThirdInterval>,
+        <http://purl.org/ontology/mto/PerfectFifthInterval> ;
+    ns1:root <http://purl.org/ontology/mto/kb/DFlat> .
+
+<http://example.org/fho/kb/Db:dim> a ns1:Chord ;
+    ns1:interval <http://purl.org/ontology/mto/DiminishedFifthInterval>,
+        <http://purl.org/ontology/mto/MinorThirdInterval> ;
+    ns1:root <http://purl.org/ontology/mto/kb/DFlat> .
+
+<http://example.org/fho/kb/Db:maj> a ns1:Chord ;
+    ns1:interval <http://purl.org/ontology/mto/MajorThirdInterval>,
+        <http://purl.org/ontology/mto/PerfectFifthInterval> ;
+    ns1:root <http://purl.org/ontology/mto/kb/DFlat> .
+
+<http://example.org/fho/kb/Db:maj7> a ns1:Chord ;
+    ns1:interval <http://purl.org/ontology/mto/MajorThirdInterval>,
+        <http://purl.org/ontology/mto/MinorSeventhInterval>,
+        <http://purl.org/ontology/mto/PerfectFifthInterval> ;
+    ns1:root <http://purl.org/ontology/mto/kb/DFlat> .
+
+<http://example.org/fho/kb/Db:min> a ns1:Chord ;
+    ns1:interval <http://purl.org/ontology/mto/MinorThirdInterval>,
+        <http://purl.org/ontology/mto/PerfectFifthInterval> ;
+    ns1:root <http://purl.org/ontology/mto/kb/DFlat> .
+
+<http://example.org/fho/kb/Db:min7> a ns1:Chord ;
+    ns1:interval <http://purl.org/ontology/mto/MinorSeventhInterval>,
+        <http://purl.org/ontology/mto/MinorThirdInterval>,
+        <http://purl.org/ontology/mto/PerfectFifthInterval> ;
+    ns1:root <http://purl.org/ontology/mto/kb/DFlat> .
+
+<http://example.org/fho/kb/E:7> a ns1:Chord ;
+    ns1:interval <http://purl.org/ontology/mto/MajorSeventhInterval>,
+        <http://purl.org/ontology/mto/MajorThirdInterval>,
+        <http://purl.org/ontology/mto/PerfectFifthInterval> ;
+    ns1:root <http://purl.org/ontology/mto/kb/E> .
+
+<http://example.org/fho/kb/E:dim> a ns1:Chord ;
+    ns1:interval <http://purl.org/ontology/mto/DiminishedFifthInterval>,
+        <http://purl.org/ontology/mto/MinorThirdInterval> ;
+    ns1:root <http://purl.org/ontology/mto/kb/E> .
+
+<http://example.org/fho/kb/E:maj> a ns1:Chord ;
+    ns1:interval <http://purl.org/ontology/mto/MajorThirdInterval>,
+        <http://purl.org/ontology/mto/PerfectFifthInterval> ;
+    ns1:root <http://purl.org/ontology/mto/kb/E> .
+
+<http://example.org/fho/kb/E:maj7> a ns1:Chord ;
+    ns1:interval <http://purl.org/ontology/mto/MajorThirdInterval>,
+        <http://purl.org/ontology/mto/MinorSeventhInterval>,
+        <http://purl.org/ontology/mto/PerfectFifthInterval> ;
+    ns1:root <http://purl.org/ontology/mto/kb/E> .
+
+<http://example.org/fho/kb/E:min> a ns1:Chord ;
+    ns1:interval <http://purl.org/ontology/mto/MinorThirdInterval>,
+        <http://purl.org/ontology/mto/PerfectFifthInterval> ;
+    ns1:root <http://purl.org/ontology/mto/kb/E> .
+
+<http://example.org/fho/kb/E:min7> a ns1:Chord ;
+    ns1:interval <http://purl.org/ontology/mto/MinorSeventhInterval>,
+        <http://purl.org/ontology/mto/MinorThirdInterval>,
+        <http://purl.org/ontology/mto/PerfectFifthInterval> ;
+    ns1:root <http://purl.org/ontology/mto/kb/E> .
+
+<http://example.org/fho/kb/Eb:7> a ns1:Chord ;
+    ns1:interval <http://purl.org/ontology/mto/MajorSeventhInterval>,
+        <http://purl.org/ontology/mto/MajorThirdInterval>,
+        <http://purl.org/ontology/mto/PerfectFifthInterval> ;
+    ns1:root <http://purl.org/ontology/mto/kb/EFlat> .
+
+<http://example.org/fho/kb/Eb:dim> a ns1:Chord ;
+    ns1:interval <http://purl.org/ontology/mto/DiminishedFifthInterval>,
+        <http://purl.org/ontology/mto/MinorThirdInterval> ;
+    ns1:root <http://purl.org/ontology/mto/kb/EFlat> .
+
+<http://example.org/fho/kb/Eb:maj> a ns1:Chord ;
+    ns1:interval <http://purl.org/ontology/mto/MajorThirdInterval>,
+        <http://purl.org/ontology/mto/PerfectFifthInterval> ;
+    ns1:root <http://purl.org/ontology/mto/kb/EFlat> .
+
+<http://example.org/fho/kb/Eb:maj7> a ns1:Chord ;
+    ns1:interval <http://purl.org/ontology/mto/MajorThirdInterval>,
+        <http://purl.org/ontology/mto/MinorSeventhInterval>,
+        <http://purl.org/ontology/mto/PerfectFifthInterval> ;
+    ns1:root <http://purl.org/ontology/mto/kb/EFlat> .
+
+<http://example.org/fho/kb/Eb:min> a ns1:Chord ;
+    ns1:interval <http://purl.org/ontology/mto/MinorThirdInterval>,
+        <http://purl.org/ontology/mto/PerfectFifthInterval> ;
+    ns1:root <http://purl.org/ontology/mto/kb/EFlat> .
+
+<http://example.org/fho/kb/Eb:min7> a ns1:Chord ;
+    ns1:interval <http://purl.org/ontology/mto/MinorSeventhInterval>,
+        <http://purl.org/ontology/mto/MinorThirdInterval>,
+        <http://purl.org/ontology/mto/PerfectFifthInterval> ;
+    ns1:root <http://purl.org/ontology/mto/kb/EFlat> .
+
+<http://example.org/fho/kb/F#:7> a ns1:Chord ;
+    ns1:interval <http://purl.org/ontology/mto/MajorSeventhInterval>,
+        <http://purl.org/ontology/mto/MajorThirdInterval>,
+        <http://purl.org/ontology/mto/PerfectFifthInterval> ;
+    ns1:root <http://purl.org/ontology/mto/kb/FSharp> .
+
+<http://example.org/fho/kb/F#:dim> a ns1:Chord ;
+    ns1:interval <http://purl.org/ontology/mto/DiminishedFifthInterval>,
+        <http://purl.org/ontology/mto/MinorThirdInterval> ;
+    ns1:root <http://purl.org/ontology/mto/kb/FSharp> .
+
+<http://example.org/fho/kb/F#:maj> a ns1:Chord ;
+    ns1:interval <http://purl.org/ontology/mto/MajorThirdInterval>,
+        <http://purl.org/ontology/mto/PerfectFifthInterval> ;
+    ns1:root <http://purl.org/ontology/mto/kb/FSharp> .
+
+<http://example.org/fho/kb/F#:maj7> a ns1:Chord ;
+    ns1:interval <http://purl.org/ontology/mto/MajorThirdInterval>,
+        <http://purl.org/ontology/mto/MinorSeventhInterval>,
+        <http://purl.org/ontology/mto/PerfectFifthInterval> ;
+    ns1:root <http://purl.org/ontology/mto/kb/FSharp> .
+
+<http://example.org/fho/kb/F#:min> a ns1:Chord ;
+    ns1:interval <http://purl.org/ontology/mto/MinorThirdInterval>,
+        <http://purl.org/ontology/mto/PerfectFifthInterval> ;
+    ns1:root <http://purl.org/ontology/mto/kb/FSharp> .
+
+<http://example.org/fho/kb/F#:min7> a ns1:Chord ;
+    ns1:interval <http://purl.org/ontology/mto/MinorSeventhInterval>,
+        <http://purl.org/ontology/mto/MinorThirdInterval>,
+        <http://purl.org/ontology/mto/PerfectFifthInterval> ;
+    ns1:root <http://purl.org/ontology/mto/kb/FSharp> .
+
+<http://example.org/fho/kb/F:7> a ns1:Chord ;
+    ns1:interval <http://purl.org/ontology/mto/MajorSeventhInterval>,
+        <http://purl.org/ontology/mto/MajorThirdInterval>,
+        <http://purl.org/ontology/mto/PerfectFifthInterval> ;
+    ns1:root <http://purl.org/ontology/mto/kb/F> .
+
+<http://example.org/fho/kb/F:dim> a ns1:Chord ;
+    ns1:interval <http://purl.org/ontology/mto/DiminishedFifthInterval>,
+        <http://purl.org/ontology/mto/MinorThirdInterval> ;
+    ns1:root <http://purl.org/ontology/mto/kb/F> .
+
+<http://example.org/fho/kb/F:maj> a ns1:Chord ;
+    ns1:interval <http://purl.org/ontology/mto/MajorThirdInterval>,
+        <http://purl.org/ontology/mto/PerfectFifthInterval> ;
+    ns1:root <http://purl.org/ontology/mto/kb/F> .
+
+<http://example.org/fho/kb/F:maj7> a ns1:Chord ;
+    ns1:interval <http://purl.org/ontology/mto/MajorThirdInterval>,
+        <http://purl.org/ontology/mto/MinorSeventhInterval>,
+        <http://purl.org/ontology/mto/PerfectFifthInterval> ;
+    ns1:root <http://purl.org/ontology/mto/kb/F> .
+
+<http://example.org/fho/kb/F:min> a ns1:Chord ;
+    ns1:interval <http://purl.org/ontology/mto/MinorThirdInterval>,
+        <http://purl.org/ontology/mto/PerfectFifthInterval> ;
+    ns1:root <http://purl.org/ontology/mto/kb/F> .
+
+<http://example.org/fho/kb/F:min7> a ns1:Chord ;
+    ns1:interval <http://purl.org/ontology/mto/MinorSeventhInterval>,
+        <http://purl.org/ontology/mto/MinorThirdInterval>,
+        <http://purl.org/ontology/mto/PerfectFifthInterval> ;
+    ns1:root <http://purl.org/ontology/mto/kb/F> .
+
+<http://example.org/fho/kb/G#:7> a ns1:Chord ;
+    ns1:interval <http://purl.org/ontology/mto/MajorSeventhInterval>,
+        <http://purl.org/ontology/mto/MajorThirdInterval>,
+        <http://purl.org/ontology/mto/PerfectFifthInterval> ;
+    ns1:root <http://purl.org/ontology/mto/kb/GSharp> .
+
+<http://example.org/fho/kb/G#:dim> a ns1:Chord ;
+    ns1:interval <http://purl.org/ontology/mto/DiminishedFifthInterval>,
+        <http://purl.org/ontology/mto/MinorThirdInterval> ;
+    ns1:root <http://purl.org/ontology/mto/kb/GSharp> .
+
+<http://example.org/fho/kb/G#:maj> a ns1:Chord ;
+    ns1:interval <http://purl.org/ontology/mto/MajorThirdInterval>,
+        <http://purl.org/ontology/mto/PerfectFifthInterval> ;
+    ns1:root <http://purl.org/ontology/mto/kb/GSharp> .
+
+<http://example.org/fho/kb/G#:maj7> a ns1:Chord ;
+    ns1:interval <http://purl.org/ontology/mto/MajorThirdInterval>,
+        <http://purl.org/ontology/mto/MinorSeventhInterval>,
+        <http://purl.org/ontology/mto/PerfectFifthInterval> ;
+    ns1:root <http://purl.org/ontology/mto/kb/GSharp> .
+
+<http://example.org/fho/kb/G#:min> a ns1:Chord ;
+    ns1:interval <http://purl.org/ontology/mto/MinorThirdInterval>,
+        <http://purl.org/ontology/mto/PerfectFifthInterval> ;
+    ns1:root <http://purl.org/ontology/mto/kb/GSharp> .
+
+<http://example.org/fho/kb/G#:min7> a ns1:Chord ;
+    ns1:interval <http://purl.org/ontology/mto/MinorSeventhInterval>,
+        <http://purl.org/ontology/mto/MinorThirdInterval>,
+        <http://purl.org/ontology/mto/PerfectFifthInterval> ;
+    ns1:root <http://purl.org/ontology/mto/kb/GSharp> .
+
+<http://example.org/fho/kb/G:7> a ns1:Chord ;
+    ns1:interval <http://purl.org/ontology/mto/MajorSeventhInterval>,
+        <http://purl.org/ontology/mto/MajorThirdInterval>,
+        <http://purl.org/ontology/mto/PerfectFifthInterval> ;
+    ns1:root <http://purl.org/ontology/mto/kb/G> .
+
+<http://example.org/fho/kb/G:dim> a ns1:Chord ;
+    ns1:interval <http://purl.org/ontology/mto/DiminishedFifthInterval>,
+        <http://purl.org/ontology/mto/MinorThirdInterval> ;
+    ns1:root <http://purl.org/ontology/mto/kb/G> .
+
+<http://example.org/fho/kb/G:maj> a ns1:Chord ;
+    ns1:interval <http://purl.org/ontology/mto/MajorThirdInterval>,
+        <http://purl.org/ontology/mto/PerfectFifthInterval> ;
+    ns1:root <http://purl.org/ontology/mto/kb/G> .
+
+<http://example.org/fho/kb/G:maj7> a ns1:Chord ;
+    ns1:interval <http://purl.org/ontology/mto/MajorThirdInterval>,
+        <http://purl.org/ontology/mto/MinorSeventhInterval>,
+        <http://purl.org/ontology/mto/PerfectFifthInterval> ;
+    ns1:root <http://purl.org/ontology/mto/kb/G> .
+
+<http://example.org/fho/kb/G:min> a ns1:Chord ;
+    ns1:interval <http://purl.org/ontology/mto/MinorThirdInterval>,
+        <http://purl.org/ontology/mto/PerfectFifthInterval> ;
+    ns1:root <http://purl.org/ontology/mto/kb/G> .
+
+<http://example.org/fho/kb/G:min7> a ns1:Chord ;
+    ns1:interval <http://purl.org/ontology/mto/MinorSeventhInterval>,
+        <http://purl.org/ontology/mto/MinorThirdInterval>,
+        <http://purl.org/ontology/mto/PerfectFifthInterval> ;
+    ns1:root <http://purl.org/ontology/mto/kb/G> .
+
+<http://example.org/fho/kb/Gb:7> a ns1:Chord ;
+    ns1:interval <http://purl.org/ontology/mto/MajorSeventhInterval>,
+        <http://purl.org/ontology/mto/MajorThirdInterval>,
+        <http://purl.org/ontology/mto/PerfectFifthInterval> ;
+    ns1:root <http://purl.org/ontology/mto/kb/GFlat> .
+
+<http://example.org/fho/kb/Gb:dim> a ns1:Chord ;
+    ns1:interval <http://purl.org/ontology/mto/DiminishedFifthInterval>,
+        <http://purl.org/ontology/mto/MinorThirdInterval> ;
+    ns1:root <http://purl.org/ontology/mto/kb/GFlat> .
+
+<http://example.org/fho/kb/Gb:maj> a ns1:Chord ;
+    ns1:interval <http://purl.org/ontology/mto/MajorThirdInterval>,
+        <http://purl.org/ontology/mto/PerfectFifthInterval> ;
+    ns1:root <http://purl.org/ontology/mto/kb/GFlat> .
+
+<http://example.org/fho/kb/Gb:maj7> a ns1:Chord ;
+    ns1:interval <http://purl.org/ontology/mto/MajorThirdInterval>,
+        <http://purl.org/ontology/mto/MinorSeventhInterval>,
+        <http://purl.org/ontology/mto/PerfectFifthInterval> ;
+    ns1:root <http://purl.org/ontology/mto/kb/GFlat> .
+
+<http://example.org/fho/kb/Gb:min> a ns1:Chord ;
+    ns1:interval <http://purl.org/ontology/mto/MinorThirdInterval>,
+        <http://purl.org/ontology/mto/PerfectFifthInterval> ;
+    ns1:root <http://purl.org/ontology/mto/kb/GFlat> .
+
+<http://example.org/fho/kb/Gb:min7> a ns1:Chord ;
+    ns1:interval <http://purl.org/ontology/mto/MinorSeventhInterval>,
+        <http://purl.org/ontology/mto/MinorThirdInterval>,
+        <http://purl.org/ontology/mto/PerfectFifthInterval> ;
+    ns1:root <http://purl.org/ontology/mto/kb/GFlat> .
+
+

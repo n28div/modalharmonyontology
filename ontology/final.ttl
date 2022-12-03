@@ -1,0 +1,2396 @@
+@prefix : <http://example.org/fho/> .
+@prefix chord: <http://purl.org/ontology/chord/> .
+@prefix ex: <http://example.org/> .
+@prefix kb: <http://example.org/fho/kb/> .
+@prefix mto: <http://purl.org/ontology/mto/> .
+@prefix mto-kb: <http://purl.org/ontology/mto/kb/> .
+@prefix ns1: <http://www.w3.org/2003/11/swrl#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+: a owl:Ontology ;
+    owl:imports mto:0.9 .
+
+kb:AFlat_Aeolian a :AeolianMode ;
+    mto:hasRootNote mto-kb:AFlat ;
+    owl:sameAs kb:F_MinorScale .
+
+kb:AFlat_Dorian a :DorianMode ;
+    mto:hasRootNote mto-kb:AFlat .
+
+kb:AFlat_Ionian a :IonianMode ;
+    mto:hasRootNote mto-kb:AFlat ;
+    owl:sameAs kb:AFlat_MajorScale .
+
+kb:AFlat_Locrian a :LocrianMode ;
+    mto:hasRootNote mto-kb:AFlat .
+
+kb:AFlat_Lydian a :LydianMode ;
+    mto:hasRootNote mto-kb:AFlat .
+
+kb:AFlat_MinorScale a mto:MinorScale ;
+    mto:hasRootNote mto-kb:AFlat .
+
+kb:AFlat_Mixolydian a :MixolydianMode ;
+    mto:hasRootNote mto-kb:AFlat .
+
+kb:AFlat_Phrygian a :PhrygianMode ;
+    mto:hasRootNote mto-kb:AFlat .
+
+kb:ASharp_Aeolian a :AeolianMode ;
+    mto:hasRootNote mto-kb:ASharp ;
+    owl:sameAs kb:G_MinorScale .
+
+kb:ASharp_Dorian a :DorianMode ;
+    mto:hasRootNote mto-kb:ASharp .
+
+kb:ASharp_Ionian a :IonianMode ;
+    mto:hasRootNote mto-kb:ASharp ;
+    owl:sameAs kb:ASharp_MajorScale .
+
+kb:ASharp_Locrian a :LocrianMode ;
+    mto:hasRootNote mto-kb:ASharp .
+
+kb:ASharp_Lydian a :LydianMode ;
+    mto:hasRootNote mto-kb:ASharp .
+
+kb:ASharp_MinorScale a mto:MinorScale ;
+    mto:hasRootNote mto-kb:ASharp .
+
+kb:ASharp_Mixolydian a :MixolydianMode ;
+    mto:hasRootNote mto-kb:ASharp .
+
+kb:ASharp_Phrygian a :PhrygianMode ;
+    mto:hasRootNote mto-kb:ASharp .
+
+kb:A_Aeolian a :AeolianMode ;
+    mto:hasRootNote mto-kb:A ;
+    owl:sameAs kb:FSharp_MinorScale .
+
+kb:A_Dorian a :DorianMode ;
+    mto:hasRootNote mto-kb:A .
+
+kb:A_Ionian a :IonianMode ;
+    mto:hasRootNote mto-kb:A ;
+    owl:sameAs kb:A_MajorScale .
+
+kb:A_Locrian a :LocrianMode ;
+    mto:hasRootNote mto-kb:A .
+
+kb:A_Lydian a :LydianMode ;
+    mto:hasRootNote mto-kb:A .
+
+kb:A_Mixolydian a :MixolydianMode ;
+    mto:hasRootNote mto-kb:A .
+
+kb:A_Phrygian a :PhrygianMode ;
+    mto:hasRootNote mto-kb:A .
+
+kb:BFlat_Aeolian a :AeolianMode ;
+    mto:hasRootNote mto-kb:BFlat ;
+    owl:sameAs kb:G_MinorScale .
+
+kb:BFlat_Dorian a :DorianMode ;
+    mto:hasRootNote mto-kb:BFlat .
+
+kb:BFlat_Ionian a :IonianMode ;
+    mto:hasRootNote mto-kb:BFlat ;
+    owl:sameAs kb:BFlat_MajorScale .
+
+kb:BFlat_Locrian a :LocrianMode ;
+    mto:hasRootNote mto-kb:BFlat .
+
+kb:BFlat_Lydian a :LydianMode ;
+    mto:hasRootNote mto-kb:BFlat .
+
+kb:BFlat_Mixolydian a :MixolydianMode ;
+    mto:hasRootNote mto-kb:BFlat .
+
+kb:BFlat_Phrygian a :PhrygianMode ;
+    mto:hasRootNote mto-kb:BFlat .
+
+kb:B_Aeolian a :AeolianMode ;
+    mto:hasRootNote mto-kb:B ;
+    owl:sameAs kb:GSharp_MinorScale .
+
+kb:B_Dorian a :DorianMode ;
+    mto:hasRootNote mto-kb:B .
+
+kb:B_Ionian a :IonianMode ;
+    mto:hasRootNote mto-kb:B ;
+    owl:sameAs kb:B_MajorScale .
+
+kb:B_Locrian a :LocrianMode ;
+    mto:hasRootNote mto-kb:B .
+
+kb:B_Lydian a :LydianMode ;
+    mto:hasRootNote mto-kb:B .
+
+kb:B_Mixolydian a :MixolydianMode ;
+    mto:hasRootNote mto-kb:B .
+
+kb:B_Phrygian a :PhrygianMode ;
+    mto:hasRootNote mto-kb:B .
+
+kb:CSharp_Aeolian a :AeolianMode ;
+    mto:hasRootNote mto-kb:CSharp ;
+    owl:sameAs kb:BFlat_MinorScale .
+
+kb:CSharp_Dorian a :DorianMode ;
+    mto:hasRootNote mto-kb:CSharp .
+
+kb:CSharp_Ionian a :IonianMode ;
+    mto:hasRootNote mto-kb:CSharp ;
+    owl:sameAs kb:CSharp_MajorScale .
+
+kb:CSharp_Locrian a :LocrianMode ;
+    mto:hasRootNote mto-kb:CSharp .
+
+kb:CSharp_Lydian a :LydianMode ;
+    mto:hasRootNote mto-kb:CSharp .
+
+kb:CSharp_Mixolydian a :MixolydianMode ;
+    mto:hasRootNote mto-kb:CSharp .
+
+kb:CSharp_Phrygian a :PhrygianMode ;
+    mto:hasRootNote mto-kb:CSharp .
+
+kb:C_Aeolian a :AeolianMode ;
+    mto:hasRootNote mto-kb:C ;
+    owl:sameAs kb:A_MinorScale .
+
+kb:C_Dorian a :DorianMode ;
+    mto:hasRootNote mto-kb:C .
+
+kb:C_Ionian a :IonianMode ;
+    mto:hasRootNote mto-kb:C ;
+    owl:sameAs kb:C_MajorScale .
+
+kb:C_Locrian a :LocrianMode ;
+    mto:hasRootNote mto-kb:C .
+
+kb:C_Lydian a :LydianMode ;
+    mto:hasRootNote mto-kb:C .
+
+kb:C_Mixolydian a :MixolydianMode ;
+    mto:hasRootNote mto-kb:C .
+
+kb:C_Phrygian a :PhrygianMode ;
+    mto:hasRootNote mto-kb:C .
+
+kb:DFlat_Aeolian a :AeolianMode ;
+    mto:hasRootNote mto-kb:DFlat ;
+    owl:sameAs kb:BFlat_MinorScale .
+
+kb:DFlat_Dorian a :DorianMode ;
+    mto:hasRootNote mto-kb:DFlat .
+
+kb:DFlat_Ionian a :IonianMode ;
+    mto:hasRootNote mto-kb:DFlat ;
+    owl:sameAs kb:DFlat_MajorScale .
+
+kb:DFlat_Locrian a :LocrianMode ;
+    mto:hasRootNote mto-kb:DFlat .
+
+kb:DFlat_Lydian a :LydianMode ;
+    mto:hasRootNote mto-kb:DFlat .
+
+kb:DFlat_MinorScale a mto:MinorScale ;
+    mto:hasRootNote mto-kb:DFlat .
+
+kb:DFlat_Mixolydian a :MixolydianMode ;
+    mto:hasRootNote mto-kb:DFlat .
+
+kb:DFlat_Phrygian a :PhrygianMode ;
+    mto:hasRootNote mto-kb:DFlat .
+
+kb:DSharp_Aeolian a :AeolianMode ;
+    mto:hasRootNote mto-kb:DSharp ;
+    owl:sameAs kb:C_MinorScale .
+
+kb:DSharp_Dorian a :DorianMode ;
+    mto:hasRootNote mto-kb:DSharp .
+
+kb:DSharp_Ionian a :IonianMode ;
+    mto:hasRootNote mto-kb:DSharp ;
+    owl:sameAs kb:DSharp_MajorScale .
+
+kb:DSharp_Locrian a :LocrianMode ;
+    mto:hasRootNote mto-kb:DSharp .
+
+kb:DSharp_Lydian a :LydianMode ;
+    mto:hasRootNote mto-kb:DSharp .
+
+kb:DSharp_MinorScale a mto:MinorScale ;
+    mto:hasRootNote mto-kb:DSharp .
+
+kb:DSharp_Mixolydian a :MixolydianMode ;
+    mto:hasRootNote mto-kb:DSharp .
+
+kb:DSharp_Phrygian a :PhrygianMode ;
+    mto:hasRootNote mto-kb:DSharp .
+
+kb:D_Aeolian a :AeolianMode ;
+    mto:hasRootNote mto-kb:D ;
+    owl:sameAs kb:B_MinorScale .
+
+kb:D_Dorian a :DorianMode ;
+    mto:hasRootNote mto-kb:D .
+
+kb:D_Ionian a :IonianMode ;
+    mto:hasRootNote mto-kb:D ;
+    owl:sameAs kb:D_MajorScale .
+
+kb:D_Locrian a :LocrianMode ;
+    mto:hasRootNote mto-kb:D .
+
+kb:D_Lydian a :LydianMode ;
+    mto:hasRootNote mto-kb:D .
+
+kb:D_Mixolydian a :MixolydianMode ;
+    mto:hasRootNote mto-kb:D .
+
+kb:D_Phrygian a :PhrygianMode ;
+    mto:hasRootNote mto-kb:D .
+
+kb:EFlat_Aeolian a :AeolianMode ;
+    mto:hasRootNote mto-kb:EFlat ;
+    owl:sameAs kb:C_MinorScale .
+
+kb:EFlat_Dorian a :DorianMode ;
+    mto:hasRootNote mto-kb:EFlat .
+
+kb:EFlat_Ionian a :IonianMode ;
+    mto:hasRootNote mto-kb:EFlat ;
+    owl:sameAs kb:EFlat_MajorScale .
+
+kb:EFlat_Locrian a :LocrianMode ;
+    mto:hasRootNote mto-kb:EFlat .
+
+kb:EFlat_Lydian a :LydianMode ;
+    mto:hasRootNote mto-kb:EFlat .
+
+kb:EFlat_Mixolydian a :MixolydianMode ;
+    mto:hasRootNote mto-kb:EFlat .
+
+kb:EFlat_Phrygian a :PhrygianMode ;
+    mto:hasRootNote mto-kb:EFlat .
+
+kb:E_Aeolian a :AeolianMode ;
+    mto:hasRootNote mto-kb:E ;
+    owl:sameAs kb:CSharp_MinorScale .
+
+kb:E_Dorian a :DorianMode ;
+    mto:hasRootNote mto-kb:E .
+
+kb:E_Ionian a :IonianMode ;
+    mto:hasRootNote mto-kb:E ;
+    owl:sameAs kb:E_MajorScale .
+
+kb:E_Locrian a :LocrianMode ;
+    mto:hasRootNote mto-kb:E .
+
+kb:E_Lydian a :LydianMode ;
+    mto:hasRootNote mto-kb:E .
+
+kb:E_Mixolydian a :MixolydianMode ;
+    mto:hasRootNote mto-kb:E .
+
+kb:E_Phrygian a :PhrygianMode ;
+    mto:hasRootNote mto-kb:E .
+
+kb:FSharp_Aeolian a :AeolianMode ;
+    mto:hasRootNote mto-kb:FSharp ;
+    owl:sameAs kb:EFlat_MinorScale .
+
+kb:FSharp_Dorian a :DorianMode ;
+    mto:hasRootNote mto-kb:FSharp .
+
+kb:FSharp_Ionian a :IonianMode ;
+    mto:hasRootNote mto-kb:FSharp ;
+    owl:sameAs kb:FSharp_MajorScale .
+
+kb:FSharp_Locrian a :LocrianMode ;
+    mto:hasRootNote mto-kb:FSharp .
+
+kb:FSharp_Lydian a :LydianMode ;
+    mto:hasRootNote mto-kb:FSharp .
+
+kb:FSharp_Mixolydian a :MixolydianMode ;
+    mto:hasRootNote mto-kb:FSharp .
+
+kb:FSharp_Phrygian a :PhrygianMode ;
+    mto:hasRootNote mto-kb:FSharp .
+
+kb:F_Aeolian a :AeolianMode ;
+    mto:hasRootNote mto-kb:F ;
+    owl:sameAs kb:D_MinorScale .
+
+kb:F_Dorian a :DorianMode ;
+    mto:hasRootNote mto-kb:F .
+
+kb:F_Ionian a :IonianMode ;
+    mto:hasRootNote mto-kb:F ;
+    owl:sameAs kb:F_MajorScale .
+
+kb:F_Locrian a :LocrianMode ;
+    mto:hasRootNote mto-kb:F .
+
+kb:F_Lydian a :LydianMode ;
+    mto:hasRootNote mto-kb:F .
+
+kb:F_Mixolydian a :MixolydianMode ;
+    mto:hasRootNote mto-kb:F .
+
+kb:F_Phrygian a :PhrygianMode ;
+    mto:hasRootNote mto-kb:F .
+
+kb:GFlat_Aeolian a :AeolianMode ;
+    mto:hasRootNote mto-kb:GFlat ;
+    owl:sameAs kb:EFlat_MinorScale .
+
+kb:GFlat_Dorian a :DorianMode ;
+    mto:hasRootNote mto-kb:GFlat .
+
+kb:GFlat_Ionian a :IonianMode ;
+    mto:hasRootNote mto-kb:GFlat ;
+    owl:sameAs kb:GFlat_MajorScale .
+
+kb:GFlat_Locrian a :LocrianMode ;
+    mto:hasRootNote mto-kb:GFlat .
+
+kb:GFlat_Lydian a :LydianMode ;
+    mto:hasRootNote mto-kb:GFlat .
+
+kb:GFlat_MinorScale a mto:MinorScale ;
+    mto:hasRootNote mto-kb:GFlat .
+
+kb:GFlat_Mixolydian a :MixolydianMode ;
+    mto:hasRootNote mto-kb:GFlat .
+
+kb:GFlat_Phrygian a :PhrygianMode ;
+    mto:hasRootNote mto-kb:GFlat .
+
+kb:GSharp_Aeolian a :AeolianMode ;
+    mto:hasRootNote mto-kb:GSharp ;
+    owl:sameAs kb:F_MinorScale .
+
+kb:GSharp_Dorian a :DorianMode ;
+    mto:hasRootNote mto-kb:GSharp .
+
+kb:GSharp_Ionian a :IonianMode ;
+    mto:hasRootNote mto-kb:GSharp ;
+    owl:sameAs kb:GSharp_MajorScale .
+
+kb:GSharp_Locrian a :LocrianMode ;
+    mto:hasRootNote mto-kb:GSharp .
+
+kb:GSharp_Lydian a :LydianMode ;
+    mto:hasRootNote mto-kb:GSharp .
+
+kb:GSharp_Mixolydian a :MixolydianMode ;
+    mto:hasRootNote mto-kb:GSharp .
+
+kb:GSharp_Phrygian a :PhrygianMode ;
+    mto:hasRootNote mto-kb:GSharp .
+
+kb:G_Aeolian a :AeolianMode ;
+    mto:hasRootNote mto-kb:G ;
+    owl:sameAs kb:E_MinorScale .
+
+kb:G_Dorian a :DorianMode ;
+    mto:hasRootNote mto-kb:G .
+
+kb:G_Ionian a :IonianMode ;
+    mto:hasRootNote mto-kb:G ;
+    owl:sameAs kb:G_MajorScale .
+
+kb:G_Locrian a :LocrianMode ;
+    mto:hasRootNote mto-kb:G .
+
+kb:G_Lydian a :LydianMode ;
+    mto:hasRootNote mto-kb:G .
+
+kb:G_Mixolydian a :MixolydianMode ;
+    mto:hasRootNote mto-kb:G .
+
+kb:G_Phrygian a :PhrygianMode ;
+    mto:hasRootNote mto-kb:G .
+
+chord:interval a owl:AnnotationProperty .
+
+<http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> a owl:AnnotationProperty .
+
+rdf:PlainLiteral a rdfs:Datatype .
+
+rdfs:comment a owl:AnnotationProperty .
+
+rdfs:label a owl:AnnotationProperty .
+
+xsd:boolean a rdfs:Datatype .
+
+xsd:string a rdfs:Datatype .
+
+kb:AFlat_MajorScale a mto:MajorScale ;
+    mto:hasRootNote mto-kb:AFlat .
+
+kb:ASharp_MajorScale a mto:MajorScale ;
+    mto:hasRootNote mto-kb:ASharp .
+
+kb:A_MajorScale a mto:MajorScale ;
+    mto:hasRootNote mto-kb:A .
+
+kb:A_MinorScale a mto:MinorScale ;
+    mto:hasRootNote mto-kb:A .
+
+kb:BFlat_MajorScale a mto:MajorScale ;
+    mto:hasRootNote mto-kb:BFlat .
+
+kb:B_MajorScale a mto:MajorScale ;
+    mto:hasRootNote mto-kb:B .
+
+kb:B_MinorScale a mto:MinorScale ;
+    mto:hasRootNote mto-kb:B .
+
+kb:CSharp_MajorScale a mto:MajorScale ;
+    mto:hasRootNote mto-kb:CSharp .
+
+kb:CSharp_MinorScale a mto:MinorScale ;
+    mto:hasRootNote mto-kb:CSharp .
+
+kb:C_MajorScale a mto:MajorScale ;
+    mto:hasRootNote mto-kb:C .
+
+kb:DFlat_MajorScale a mto:MajorScale ;
+    mto:hasRootNote mto-kb:DFlat .
+
+kb:DSharp_MajorScale a mto:MajorScale ;
+    mto:hasRootNote mto-kb:DSharp .
+
+kb:D_MajorScale a mto:MajorScale ;
+    mto:hasRootNote mto-kb:D .
+
+kb:D_MinorScale a mto:MinorScale ;
+    mto:hasRootNote mto-kb:D .
+
+kb:EFlat_MajorScale a mto:MajorScale ;
+    mto:hasRootNote mto-kb:EFlat .
+
+kb:E_MajorScale a mto:MajorScale ;
+    mto:hasRootNote mto-kb:E .
+
+kb:E_MinorScale a mto:MinorScale ;
+    mto:hasRootNote mto-kb:E .
+
+kb:FSharp_MajorScale a mto:MajorScale ;
+    mto:hasRootNote mto-kb:FSharp .
+
+kb:FSharp_MinorScale a mto:MinorScale ;
+    mto:hasRootNote mto-kb:FSharp .
+
+kb:F_MajorScale a mto:MajorScale ;
+    mto:hasRootNote mto-kb:F .
+
+kb:GFlat_MajorScale a mto:MajorScale ;
+    mto:hasRootNote mto-kb:GFlat .
+
+kb:GSharp_MajorScale a mto:MajorScale ;
+    mto:hasRootNote mto-kb:GSharp .
+
+kb:GSharp_MinorScale a mto:MinorScale ;
+    mto:hasRootNote mto-kb:GSharp .
+
+kb:G_MajorScale a mto:MajorScale ;
+    mto:hasRootNote mto-kb:G .
+
+mto:HeptatonicScale a owl:Class .
+
+mto:NaturalMinorScale a owl:Class .
+
+kb:BFlat_MinorScale a mto:MinorScale ;
+    mto:hasRootNote mto-kb:BFlat .
+
+kb:C_MinorScale a mto:MinorScale ;
+    mto:hasRootNote mto-kb:C .
+
+kb:EFlat_MinorScale a mto:MinorScale ;
+    mto:hasRootNote mto-kb:EFlat .
+
+kb:F_MinorScale a mto:MinorScale ;
+    mto:hasRootNote mto-kb:F .
+
+kb:G_MinorScale a mto:MinorScale ;
+    mto:hasRootNote mto-kb:G .
+
+:Mode a owl:Class ;
+    rdfs:label "Mode"^^xsd:string ;
+    rdfs:comment "A type of scale coupled with a set of characteristic melodic and harmonic behaviors defined by the root note of the scale." ;
+    rdfs:subClassOf mto:HeptatonicScale .
+
+mto:MajorScale a owl:Class .
+
+:AeolianMode a owl:Class ;
+    rdfs:label "Aeolian Mode"^^xsd:string ;
+    rdfs:comment "Mode formed starting from the sixth degree of a major scale."^^xsd:string ;
+    rdfs:subClassOf :Mode ;
+    owl:equivalentClass mto:NaturalMinorScale .
+
+:DorianMode a owl:Class ;
+    rdfs:label "Dorian Mode"^^xsd:string ;
+    rdfs:comment "Mode formed starting from the second degree of a major scale."^^xsd:string ;
+    rdfs:subClassOf :Mode .
+
+:IonianMode a owl:Class ;
+    rdfs:label "Ionian Mode"^^xsd:string ;
+    rdfs:comment "Mode formed starting from the first degree of a major scale."^^xsd:string ;
+    rdfs:subClassOf :Mode ;
+    owl:equivalentClass mto:MajorScale .
+
+:LocrianMode a owl:Class ;
+    rdfs:label "Locrian Mode"^^xsd:string ;
+    rdfs:comment "Mode formed starting from the seventh degree of a major scale."^^xsd:string ;
+    rdfs:subClassOf :Mode .
+
+:LydianMode a owl:Class ;
+    rdfs:label "Lydian Mode"^^xsd:string ;
+    rdfs:comment "Mode formed starting from the fourth degree of a major scale."^^xsd:string ;
+    rdfs:subClassOf :Mode .
+
+:MixolydianMode a owl:Class ;
+    rdfs:label "Mixolydian Mode"^^xsd:string ;
+    rdfs:comment "Mode formed starting from the fifth degree of a major scale."^^xsd:string ;
+    rdfs:subClassOf :Mode .
+
+:PhrygianMode a owl:Class ;
+    rdfs:label "Phrygian Mode"^^xsd:string ;
+    rdfs:comment "Mode formed starting from the third degree of a major scale."^^xsd:string ;
+    rdfs:subClassOf :Mode .
+
+mto:hasRootNote a owl:ObjectProperty .
+
+ex:chord_root a ns1:Variable .
+
+ex:mode_root a ns1:Variable .
+
+ex:tonic_root a ns1:Variable .
+
+ex:chord a ns1:Variable .
+
+ex:mode a ns1:Variable .
+
+[] a ns1:Imp ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:ClassAtom ;
+                    ns1:argument1 ex:mode ;
+                    ns1:classPredicate :AeolianMode ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:IndividualPropertyAtom ;
+                            ns1:argument1 ex:mode ;
+                            ns1:argument2 ex:mode_root ;
+                            ns1:propertyPredicate mto:hasRootNote ] ;
+                    rdf:rest [ a ns1:AtomList ;
+                            rdf:first [ a ns1:IndividualPropertyAtom ;
+                                    ns1:argument1 ex:mode_root ;
+                                    ns1:argument2 ex:tonic_root ;
+                                    ns1:propertyPredicate mto:hasMajorSixthInterval ] ;
+                            rdf:rest [ a ns1:AtomList ;
+                                    rdf:first [ a ns1:ClassAtom ;
+                                            ns1:argument1 ex:chord ;
+                                            ns1:classPredicate mto:DiminishedTriad ] ;
+                                    rdf:rest [ a ns1:AtomList ;
+                                            rdf:first [ a ns1:IndividualPropertyAtom ;
+                                                    ns1:argument1 ex:tonic_root ;
+                                                    ns1:argument2 ex:chord_root ;
+                                                    ns1:propertyPredicate mto:hasMajorSecondInterval ] ;
+                                            rdf:rest [ a ns1:AtomList ;
+                                                    rdf:first [ a ns1:IndividualPropertyAtom ;
+                                                            ns1:argument1 ex:chord ;
+                                                            ns1:argument2 ex:chord_root ;
+                                                            ns1:propertyPredicate chord:root ] ;
+                                                    rdf:rest () ] ] ] ] ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 ex:mode ;
+                    ns1:argument2 ex:chord ;
+                    ns1:propertyPredicate mto:hasSupertonic ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:ClassAtom ;
+                    ns1:argument1 ex:mode ;
+                    ns1:classPredicate :IonianMode ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:IndividualPropertyAtom ;
+                            ns1:argument1 ex:mode ;
+                            ns1:argument2 ex:mode_root ;
+                            ns1:propertyPredicate mto:hasRootNote ] ;
+                    rdf:rest [ a ns1:AtomList ;
+                            rdf:first [ a ns1:IndividualPropertyAtom ;
+                                    ns1:argument1 ex:mode_root ;
+                                    ns1:argument2 ex:tonic_root ;
+                                    ns1:propertyPredicate mto:hasPerfectUnisonInterval ] ;
+                            rdf:rest [ a ns1:AtomList ;
+                                    rdf:first [ a ns1:ClassAtom ;
+                                            ns1:argument1 ex:chord ;
+                                            ns1:classPredicate mto:MajorTriad ] ;
+                                    rdf:rest [ a ns1:AtomList ;
+                                            rdf:first [ a ns1:IndividualPropertyAtom ;
+                                                    ns1:argument1 ex:tonic_root ;
+                                                    ns1:argument2 ex:chord_root ;
+                                                    ns1:propertyPredicate mto:hasPerfectUnisonInterval ] ;
+                                            rdf:rest [ a ns1:AtomList ;
+                                                    rdf:first [ a ns1:IndividualPropertyAtom ;
+                                                            ns1:argument1 ex:chord ;
+                                                            ns1:argument2 ex:chord_root ;
+                                                            ns1:propertyPredicate chord:root ] ;
+                                                    rdf:rest () ] ] ] ] ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 ex:mode ;
+                    ns1:argument2 ex:chord ;
+                    ns1:propertyPredicate mto:hasTonic ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:ClassAtom ;
+                    ns1:argument1 ex:mode ;
+                    ns1:classPredicate :IonianMode ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:IndividualPropertyAtom ;
+                            ns1:argument1 ex:mode ;
+                            ns1:argument2 ex:mode_root ;
+                            ns1:propertyPredicate mto:hasRootNote ] ;
+                    rdf:rest [ a ns1:AtomList ;
+                            rdf:first [ a ns1:IndividualPropertyAtom ;
+                                    ns1:argument1 ex:mode_root ;
+                                    ns1:argument2 ex:tonic_root ;
+                                    ns1:propertyPredicate mto:hasPerfectUnisonInterval ] ;
+                            rdf:rest [ a ns1:AtomList ;
+                                    rdf:first [ a ns1:ClassAtom ;
+                                            ns1:argument1 ex:chord ;
+                                            ns1:classPredicate mto:MinorTriad ] ;
+                                    rdf:rest [ a ns1:AtomList ;
+                                            rdf:first [ a ns1:IndividualPropertyAtom ;
+                                                    ns1:argument1 ex:tonic_root ;
+                                                    ns1:argument2 ex:chord_root ;
+                                                    ns1:propertyPredicate mto:hasMajorSecondInterval ] ;
+                                            rdf:rest [ a ns1:AtomList ;
+                                                    rdf:first [ a ns1:IndividualPropertyAtom ;
+                                                            ns1:argument1 ex:chord ;
+                                                            ns1:argument2 ex:chord_root ;
+                                                            ns1:propertyPredicate chord:root ] ;
+                                                    rdf:rest () ] ] ] ] ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 ex:mode ;
+                    ns1:argument2 ex:chord ;
+                    ns1:propertyPredicate mto:hasSupertonic ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:ClassAtom ;
+                    ns1:argument1 ex:mode ;
+                    ns1:classPredicate :IonianMode ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:IndividualPropertyAtom ;
+                            ns1:argument1 ex:mode ;
+                            ns1:argument2 ex:mode_root ;
+                            ns1:propertyPredicate mto:hasRootNote ] ;
+                    rdf:rest [ a ns1:AtomList ;
+                            rdf:first [ a ns1:IndividualPropertyAtom ;
+                                    ns1:argument1 ex:mode_root ;
+                                    ns1:argument2 ex:tonic_root ;
+                                    ns1:propertyPredicate mto:hasPerfectUnisonInterval ] ;
+                            rdf:rest [ a ns1:AtomList ;
+                                    rdf:first [ a ns1:ClassAtom ;
+                                            ns1:argument1 ex:chord ;
+                                            ns1:classPredicate mto:MinorTriad ] ;
+                                    rdf:rest [ a ns1:AtomList ;
+                                            rdf:first [ a ns1:IndividualPropertyAtom ;
+                                                    ns1:argument1 ex:tonic_root ;
+                                                    ns1:argument2 ex:chord_root ;
+                                                    ns1:propertyPredicate mto:hasMajorSixthInterval ] ;
+                                            rdf:rest [ a ns1:AtomList ;
+                                                    rdf:first [ a ns1:IndividualPropertyAtom ;
+                                                            ns1:argument1 ex:chord ;
+                                                            ns1:argument2 ex:chord_root ;
+                                                            ns1:propertyPredicate chord:root ] ;
+                                                    rdf:rest () ] ] ] ] ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 ex:mode ;
+                    ns1:argument2 ex:chord ;
+                    ns1:propertyPredicate mto:hasSubmediant ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:ClassAtom ;
+                    ns1:argument1 ex:mode ;
+                    ns1:classPredicate :IonianMode ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:IndividualPropertyAtom ;
+                            ns1:argument1 ex:mode ;
+                            ns1:argument2 ex:mode_root ;
+                            ns1:propertyPredicate mto:hasRootNote ] ;
+                    rdf:rest [ a ns1:AtomList ;
+                            rdf:first [ a ns1:IndividualPropertyAtom ;
+                                    ns1:argument1 ex:mode_root ;
+                                    ns1:argument2 ex:tonic_root ;
+                                    ns1:propertyPredicate mto:hasPerfectUnisonInterval ] ;
+                            rdf:rest [ a ns1:AtomList ;
+                                    rdf:first [ a ns1:ClassAtom ;
+                                            ns1:argument1 ex:chord ;
+                                            ns1:classPredicate mto:MinorTriad ] ;
+                                    rdf:rest [ a ns1:AtomList ;
+                                            rdf:first [ a ns1:IndividualPropertyAtom ;
+                                                    ns1:argument1 ex:tonic_root ;
+                                                    ns1:argument2 ex:chord_root ;
+                                                    ns1:propertyPredicate mto:hasMajorThirdInterval ] ;
+                                            rdf:rest [ a ns1:AtomList ;
+                                                    rdf:first [ a ns1:IndividualPropertyAtom ;
+                                                            ns1:argument1 ex:chord ;
+                                                            ns1:argument2 ex:chord_root ;
+                                                            ns1:propertyPredicate chord:root ] ;
+                                                    rdf:rest () ] ] ] ] ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 ex:mode ;
+                    ns1:argument2 ex:chord ;
+                    ns1:propertyPredicate mto:hasMediant ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:ClassAtom ;
+                    ns1:argument1 ex:mode ;
+                    ns1:classPredicate :DorianMode ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:IndividualPropertyAtom ;
+                            ns1:argument1 ex:mode ;
+                            ns1:argument2 ex:mode_root ;
+                            ns1:propertyPredicate mto:hasRootNote ] ;
+                    rdf:rest [ a ns1:AtomList ;
+                            rdf:first [ a ns1:IndividualPropertyAtom ;
+                                    ns1:argument1 ex:mode_root ;
+                                    ns1:argument2 ex:tonic_root ;
+                                    ns1:propertyPredicate mto:hasMajorSecondInterval ] ;
+                            rdf:rest [ a ns1:AtomList ;
+                                    rdf:first [ a ns1:ClassAtom ;
+                                            ns1:argument1 ex:chord ;
+                                            ns1:classPredicate mto:MinorTriad ] ;
+                                    rdf:rest [ a ns1:AtomList ;
+                                            rdf:first [ a ns1:IndividualPropertyAtom ;
+                                                    ns1:argument1 ex:tonic_root ;
+                                                    ns1:argument2 ex:chord_root ;
+                                                    ns1:propertyPredicate mto:hasPerfectFifthInterval ] ;
+                                            rdf:rest [ a ns1:AtomList ;
+                                                    rdf:first [ a ns1:IndividualPropertyAtom ;
+                                                            ns1:argument1 ex:chord ;
+                                                            ns1:argument2 ex:chord_root ;
+                                                            ns1:propertyPredicate chord:root ] ;
+                                                    rdf:rest () ] ] ] ] ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 ex:mode ;
+                    ns1:argument2 ex:chord ;
+                    ns1:propertyPredicate mto:hasDominant ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:ClassAtom ;
+                    ns1:argument1 ex:mode ;
+                    ns1:classPredicate :AeolianMode ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:IndividualPropertyAtom ;
+                            ns1:argument1 ex:mode ;
+                            ns1:argument2 ex:mode_root ;
+                            ns1:propertyPredicate mto:hasRootNote ] ;
+                    rdf:rest [ a ns1:AtomList ;
+                            rdf:first [ a ns1:IndividualPropertyAtom ;
+                                    ns1:argument1 ex:mode_root ;
+                                    ns1:argument2 ex:tonic_root ;
+                                    ns1:propertyPredicate mto:hasMajorSixthInterval ] ;
+                            rdf:rest [ a ns1:AtomList ;
+                                    rdf:first [ a ns1:ClassAtom ;
+                                            ns1:argument1 ex:chord ;
+                                            ns1:classPredicate mto:MajorTriad ] ;
+                                    rdf:rest [ a ns1:AtomList ;
+                                            rdf:first [ a ns1:IndividualPropertyAtom ;
+                                                    ns1:argument1 ex:tonic_root ;
+                                                    ns1:argument2 ex:chord_root ;
+                                                    ns1:propertyPredicate mto:hasMinorSixthInterval ] ;
+                                            rdf:rest [ a ns1:AtomList ;
+                                                    rdf:first [ a ns1:IndividualPropertyAtom ;
+                                                            ns1:argument1 ex:chord ;
+                                                            ns1:argument2 ex:chord_root ;
+                                                            ns1:propertyPredicate chord:root ] ;
+                                                    rdf:rest () ] ] ] ] ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 ex:mode ;
+                    ns1:argument2 ex:chord ;
+                    ns1:propertyPredicate mto:hasSubmediant ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:ClassAtom ;
+                    ns1:argument1 ex:mode ;
+                    ns1:classPredicate :LocrianMode ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:IndividualPropertyAtom ;
+                            ns1:argument1 ex:mode ;
+                            ns1:argument2 ex:mode_root ;
+                            ns1:propertyPredicate mto:hasRootNote ] ;
+                    rdf:rest [ a ns1:AtomList ;
+                            rdf:first [ a ns1:IndividualPropertyAtom ;
+                                    ns1:argument1 ex:mode_root ;
+                                    ns1:argument2 ex:tonic_root ;
+                                    ns1:propertyPredicate mto:hasMajorSeventhInterval ] ;
+                            rdf:rest [ a ns1:AtomList ;
+                                    rdf:first [ a ns1:ClassAtom ;
+                                            ns1:argument1 ex:chord ;
+                                            ns1:classPredicate mto:DiminishedTriad ] ;
+                                    rdf:rest [ a ns1:AtomList ;
+                                            rdf:first [ a ns1:IndividualPropertyAtom ;
+                                                    ns1:argument1 ex:tonic_root ;
+                                                    ns1:argument2 ex:chord_root ;
+                                                    ns1:propertyPredicate mto:hasPerfectUnisonInterval ] ;
+                                            rdf:rest [ a ns1:AtomList ;
+                                                    rdf:first [ a ns1:IndividualPropertyAtom ;
+                                                            ns1:argument1 ex:chord ;
+                                                            ns1:argument2 ex:chord_root ;
+                                                            ns1:propertyPredicate chord:root ] ;
+                                                    rdf:rest () ] ] ] ] ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 ex:mode ;
+                    ns1:argument2 ex:chord ;
+                    ns1:propertyPredicate mto:hasTonic ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:ClassAtom ;
+                    ns1:argument1 ex:mode ;
+                    ns1:classPredicate :LocrianMode ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:IndividualPropertyAtom ;
+                            ns1:argument1 ex:mode ;
+                            ns1:argument2 ex:mode_root ;
+                            ns1:propertyPredicate mto:hasRootNote ] ;
+                    rdf:rest [ a ns1:AtomList ;
+                            rdf:first [ a ns1:IndividualPropertyAtom ;
+                                    ns1:argument1 ex:mode_root ;
+                                    ns1:argument2 ex:tonic_root ;
+                                    ns1:propertyPredicate mto:hasMajorSeventhInterval ] ;
+                            rdf:rest [ a ns1:AtomList ;
+                                    rdf:first [ a ns1:ClassAtom ;
+                                            ns1:argument1 ex:chord ;
+                                            ns1:classPredicate mto:MajorTriad ] ;
+                                    rdf:rest [ a ns1:AtomList ;
+                                            rdf:first [ a ns1:IndividualPropertyAtom ;
+                                                    ns1:argument1 ex:tonic_root ;
+                                                    ns1:argument2 ex:chord_root ;
+                                                    ns1:propertyPredicate mto:hasDiminishedFifthInterval ] ;
+                                            rdf:rest [ a ns1:AtomList ;
+                                                    rdf:first [ a ns1:IndividualPropertyAtom ;
+                                                            ns1:argument1 ex:chord ;
+                                                            ns1:argument2 ex:chord_root ;
+                                                            ns1:propertyPredicate chord:root ] ;
+                                                    rdf:rest () ] ] ] ] ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 ex:mode ;
+                    ns1:argument2 ex:chord ;
+                    ns1:propertyPredicate mto:hasDominant ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:ClassAtom ;
+                    ns1:argument1 ex:mode ;
+                    ns1:classPredicate :LocrianMode ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:IndividualPropertyAtom ;
+                            ns1:argument1 ex:mode ;
+                            ns1:argument2 ex:mode_root ;
+                            ns1:propertyPredicate mto:hasRootNote ] ;
+                    rdf:rest [ a ns1:AtomList ;
+                            rdf:first [ a ns1:IndividualPropertyAtom ;
+                                    ns1:argument1 ex:mode_root ;
+                                    ns1:argument2 ex:tonic_root ;
+                                    ns1:propertyPredicate mto:hasMajorSeventhInterval ] ;
+                            rdf:rest [ a ns1:AtomList ;
+                                    rdf:first [ a ns1:ClassAtom ;
+                                            ns1:argument1 ex:chord ;
+                                            ns1:classPredicate mto:MajorTriad ] ;
+                                    rdf:rest [ a ns1:AtomList ;
+                                            rdf:first [ a ns1:IndividualPropertyAtom ;
+                                                    ns1:argument1 ex:tonic_root ;
+                                                    ns1:argument2 ex:chord_root ;
+                                                    ns1:propertyPredicate mto:hasMinorSecondInterval ] ;
+                                            rdf:rest [ a ns1:AtomList ;
+                                                    rdf:first [ a ns1:IndividualPropertyAtom ;
+                                                            ns1:argument1 ex:chord ;
+                                                            ns1:argument2 ex:chord_root ;
+                                                            ns1:propertyPredicate chord:root ] ;
+                                                    rdf:rest () ] ] ] ] ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 ex:mode ;
+                    ns1:argument2 ex:chord ;
+                    ns1:propertyPredicate mto:hasSupertonic ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:ClassAtom ;
+                    ns1:argument1 ex:mode ;
+                    ns1:classPredicate :LocrianMode ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:IndividualPropertyAtom ;
+                            ns1:argument1 ex:mode ;
+                            ns1:argument2 ex:mode_root ;
+                            ns1:propertyPredicate mto:hasRootNote ] ;
+                    rdf:rest [ a ns1:AtomList ;
+                            rdf:first [ a ns1:IndividualPropertyAtom ;
+                                    ns1:argument1 ex:mode_root ;
+                                    ns1:argument2 ex:tonic_root ;
+                                    ns1:propertyPredicate mto:hasMajorSeventhInterval ] ;
+                            rdf:rest [ a ns1:AtomList ;
+                                    rdf:first [ a ns1:ClassAtom ;
+                                            ns1:argument1 ex:chord ;
+                                            ns1:classPredicate mto:MajorTriad ] ;
+                                    rdf:rest [ a ns1:AtomList ;
+                                            rdf:first [ a ns1:IndividualPropertyAtom ;
+                                                    ns1:argument1 ex:tonic_root ;
+                                                    ns1:argument2 ex:chord_root ;
+                                                    ns1:propertyPredicate mto:hasMinorSixthInterval ] ;
+                                            rdf:rest [ a ns1:AtomList ;
+                                                    rdf:first [ a ns1:IndividualPropertyAtom ;
+                                                            ns1:argument1 ex:chord ;
+                                                            ns1:argument2 ex:chord_root ;
+                                                            ns1:propertyPredicate chord:root ] ;
+                                                    rdf:rest () ] ] ] ] ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 ex:mode ;
+                    ns1:argument2 ex:chord ;
+                    ns1:propertyPredicate mto:hasSubmediant ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:ClassAtom ;
+                    ns1:argument1 ex:mode ;
+                    ns1:classPredicate :DorianMode ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:IndividualPropertyAtom ;
+                            ns1:argument1 ex:mode ;
+                            ns1:argument2 ex:mode_root ;
+                            ns1:propertyPredicate mto:hasRootNote ] ;
+                    rdf:rest [ a ns1:AtomList ;
+                            rdf:first [ a ns1:IndividualPropertyAtom ;
+                                    ns1:argument1 ex:mode_root ;
+                                    ns1:argument2 ex:tonic_root ;
+                                    ns1:propertyPredicate mto:hasMajorSecondInterval ] ;
+                            rdf:rest [ a ns1:AtomList ;
+                                    rdf:first [ a ns1:ClassAtom ;
+                                            ns1:argument1 ex:chord ;
+                                            ns1:classPredicate mto:MajorTriad ] ;
+                                    rdf:rest [ a ns1:AtomList ;
+                                            rdf:first [ a ns1:IndividualPropertyAtom ;
+                                                    ns1:argument1 ex:tonic_root ;
+                                                    ns1:argument2 ex:chord_root ;
+                                                    ns1:propertyPredicate mto:hasMinorSeventhInterval ] ;
+                                            rdf:rest [ a ns1:AtomList ;
+                                                    rdf:first [ a ns1:IndividualPropertyAtom ;
+                                                            ns1:argument1 ex:chord ;
+                                                            ns1:argument2 ex:chord_root ;
+                                                            ns1:propertyPredicate chord:root ] ;
+                                                    rdf:rest () ] ] ] ] ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 ex:mode ;
+                    ns1:argument2 ex:chord ;
+                    ns1:propertyPredicate mto:hasLeadingtone ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:ClassAtom ;
+                    ns1:argument1 ex:mode ;
+                    ns1:classPredicate :LocrianMode ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:IndividualPropertyAtom ;
+                            ns1:argument1 ex:mode ;
+                            ns1:argument2 ex:mode_root ;
+                            ns1:propertyPredicate mto:hasRootNote ] ;
+                    rdf:rest [ a ns1:AtomList ;
+                            rdf:first [ a ns1:IndividualPropertyAtom ;
+                                    ns1:argument1 ex:mode_root ;
+                                    ns1:argument2 ex:tonic_root ;
+                                    ns1:propertyPredicate mto:hasMajorSeventhInterval ] ;
+                            rdf:rest [ a ns1:AtomList ;
+                                    rdf:first [ a ns1:ClassAtom ;
+                                            ns1:argument1 ex:chord ;
+                                            ns1:classPredicate mto:MinorTriad ] ;
+                                    rdf:rest [ a ns1:AtomList ;
+                                            rdf:first [ a ns1:IndividualPropertyAtom ;
+                                                    ns1:argument1 ex:tonic_root ;
+                                                    ns1:argument2 ex:chord_root ;
+                                                    ns1:propertyPredicate mto:hasMinorSeventhInterval ] ;
+                                            rdf:rest [ a ns1:AtomList ;
+                                                    rdf:first [ a ns1:IndividualPropertyAtom ;
+                                                            ns1:argument1 ex:chord ;
+                                                            ns1:argument2 ex:chord_root ;
+                                                            ns1:propertyPredicate chord:root ] ;
+                                                    rdf:rest () ] ] ] ] ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 ex:mode ;
+                    ns1:argument2 ex:chord ;
+                    ns1:propertyPredicate mto:hasLeadingtone ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:ClassAtom ;
+                    ns1:argument1 ex:mode ;
+                    ns1:classPredicate :LocrianMode ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:IndividualPropertyAtom ;
+                            ns1:argument1 ex:mode ;
+                            ns1:argument2 ex:mode_root ;
+                            ns1:propertyPredicate mto:hasRootNote ] ;
+                    rdf:rest [ a ns1:AtomList ;
+                            rdf:first [ a ns1:IndividualPropertyAtom ;
+                                    ns1:argument1 ex:mode_root ;
+                                    ns1:argument2 ex:tonic_root ;
+                                    ns1:propertyPredicate mto:hasMajorSeventhInterval ] ;
+                            rdf:rest [ a ns1:AtomList ;
+                                    rdf:first [ a ns1:ClassAtom ;
+                                            ns1:argument1 ex:chord ;
+                                            ns1:classPredicate mto:MinorTriad ] ;
+                                    rdf:rest [ a ns1:AtomList ;
+                                            rdf:first [ a ns1:IndividualPropertyAtom ;
+                                                    ns1:argument1 ex:tonic_root ;
+                                                    ns1:argument2 ex:chord_root ;
+                                                    ns1:propertyPredicate mto:hasMinorThirdInterval ] ;
+                                            rdf:rest [ a ns1:AtomList ;
+                                                    rdf:first [ a ns1:IndividualPropertyAtom ;
+                                                            ns1:argument1 ex:chord ;
+                                                            ns1:argument2 ex:chord_root ;
+                                                            ns1:propertyPredicate chord:root ] ;
+                                                    rdf:rest () ] ] ] ] ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 ex:mode ;
+                    ns1:argument2 ex:chord ;
+                    ns1:propertyPredicate mto:hasMediant ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:ClassAtom ;
+                    ns1:argument1 ex:mode ;
+                    ns1:classPredicate :LocrianMode ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:IndividualPropertyAtom ;
+                            ns1:argument1 ex:mode ;
+                            ns1:argument2 ex:mode_root ;
+                            ns1:propertyPredicate mto:hasRootNote ] ;
+                    rdf:rest [ a ns1:AtomList ;
+                            rdf:first [ a ns1:IndividualPropertyAtom ;
+                                    ns1:argument1 ex:mode_root ;
+                                    ns1:argument2 ex:tonic_root ;
+                                    ns1:propertyPredicate mto:hasMajorSeventhInterval ] ;
+                            rdf:rest [ a ns1:AtomList ;
+                                    rdf:first [ a ns1:ClassAtom ;
+                                            ns1:argument1 ex:chord ;
+                                            ns1:classPredicate mto:MinorTriad ] ;
+                                    rdf:rest [ a ns1:AtomList ;
+                                            rdf:first [ a ns1:IndividualPropertyAtom ;
+                                                    ns1:argument1 ex:tonic_root ;
+                                                    ns1:argument2 ex:chord_root ;
+                                                    ns1:propertyPredicate mto:hasPerfectFourthInterval ] ;
+                                            rdf:rest [ a ns1:AtomList ;
+                                                    rdf:first [ a ns1:IndividualPropertyAtom ;
+                                                            ns1:argument1 ex:chord ;
+                                                            ns1:argument2 ex:chord_root ;
+                                                            ns1:propertyPredicate chord:root ] ;
+                                                    rdf:rest () ] ] ] ] ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 ex:mode ;
+                    ns1:argument2 ex:chord ;
+                    ns1:propertyPredicate mto:hasSubdominant ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:ClassAtom ;
+                    ns1:argument1 ex:mode ;
+                    ns1:classPredicate :LydianMode ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:IndividualPropertyAtom ;
+                            ns1:argument1 ex:mode ;
+                            ns1:argument2 ex:mode_root ;
+                            ns1:propertyPredicate mto:hasRootNote ] ;
+                    rdf:rest [ a ns1:AtomList ;
+                            rdf:first [ a ns1:IndividualPropertyAtom ;
+                                    ns1:argument1 ex:mode_root ;
+                                    ns1:argument2 ex:tonic_root ;
+                                    ns1:propertyPredicate mto:hasPerfectFourthInterval ] ;
+                            rdf:rest [ a ns1:AtomList ;
+                                    rdf:first [ a ns1:ClassAtom ;
+                                            ns1:argument1 ex:chord ;
+                                            ns1:classPredicate mto:DiminishedTriad ] ;
+                                    rdf:rest [ a ns1:AtomList ;
+                                            rdf:first [ a ns1:IndividualPropertyAtom ;
+                                                    ns1:argument1 ex:tonic_root ;
+                                                    ns1:argument2 ex:chord_root ;
+                                                    ns1:propertyPredicate mto:hasAugmentedFourthInterval ] ;
+                                            rdf:rest [ a ns1:AtomList ;
+                                                    rdf:first [ a ns1:IndividualPropertyAtom ;
+                                                            ns1:argument1 ex:chord ;
+                                                            ns1:argument2 ex:chord_root ;
+                                                            ns1:propertyPredicate chord:root ] ;
+                                                    rdf:rest () ] ] ] ] ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 ex:mode ;
+                    ns1:argument2 ex:chord ;
+                    ns1:propertyPredicate mto:hasSubdominant ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:ClassAtom ;
+                    ns1:argument1 ex:mode ;
+                    ns1:classPredicate :DorianMode ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:IndividualPropertyAtom ;
+                            ns1:argument1 ex:mode ;
+                            ns1:argument2 ex:mode_root ;
+                            ns1:propertyPredicate mto:hasRootNote ] ;
+                    rdf:rest [ a ns1:AtomList ;
+                            rdf:first [ a ns1:IndividualPropertyAtom ;
+                                    ns1:argument1 ex:mode_root ;
+                                    ns1:argument2 ex:tonic_root ;
+                                    ns1:propertyPredicate mto:hasMajorSecondInterval ] ;
+                            rdf:rest [ a ns1:AtomList ;
+                                    rdf:first [ a ns1:ClassAtom ;
+                                            ns1:argument1 ex:chord ;
+                                            ns1:classPredicate mto:MinorTriad ] ;
+                                    rdf:rest [ a ns1:AtomList ;
+                                            rdf:first [ a ns1:IndividualPropertyAtom ;
+                                                    ns1:argument1 ex:tonic_root ;
+                                                    ns1:argument2 ex:chord_root ;
+                                                    ns1:propertyPredicate mto:hasPerfectUnisonInterval ] ;
+                                            rdf:rest [ a ns1:AtomList ;
+                                                    rdf:first [ a ns1:IndividualPropertyAtom ;
+                                                            ns1:argument1 ex:chord ;
+                                                            ns1:argument2 ex:chord_root ;
+                                                            ns1:propertyPredicate chord:root ] ;
+                                                    rdf:rest () ] ] ] ] ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 ex:mode ;
+                    ns1:argument2 ex:chord ;
+                    ns1:propertyPredicate mto:hasTonic ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:ClassAtom ;
+                    ns1:argument1 ex:mode ;
+                    ns1:classPredicate :LydianMode ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:IndividualPropertyAtom ;
+                            ns1:argument1 ex:mode ;
+                            ns1:argument2 ex:mode_root ;
+                            ns1:propertyPredicate mto:hasRootNote ] ;
+                    rdf:rest [ a ns1:AtomList ;
+                            rdf:first [ a ns1:IndividualPropertyAtom ;
+                                    ns1:argument1 ex:mode_root ;
+                                    ns1:argument2 ex:tonic_root ;
+                                    ns1:propertyPredicate mto:hasPerfectFourthInterval ] ;
+                            rdf:rest [ a ns1:AtomList ;
+                                    rdf:first [ a ns1:ClassAtom ;
+                                            ns1:argument1 ex:chord ;
+                                            ns1:classPredicate mto:MajorTriad ] ;
+                                    rdf:rest [ a ns1:AtomList ;
+                                            rdf:first [ a ns1:IndividualPropertyAtom ;
+                                                    ns1:argument1 ex:tonic_root ;
+                                                    ns1:argument2 ex:chord_root ;
+                                                    ns1:propertyPredicate mto:hasMajorSecondInterval ] ;
+                                            rdf:rest [ a ns1:AtomList ;
+                                                    rdf:first [ a ns1:IndividualPropertyAtom ;
+                                                            ns1:argument1 ex:chord ;
+                                                            ns1:argument2 ex:chord_root ;
+                                                            ns1:propertyPredicate chord:root ] ;
+                                                    rdf:rest () ] ] ] ] ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 ex:mode ;
+                    ns1:argument2 ex:chord ;
+                    ns1:propertyPredicate mto:hasSupertonic ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:ClassAtom ;
+                    ns1:argument1 ex:mode ;
+                    ns1:classPredicate :LydianMode ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:IndividualPropertyAtom ;
+                            ns1:argument1 ex:mode ;
+                            ns1:argument2 ex:mode_root ;
+                            ns1:propertyPredicate mto:hasRootNote ] ;
+                    rdf:rest [ a ns1:AtomList ;
+                            rdf:first [ a ns1:IndividualPropertyAtom ;
+                                    ns1:argument1 ex:mode_root ;
+                                    ns1:argument2 ex:tonic_root ;
+                                    ns1:propertyPredicate mto:hasPerfectFourthInterval ] ;
+                            rdf:rest [ a ns1:AtomList ;
+                                    rdf:first [ a ns1:ClassAtom ;
+                                            ns1:argument1 ex:chord ;
+                                            ns1:classPredicate mto:MajorTriad ] ;
+                                    rdf:rest [ a ns1:AtomList ;
+                                            rdf:first [ a ns1:IndividualPropertyAtom ;
+                                                    ns1:argument1 ex:tonic_root ;
+                                                    ns1:argument2 ex:chord_root ;
+                                                    ns1:propertyPredicate mto:hasPerfectFifthInterval ] ;
+                                            rdf:rest [ a ns1:AtomList ;
+                                                    rdf:first [ a ns1:IndividualPropertyAtom ;
+                                                            ns1:argument1 ex:chord ;
+                                                            ns1:argument2 ex:chord_root ;
+                                                            ns1:propertyPredicate chord:root ] ;
+                                                    rdf:rest () ] ] ] ] ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 ex:mode ;
+                    ns1:argument2 ex:chord ;
+                    ns1:propertyPredicate mto:hasDominant ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:ClassAtom ;
+                    ns1:argument1 ex:mode ;
+                    ns1:classPredicate :AeolianMode ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:IndividualPropertyAtom ;
+                            ns1:argument1 ex:mode ;
+                            ns1:argument2 ex:mode_root ;
+                            ns1:propertyPredicate mto:hasRootNote ] ;
+                    rdf:rest [ a ns1:AtomList ;
+                            rdf:first [ a ns1:IndividualPropertyAtom ;
+                                    ns1:argument1 ex:mode_root ;
+                                    ns1:argument2 ex:tonic_root ;
+                                    ns1:propertyPredicate mto:hasMajorSixthInterval ] ;
+                            rdf:rest [ a ns1:AtomList ;
+                                    rdf:first [ a ns1:ClassAtom ;
+                                            ns1:argument1 ex:chord ;
+                                            ns1:classPredicate mto:MajorTriad ] ;
+                                    rdf:rest [ a ns1:AtomList ;
+                                            rdf:first [ a ns1:IndividualPropertyAtom ;
+                                                    ns1:argument1 ex:tonic_root ;
+                                                    ns1:argument2 ex:chord_root ;
+                                                    ns1:propertyPredicate mto:hasMinorThirdInterval ] ;
+                                            rdf:rest [ a ns1:AtomList ;
+                                                    rdf:first [ a ns1:IndividualPropertyAtom ;
+                                                            ns1:argument1 ex:chord ;
+                                                            ns1:argument2 ex:chord_root ;
+                                                            ns1:propertyPredicate chord:root ] ;
+                                                    rdf:rest () ] ] ] ] ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 ex:mode ;
+                    ns1:argument2 ex:chord ;
+                    ns1:propertyPredicate mto:hasMediant ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:ClassAtom ;
+                    ns1:argument1 ex:mode ;
+                    ns1:classPredicate :LydianMode ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:IndividualPropertyAtom ;
+                            ns1:argument1 ex:mode ;
+                            ns1:argument2 ex:mode_root ;
+                            ns1:propertyPredicate mto:hasRootNote ] ;
+                    rdf:rest [ a ns1:AtomList ;
+                            rdf:first [ a ns1:IndividualPropertyAtom ;
+                                    ns1:argument1 ex:mode_root ;
+                                    ns1:argument2 ex:tonic_root ;
+                                    ns1:propertyPredicate mto:hasPerfectFourthInterval ] ;
+                            rdf:rest [ a ns1:AtomList ;
+                                    rdf:first [ a ns1:ClassAtom ;
+                                            ns1:argument1 ex:chord ;
+                                            ns1:classPredicate mto:MajorTriad ] ;
+                                    rdf:rest [ a ns1:AtomList ;
+                                            rdf:first [ a ns1:IndividualPropertyAtom ;
+                                                    ns1:argument1 ex:tonic_root ;
+                                                    ns1:argument2 ex:chord_root ;
+                                                    ns1:propertyPredicate mto:hasPerfectUnisonInterval ] ;
+                                            rdf:rest [ a ns1:AtomList ;
+                                                    rdf:first [ a ns1:IndividualPropertyAtom ;
+                                                            ns1:argument1 ex:chord ;
+                                                            ns1:argument2 ex:chord_root ;
+                                                            ns1:propertyPredicate chord:root ] ;
+                                                    rdf:rest () ] ] ] ] ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 ex:mode ;
+                    ns1:argument2 ex:chord ;
+                    ns1:propertyPredicate mto:hasTonic ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:ClassAtom ;
+                    ns1:argument1 ex:mode ;
+                    ns1:classPredicate :LydianMode ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:IndividualPropertyAtom ;
+                            ns1:argument1 ex:mode ;
+                            ns1:argument2 ex:mode_root ;
+                            ns1:propertyPredicate mto:hasRootNote ] ;
+                    rdf:rest [ a ns1:AtomList ;
+                            rdf:first [ a ns1:IndividualPropertyAtom ;
+                                    ns1:argument1 ex:mode_root ;
+                                    ns1:argument2 ex:tonic_root ;
+                                    ns1:propertyPredicate mto:hasPerfectFourthInterval ] ;
+                            rdf:rest [ a ns1:AtomList ;
+                                    rdf:first [ a ns1:ClassAtom ;
+                                            ns1:argument1 ex:chord ;
+                                            ns1:classPredicate mto:MinorTriad ] ;
+                                    rdf:rest [ a ns1:AtomList ;
+                                            rdf:first [ a ns1:IndividualPropertyAtom ;
+                                                    ns1:argument1 ex:tonic_root ;
+                                                    ns1:argument2 ex:chord_root ;
+                                                    ns1:propertyPredicate mto:hasMajorSeventhInterval ] ;
+                                            rdf:rest [ a ns1:AtomList ;
+                                                    rdf:first [ a ns1:IndividualPropertyAtom ;
+                                                            ns1:argument1 ex:chord ;
+                                                            ns1:argument2 ex:chord_root ;
+                                                            ns1:propertyPredicate chord:root ] ;
+                                                    rdf:rest () ] ] ] ] ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 ex:mode ;
+                    ns1:argument2 ex:chord ;
+                    ns1:propertyPredicate mto:hasLeadingtone ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:ClassAtom ;
+                    ns1:argument1 ex:mode ;
+                    ns1:classPredicate :LydianMode ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:IndividualPropertyAtom ;
+                            ns1:argument1 ex:mode ;
+                            ns1:argument2 ex:mode_root ;
+                            ns1:propertyPredicate mto:hasRootNote ] ;
+                    rdf:rest [ a ns1:AtomList ;
+                            rdf:first [ a ns1:IndividualPropertyAtom ;
+                                    ns1:argument1 ex:mode_root ;
+                                    ns1:argument2 ex:tonic_root ;
+                                    ns1:propertyPredicate mto:hasPerfectFourthInterval ] ;
+                            rdf:rest [ a ns1:AtomList ;
+                                    rdf:first [ a ns1:ClassAtom ;
+                                            ns1:argument1 ex:chord ;
+                                            ns1:classPredicate mto:MinorTriad ] ;
+                                    rdf:rest [ a ns1:AtomList ;
+                                            rdf:first [ a ns1:IndividualPropertyAtom ;
+                                                    ns1:argument1 ex:tonic_root ;
+                                                    ns1:argument2 ex:chord_root ;
+                                                    ns1:propertyPredicate mto:hasMajorSixthInterval ] ;
+                                            rdf:rest [ a ns1:AtomList ;
+                                                    rdf:first [ a ns1:IndividualPropertyAtom ;
+                                                            ns1:argument1 ex:chord ;
+                                                            ns1:argument2 ex:chord_root ;
+                                                            ns1:propertyPredicate chord:root ] ;
+                                                    rdf:rest () ] ] ] ] ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 ex:mode ;
+                    ns1:argument2 ex:chord ;
+                    ns1:propertyPredicate mto:hasSubmediant ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:ClassAtom ;
+                    ns1:argument1 ex:mode ;
+                    ns1:classPredicate :DorianMode ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:IndividualPropertyAtom ;
+                            ns1:argument1 ex:mode ;
+                            ns1:argument2 ex:mode_root ;
+                            ns1:propertyPredicate mto:hasRootNote ] ;
+                    rdf:rest [ a ns1:AtomList ;
+                            rdf:first [ a ns1:IndividualPropertyAtom ;
+                                    ns1:argument1 ex:mode_root ;
+                                    ns1:argument2 ex:tonic_root ;
+                                    ns1:propertyPredicate mto:hasMajorSecondInterval ] ;
+                            rdf:rest [ a ns1:AtomList ;
+                                    rdf:first [ a ns1:ClassAtom ;
+                                            ns1:argument1 ex:chord ;
+                                            ns1:classPredicate mto:MajorTriad ] ;
+                                    rdf:rest [ a ns1:AtomList ;
+                                            rdf:first [ a ns1:IndividualPropertyAtom ;
+                                                    ns1:argument1 ex:tonic_root ;
+                                                    ns1:argument2 ex:chord_root ;
+                                                    ns1:propertyPredicate mto:hasMinorThirdInterval ] ;
+                                            rdf:rest [ a ns1:AtomList ;
+                                                    rdf:first [ a ns1:IndividualPropertyAtom ;
+                                                            ns1:argument1 ex:chord ;
+                                                            ns1:argument2 ex:chord_root ;
+                                                            ns1:propertyPredicate chord:root ] ;
+                                                    rdf:rest () ] ] ] ] ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 ex:mode ;
+                    ns1:argument2 ex:chord ;
+                    ns1:propertyPredicate mto:hasMediant ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:ClassAtom ;
+                    ns1:argument1 ex:mode ;
+                    ns1:classPredicate :LydianMode ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:IndividualPropertyAtom ;
+                            ns1:argument1 ex:mode ;
+                            ns1:argument2 ex:mode_root ;
+                            ns1:propertyPredicate mto:hasRootNote ] ;
+                    rdf:rest [ a ns1:AtomList ;
+                            rdf:first [ a ns1:IndividualPropertyAtom ;
+                                    ns1:argument1 ex:mode_root ;
+                                    ns1:argument2 ex:tonic_root ;
+                                    ns1:propertyPredicate mto:hasPerfectFourthInterval ] ;
+                            rdf:rest [ a ns1:AtomList ;
+                                    rdf:first [ a ns1:ClassAtom ;
+                                            ns1:argument1 ex:chord ;
+                                            ns1:classPredicate mto:MinorTriad ] ;
+                                    rdf:rest [ a ns1:AtomList ;
+                                            rdf:first [ a ns1:IndividualPropertyAtom ;
+                                                    ns1:argument1 ex:tonic_root ;
+                                                    ns1:argument2 ex:chord_root ;
+                                                    ns1:propertyPredicate mto:hasMajorThirdInterval ] ;
+                                            rdf:rest [ a ns1:AtomList ;
+                                                    rdf:first [ a ns1:IndividualPropertyAtom ;
+                                                            ns1:argument1 ex:chord ;
+                                                            ns1:argument2 ex:chord_root ;
+                                                            ns1:propertyPredicate chord:root ] ;
+                                                    rdf:rest () ] ] ] ] ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 ex:mode ;
+                    ns1:argument2 ex:chord ;
+                    ns1:propertyPredicate mto:hasMediant ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:ClassAtom ;
+                    ns1:argument1 ex:mode ;
+                    ns1:classPredicate :MixolydianMode ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:IndividualPropertyAtom ;
+                            ns1:argument1 ex:mode ;
+                            ns1:argument2 ex:mode_root ;
+                            ns1:propertyPredicate mto:hasRootNote ] ;
+                    rdf:rest [ a ns1:AtomList ;
+                            rdf:first [ a ns1:IndividualPropertyAtom ;
+                                    ns1:argument1 ex:mode_root ;
+                                    ns1:argument2 ex:tonic_root ;
+                                    ns1:propertyPredicate mto:hasPerfectFifthInterval ] ;
+                            rdf:rest [ a ns1:AtomList ;
+                                    rdf:first [ a ns1:ClassAtom ;
+                                            ns1:argument1 ex:chord ;
+                                            ns1:classPredicate mto:DiminishedTriad ] ;
+                                    rdf:rest [ a ns1:AtomList ;
+                                            rdf:first [ a ns1:IndividualPropertyAtom ;
+                                                    ns1:argument1 ex:tonic_root ;
+                                                    ns1:argument2 ex:chord_root ;
+                                                    ns1:propertyPredicate mto:hasMajorThirdInterval ] ;
+                                            rdf:rest [ a ns1:AtomList ;
+                                                    rdf:first [ a ns1:IndividualPropertyAtom ;
+                                                            ns1:argument1 ex:chord ;
+                                                            ns1:argument2 ex:chord_root ;
+                                                            ns1:propertyPredicate chord:root ] ;
+                                                    rdf:rest () ] ] ] ] ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 ex:mode ;
+                    ns1:argument2 ex:chord ;
+                    ns1:propertyPredicate mto:hasMediant ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:ClassAtom ;
+                    ns1:argument1 ex:mode ;
+                    ns1:classPredicate :MixolydianMode ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:IndividualPropertyAtom ;
+                            ns1:argument1 ex:mode ;
+                            ns1:argument2 ex:mode_root ;
+                            ns1:propertyPredicate mto:hasRootNote ] ;
+                    rdf:rest [ a ns1:AtomList ;
+                            rdf:first [ a ns1:IndividualPropertyAtom ;
+                                    ns1:argument1 ex:mode_root ;
+                                    ns1:argument2 ex:tonic_root ;
+                                    ns1:propertyPredicate mto:hasPerfectFifthInterval ] ;
+                            rdf:rest [ a ns1:AtomList ;
+                                    rdf:first [ a ns1:ClassAtom ;
+                                            ns1:argument1 ex:chord ;
+                                            ns1:classPredicate mto:MajorTriad ] ;
+                                    rdf:rest [ a ns1:AtomList ;
+                                            rdf:first [ a ns1:IndividualPropertyAtom ;
+                                                    ns1:argument1 ex:tonic_root ;
+                                                    ns1:argument2 ex:chord_root ;
+                                                    ns1:propertyPredicate mto:hasMinorSeventhInterval ] ;
+                                            rdf:rest [ a ns1:AtomList ;
+                                                    rdf:first [ a ns1:IndividualPropertyAtom ;
+                                                            ns1:argument1 ex:chord ;
+                                                            ns1:argument2 ex:chord_root ;
+                                                            ns1:propertyPredicate chord:root ] ;
+                                                    rdf:rest () ] ] ] ] ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 ex:mode ;
+                    ns1:argument2 ex:chord ;
+                    ns1:propertyPredicate mto:hasLeadingtone ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:ClassAtom ;
+                    ns1:argument1 ex:mode ;
+                    ns1:classPredicate :IonianMode ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:IndividualPropertyAtom ;
+                            ns1:argument1 ex:mode ;
+                            ns1:argument2 ex:mode_root ;
+                            ns1:propertyPredicate mto:hasRootNote ] ;
+                    rdf:rest [ a ns1:AtomList ;
+                            rdf:first [ a ns1:IndividualPropertyAtom ;
+                                    ns1:argument1 ex:mode_root ;
+                                    ns1:argument2 ex:tonic_root ;
+                                    ns1:propertyPredicate mto:hasPerfectUnisonInterval ] ;
+                            rdf:rest [ a ns1:AtomList ;
+                                    rdf:first [ a ns1:ClassAtom ;
+                                            ns1:argument1 ex:chord ;
+                                            ns1:classPredicate mto:DiminishedTriad ] ;
+                                    rdf:rest [ a ns1:AtomList ;
+                                            rdf:first [ a ns1:IndividualPropertyAtom ;
+                                                    ns1:argument1 ex:tonic_root ;
+                                                    ns1:argument2 ex:chord_root ;
+                                                    ns1:propertyPredicate mto:hasMajorSeventhInterval ] ;
+                                            rdf:rest [ a ns1:AtomList ;
+                                                    rdf:first [ a ns1:IndividualPropertyAtom ;
+                                                            ns1:argument1 ex:chord ;
+                                                            ns1:argument2 ex:chord_root ;
+                                                            ns1:propertyPredicate chord:root ] ;
+                                                    rdf:rest () ] ] ] ] ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 ex:mode ;
+                    ns1:argument2 ex:chord ;
+                    ns1:propertyPredicate mto:hasLeadingtone ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:ClassAtom ;
+                    ns1:argument1 ex:mode ;
+                    ns1:classPredicate :MixolydianMode ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:IndividualPropertyAtom ;
+                            ns1:argument1 ex:mode ;
+                            ns1:argument2 ex:mode_root ;
+                            ns1:propertyPredicate mto:hasRootNote ] ;
+                    rdf:rest [ a ns1:AtomList ;
+                            rdf:first [ a ns1:IndividualPropertyAtom ;
+                                    ns1:argument1 ex:mode_root ;
+                                    ns1:argument2 ex:tonic_root ;
+                                    ns1:propertyPredicate mto:hasPerfectFifthInterval ] ;
+                            rdf:rest [ a ns1:AtomList ;
+                                    rdf:first [ a ns1:ClassAtom ;
+                                            ns1:argument1 ex:chord ;
+                                            ns1:classPredicate mto:MajorTriad ] ;
+                                    rdf:rest [ a ns1:AtomList ;
+                                            rdf:first [ a ns1:IndividualPropertyAtom ;
+                                                    ns1:argument1 ex:tonic_root ;
+                                                    ns1:argument2 ex:chord_root ;
+                                                    ns1:propertyPredicate mto:hasPerfectFourthInterval ] ;
+                                            rdf:rest [ a ns1:AtomList ;
+                                                    rdf:first [ a ns1:IndividualPropertyAtom ;
+                                                            ns1:argument1 ex:chord ;
+                                                            ns1:argument2 ex:chord_root ;
+                                                            ns1:propertyPredicate chord:root ] ;
+                                                    rdf:rest () ] ] ] ] ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 ex:mode ;
+                    ns1:argument2 ex:chord ;
+                    ns1:propertyPredicate mto:hasSubdominant ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:ClassAtom ;
+                    ns1:argument1 ex:mode ;
+                    ns1:classPredicate :MixolydianMode ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:IndividualPropertyAtom ;
+                            ns1:argument1 ex:mode ;
+                            ns1:argument2 ex:mode_root ;
+                            ns1:propertyPredicate mto:hasRootNote ] ;
+                    rdf:rest [ a ns1:AtomList ;
+                            rdf:first [ a ns1:IndividualPropertyAtom ;
+                                    ns1:argument1 ex:mode_root ;
+                                    ns1:argument2 ex:tonic_root ;
+                                    ns1:propertyPredicate mto:hasPerfectFifthInterval ] ;
+                            rdf:rest [ a ns1:AtomList ;
+                                    rdf:first [ a ns1:ClassAtom ;
+                                            ns1:argument1 ex:chord ;
+                                            ns1:classPredicate mto:MajorTriad ] ;
+                                    rdf:rest [ a ns1:AtomList ;
+                                            rdf:first [ a ns1:IndividualPropertyAtom ;
+                                                    ns1:argument1 ex:tonic_root ;
+                                                    ns1:argument2 ex:chord_root ;
+                                                    ns1:propertyPredicate mto:hasPerfectUnisonInterval ] ;
+                                            rdf:rest [ a ns1:AtomList ;
+                                                    rdf:first [ a ns1:IndividualPropertyAtom ;
+                                                            ns1:argument1 ex:chord ;
+                                                            ns1:argument2 ex:chord_root ;
+                                                            ns1:propertyPredicate chord:root ] ;
+                                                    rdf:rest () ] ] ] ] ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 ex:mode ;
+                    ns1:argument2 ex:chord ;
+                    ns1:propertyPredicate mto:hasTonic ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:ClassAtom ;
+                    ns1:argument1 ex:mode ;
+                    ns1:classPredicate :MixolydianMode ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:IndividualPropertyAtom ;
+                            ns1:argument1 ex:mode ;
+                            ns1:argument2 ex:mode_root ;
+                            ns1:propertyPredicate mto:hasRootNote ] ;
+                    rdf:rest [ a ns1:AtomList ;
+                            rdf:first [ a ns1:IndividualPropertyAtom ;
+                                    ns1:argument1 ex:mode_root ;
+                                    ns1:argument2 ex:tonic_root ;
+                                    ns1:propertyPredicate mto:hasPerfectFifthInterval ] ;
+                            rdf:rest [ a ns1:AtomList ;
+                                    rdf:first [ a ns1:ClassAtom ;
+                                            ns1:argument1 ex:chord ;
+                                            ns1:classPredicate mto:MinorTriad ] ;
+                                    rdf:rest [ a ns1:AtomList ;
+                                            rdf:first [ a ns1:IndividualPropertyAtom ;
+                                                    ns1:argument1 ex:tonic_root ;
+                                                    ns1:argument2 ex:chord_root ;
+                                                    ns1:propertyPredicate mto:hasMajorSecondInterval ] ;
+                                            rdf:rest [ a ns1:AtomList ;
+                                                    rdf:first [ a ns1:IndividualPropertyAtom ;
+                                                            ns1:argument1 ex:chord ;
+                                                            ns1:argument2 ex:chord_root ;
+                                                            ns1:propertyPredicate chord:root ] ;
+                                                    rdf:rest () ] ] ] ] ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 ex:mode ;
+                    ns1:argument2 ex:chord ;
+                    ns1:propertyPredicate mto:hasSupertonic ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:ClassAtom ;
+                    ns1:argument1 ex:mode ;
+                    ns1:classPredicate :MixolydianMode ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:IndividualPropertyAtom ;
+                            ns1:argument1 ex:mode ;
+                            ns1:argument2 ex:mode_root ;
+                            ns1:propertyPredicate mto:hasRootNote ] ;
+                    rdf:rest [ a ns1:AtomList ;
+                            rdf:first [ a ns1:IndividualPropertyAtom ;
+                                    ns1:argument1 ex:mode_root ;
+                                    ns1:argument2 ex:tonic_root ;
+                                    ns1:propertyPredicate mto:hasPerfectFifthInterval ] ;
+                            rdf:rest [ a ns1:AtomList ;
+                                    rdf:first [ a ns1:ClassAtom ;
+                                            ns1:argument1 ex:chord ;
+                                            ns1:classPredicate mto:MinorTriad ] ;
+                                    rdf:rest [ a ns1:AtomList ;
+                                            rdf:first [ a ns1:IndividualPropertyAtom ;
+                                                    ns1:argument1 ex:tonic_root ;
+                                                    ns1:argument2 ex:chord_root ;
+                                                    ns1:propertyPredicate mto:hasMajorSixthInterval ] ;
+                                            rdf:rest [ a ns1:AtomList ;
+                                                    rdf:first [ a ns1:IndividualPropertyAtom ;
+                                                            ns1:argument1 ex:chord ;
+                                                            ns1:argument2 ex:chord_root ;
+                                                            ns1:propertyPredicate chord:root ] ;
+                                                    rdf:rest () ] ] ] ] ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 ex:mode ;
+                    ns1:argument2 ex:chord ;
+                    ns1:propertyPredicate mto:hasSubmediant ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:ClassAtom ;
+                    ns1:argument1 ex:mode ;
+                    ns1:classPredicate :AeolianMode ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:IndividualPropertyAtom ;
+                            ns1:argument1 ex:mode ;
+                            ns1:argument2 ex:mode_root ;
+                            ns1:propertyPredicate mto:hasRootNote ] ;
+                    rdf:rest [ a ns1:AtomList ;
+                            rdf:first [ a ns1:IndividualPropertyAtom ;
+                                    ns1:argument1 ex:mode_root ;
+                                    ns1:argument2 ex:tonic_root ;
+                                    ns1:propertyPredicate mto:hasMajorSixthInterval ] ;
+                            rdf:rest [ a ns1:AtomList ;
+                                    rdf:first [ a ns1:ClassAtom ;
+                                            ns1:argument1 ex:chord ;
+                                            ns1:classPredicate mto:MinorTriad ] ;
+                                    rdf:rest [ a ns1:AtomList ;
+                                            rdf:first [ a ns1:IndividualPropertyAtom ;
+                                                    ns1:argument1 ex:tonic_root ;
+                                                    ns1:argument2 ex:chord_root ;
+                                                    ns1:propertyPredicate mto:hasPerfectFifthInterval ] ;
+                                            rdf:rest [ a ns1:AtomList ;
+                                                    rdf:first [ a ns1:IndividualPropertyAtom ;
+                                                            ns1:argument1 ex:chord ;
+                                                            ns1:argument2 ex:chord_root ;
+                                                            ns1:propertyPredicate chord:root ] ;
+                                                    rdf:rest () ] ] ] ] ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 ex:mode ;
+                    ns1:argument2 ex:chord ;
+                    ns1:propertyPredicate mto:hasDominant ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:ClassAtom ;
+                    ns1:argument1 ex:mode ;
+                    ns1:classPredicate :MixolydianMode ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:IndividualPropertyAtom ;
+                            ns1:argument1 ex:mode ;
+                            ns1:argument2 ex:mode_root ;
+                            ns1:propertyPredicate mto:hasRootNote ] ;
+                    rdf:rest [ a ns1:AtomList ;
+                            rdf:first [ a ns1:IndividualPropertyAtom ;
+                                    ns1:argument1 ex:mode_root ;
+                                    ns1:argument2 ex:tonic_root ;
+                                    ns1:propertyPredicate mto:hasPerfectFifthInterval ] ;
+                            rdf:rest [ a ns1:AtomList ;
+                                    rdf:first [ a ns1:ClassAtom ;
+                                            ns1:argument1 ex:chord ;
+                                            ns1:classPredicate mto:MinorTriad ] ;
+                                    rdf:rest [ a ns1:AtomList ;
+                                            rdf:first [ a ns1:IndividualPropertyAtom ;
+                                                    ns1:argument1 ex:tonic_root ;
+                                                    ns1:argument2 ex:chord_root ;
+                                                    ns1:propertyPredicate mto:hasPerfectFifthInterval ] ;
+                                            rdf:rest [ a ns1:AtomList ;
+                                                    rdf:first [ a ns1:IndividualPropertyAtom ;
+                                                            ns1:argument1 ex:chord ;
+                                                            ns1:argument2 ex:chord_root ;
+                                                            ns1:propertyPredicate chord:root ] ;
+                                                    rdf:rest () ] ] ] ] ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 ex:mode ;
+                    ns1:argument2 ex:chord ;
+                    ns1:propertyPredicate mto:hasDominant ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:ClassAtom ;
+                    ns1:argument1 ex:mode ;
+                    ns1:classPredicate :PhrygianMode ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:IndividualPropertyAtom ;
+                            ns1:argument1 ex:mode ;
+                            ns1:argument2 ex:mode_root ;
+                            ns1:propertyPredicate mto:hasRootNote ] ;
+                    rdf:rest [ a ns1:AtomList ;
+                            rdf:first [ a ns1:IndividualPropertyAtom ;
+                                    ns1:argument1 ex:mode_root ;
+                                    ns1:argument2 ex:tonic_root ;
+                                    ns1:propertyPredicate mto:hasMajorThirdInterval ] ;
+                            rdf:rest [ a ns1:AtomList ;
+                                    rdf:first [ a ns1:ClassAtom ;
+                                            ns1:argument1 ex:chord ;
+                                            ns1:classPredicate mto:DiminishedTriad ] ;
+                                    rdf:rest [ a ns1:AtomList ;
+                                            rdf:first [ a ns1:IndividualPropertyAtom ;
+                                                    ns1:argument1 ex:tonic_root ;
+                                                    ns1:argument2 ex:chord_root ;
+                                                    ns1:propertyPredicate mto:hasPerfectFifthInterval ] ;
+                                            rdf:rest [ a ns1:AtomList ;
+                                                    rdf:first [ a ns1:IndividualPropertyAtom ;
+                                                            ns1:argument1 ex:chord ;
+                                                            ns1:argument2 ex:chord_root ;
+                                                            ns1:propertyPredicate chord:root ] ;
+                                                    rdf:rest () ] ] ] ] ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 ex:mode ;
+                    ns1:argument2 ex:chord ;
+                    ns1:propertyPredicate mto:hasDominant ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:ClassAtom ;
+                    ns1:argument1 ex:mode ;
+                    ns1:classPredicate :DorianMode ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:IndividualPropertyAtom ;
+                            ns1:argument1 ex:mode ;
+                            ns1:argument2 ex:mode_root ;
+                            ns1:propertyPredicate mto:hasRootNote ] ;
+                    rdf:rest [ a ns1:AtomList ;
+                            rdf:first [ a ns1:IndividualPropertyAtom ;
+                                    ns1:argument1 ex:mode_root ;
+                                    ns1:argument2 ex:tonic_root ;
+                                    ns1:propertyPredicate mto:hasMajorSecondInterval ] ;
+                            rdf:rest [ a ns1:AtomList ;
+                                    rdf:first [ a ns1:ClassAtom ;
+                                            ns1:argument1 ex:chord ;
+                                            ns1:classPredicate mto:MajorTriad ] ;
+                                    rdf:rest [ a ns1:AtomList ;
+                                            rdf:first [ a ns1:IndividualPropertyAtom ;
+                                                    ns1:argument1 ex:tonic_root ;
+                                                    ns1:argument2 ex:chord_root ;
+                                                    ns1:propertyPredicate mto:hasPerfectFourthInterval ] ;
+                                            rdf:rest [ a ns1:AtomList ;
+                                                    rdf:first [ a ns1:IndividualPropertyAtom ;
+                                                            ns1:argument1 ex:chord ;
+                                                            ns1:argument2 ex:chord_root ;
+                                                            ns1:propertyPredicate chord:root ] ;
+                                                    rdf:rest () ] ] ] ] ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 ex:mode ;
+                    ns1:argument2 ex:chord ;
+                    ns1:propertyPredicate mto:hasSubdominant ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:ClassAtom ;
+                    ns1:argument1 ex:mode ;
+                    ns1:classPredicate :PhrygianMode ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:IndividualPropertyAtom ;
+                            ns1:argument1 ex:mode ;
+                            ns1:argument2 ex:mode_root ;
+                            ns1:propertyPredicate mto:hasRootNote ] ;
+                    rdf:rest [ a ns1:AtomList ;
+                            rdf:first [ a ns1:IndividualPropertyAtom ;
+                                    ns1:argument1 ex:mode_root ;
+                                    ns1:argument2 ex:tonic_root ;
+                                    ns1:propertyPredicate mto:hasMajorThirdInterval ] ;
+                            rdf:rest [ a ns1:AtomList ;
+                                    rdf:first [ a ns1:ClassAtom ;
+                                            ns1:argument1 ex:chord ;
+                                            ns1:classPredicate mto:MajorTriad ] ;
+                                    rdf:rest [ a ns1:AtomList ;
+                                            rdf:first [ a ns1:IndividualPropertyAtom ;
+                                                    ns1:argument1 ex:tonic_root ;
+                                                    ns1:argument2 ex:chord_root ;
+                                                    ns1:propertyPredicate mto:hasMinorSecondInterval ] ;
+                                            rdf:rest [ a ns1:AtomList ;
+                                                    rdf:first [ a ns1:IndividualPropertyAtom ;
+                                                            ns1:argument1 ex:chord ;
+                                                            ns1:argument2 ex:chord_root ;
+                                                            ns1:propertyPredicate chord:root ] ;
+                                                    rdf:rest () ] ] ] ] ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 ex:mode ;
+                    ns1:argument2 ex:chord ;
+                    ns1:propertyPredicate mto:hasSupertonic ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:ClassAtom ;
+                    ns1:argument1 ex:mode ;
+                    ns1:classPredicate :PhrygianMode ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:IndividualPropertyAtom ;
+                            ns1:argument1 ex:mode ;
+                            ns1:argument2 ex:mode_root ;
+                            ns1:propertyPredicate mto:hasRootNote ] ;
+                    rdf:rest [ a ns1:AtomList ;
+                            rdf:first [ a ns1:IndividualPropertyAtom ;
+                                    ns1:argument1 ex:mode_root ;
+                                    ns1:argument2 ex:tonic_root ;
+                                    ns1:propertyPredicate mto:hasMajorThirdInterval ] ;
+                            rdf:rest [ a ns1:AtomList ;
+                                    rdf:first [ a ns1:ClassAtom ;
+                                            ns1:argument1 ex:chord ;
+                                            ns1:classPredicate mto:MajorTriad ] ;
+                                    rdf:rest [ a ns1:AtomList ;
+                                            rdf:first [ a ns1:IndividualPropertyAtom ;
+                                                    ns1:argument1 ex:tonic_root ;
+                                                    ns1:argument2 ex:chord_root ;
+                                                    ns1:propertyPredicate mto:hasMinorSixthInterval ] ;
+                                            rdf:rest [ a ns1:AtomList ;
+                                                    rdf:first [ a ns1:IndividualPropertyAtom ;
+                                                            ns1:argument1 ex:chord ;
+                                                            ns1:argument2 ex:chord_root ;
+                                                            ns1:propertyPredicate chord:root ] ;
+                                                    rdf:rest () ] ] ] ] ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 ex:mode ;
+                    ns1:argument2 ex:chord ;
+                    ns1:propertyPredicate mto:hasSubmediant ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:ClassAtom ;
+                    ns1:argument1 ex:mode ;
+                    ns1:classPredicate :IonianMode ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:IndividualPropertyAtom ;
+                            ns1:argument1 ex:mode ;
+                            ns1:argument2 ex:mode_root ;
+                            ns1:propertyPredicate mto:hasRootNote ] ;
+                    rdf:rest [ a ns1:AtomList ;
+                            rdf:first [ a ns1:IndividualPropertyAtom ;
+                                    ns1:argument1 ex:mode_root ;
+                                    ns1:argument2 ex:tonic_root ;
+                                    ns1:propertyPredicate mto:hasPerfectUnisonInterval ] ;
+                            rdf:rest [ a ns1:AtomList ;
+                                    rdf:first [ a ns1:ClassAtom ;
+                                            ns1:argument1 ex:chord ;
+                                            ns1:classPredicate mto:MajorTriad ] ;
+                                    rdf:rest [ a ns1:AtomList ;
+                                            rdf:first [ a ns1:IndividualPropertyAtom ;
+                                                    ns1:argument1 ex:tonic_root ;
+                                                    ns1:argument2 ex:chord_root ;
+                                                    ns1:propertyPredicate mto:hasPerfectFifthInterval ] ;
+                                            rdf:rest [ a ns1:AtomList ;
+                                                    rdf:first [ a ns1:IndividualPropertyAtom ;
+                                                            ns1:argument1 ex:chord ;
+                                                            ns1:argument2 ex:chord_root ;
+                                                            ns1:propertyPredicate chord:root ] ;
+                                                    rdf:rest () ] ] ] ] ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 ex:mode ;
+                    ns1:argument2 ex:chord ;
+                    ns1:propertyPredicate mto:hasDominant ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:ClassAtom ;
+                    ns1:argument1 ex:mode ;
+                    ns1:classPredicate :PhrygianMode ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:IndividualPropertyAtom ;
+                            ns1:argument1 ex:mode ;
+                            ns1:argument2 ex:mode_root ;
+                            ns1:propertyPredicate mto:hasRootNote ] ;
+                    rdf:rest [ a ns1:AtomList ;
+                            rdf:first [ a ns1:IndividualPropertyAtom ;
+                                    ns1:argument1 ex:mode_root ;
+                                    ns1:argument2 ex:tonic_root ;
+                                    ns1:propertyPredicate mto:hasMajorThirdInterval ] ;
+                            rdf:rest [ a ns1:AtomList ;
+                                    rdf:first [ a ns1:ClassAtom ;
+                                            ns1:argument1 ex:chord ;
+                                            ns1:classPredicate mto:MajorTriad ] ;
+                                    rdf:rest [ a ns1:AtomList ;
+                                            rdf:first [ a ns1:IndividualPropertyAtom ;
+                                                    ns1:argument1 ex:tonic_root ;
+                                                    ns1:argument2 ex:chord_root ;
+                                                    ns1:propertyPredicate mto:hasMinorThirdInterval ] ;
+                                            rdf:rest [ a ns1:AtomList ;
+                                                    rdf:first [ a ns1:IndividualPropertyAtom ;
+                                                            ns1:argument1 ex:chord ;
+                                                            ns1:argument2 ex:chord_root ;
+                                                            ns1:propertyPredicate chord:root ] ;
+                                                    rdf:rest () ] ] ] ] ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 ex:mode ;
+                    ns1:argument2 ex:chord ;
+                    ns1:propertyPredicate mto:hasMediant ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:ClassAtom ;
+                    ns1:argument1 ex:mode ;
+                    ns1:classPredicate :PhrygianMode ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:IndividualPropertyAtom ;
+                            ns1:argument1 ex:mode ;
+                            ns1:argument2 ex:mode_root ;
+                            ns1:propertyPredicate mto:hasRootNote ] ;
+                    rdf:rest [ a ns1:AtomList ;
+                            rdf:first [ a ns1:IndividualPropertyAtom ;
+                                    ns1:argument1 ex:mode_root ;
+                                    ns1:argument2 ex:tonic_root ;
+                                    ns1:propertyPredicate mto:hasMajorThirdInterval ] ;
+                            rdf:rest [ a ns1:AtomList ;
+                                    rdf:first [ a ns1:ClassAtom ;
+                                            ns1:argument1 ex:chord ;
+                                            ns1:classPredicate mto:MinorTriad ] ;
+                                    rdf:rest [ a ns1:AtomList ;
+                                            rdf:first [ a ns1:IndividualPropertyAtom ;
+                                                    ns1:argument1 ex:tonic_root ;
+                                                    ns1:argument2 ex:chord_root ;
+                                                    ns1:propertyPredicate mto:hasMinorSeventhInterval ] ;
+                                            rdf:rest [ a ns1:AtomList ;
+                                                    rdf:first [ a ns1:IndividualPropertyAtom ;
+                                                            ns1:argument1 ex:chord ;
+                                                            ns1:argument2 ex:chord_root ;
+                                                            ns1:propertyPredicate chord:root ] ;
+                                                    rdf:rest () ] ] ] ] ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 ex:mode ;
+                    ns1:argument2 ex:chord ;
+                    ns1:propertyPredicate mto:hasLeadingtone ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:ClassAtom ;
+                    ns1:argument1 ex:mode ;
+                    ns1:classPredicate :PhrygianMode ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:IndividualPropertyAtom ;
+                            ns1:argument1 ex:mode ;
+                            ns1:argument2 ex:mode_root ;
+                            ns1:propertyPredicate mto:hasRootNote ] ;
+                    rdf:rest [ a ns1:AtomList ;
+                            rdf:first [ a ns1:IndividualPropertyAtom ;
+                                    ns1:argument1 ex:mode_root ;
+                                    ns1:argument2 ex:tonic_root ;
+                                    ns1:propertyPredicate mto:hasMajorThirdInterval ] ;
+                            rdf:rest [ a ns1:AtomList ;
+                                    rdf:first [ a ns1:ClassAtom ;
+                                            ns1:argument1 ex:chord ;
+                                            ns1:classPredicate mto:MinorTriad ] ;
+                                    rdf:rest [ a ns1:AtomList ;
+                                            rdf:first [ a ns1:IndividualPropertyAtom ;
+                                                    ns1:argument1 ex:tonic_root ;
+                                                    ns1:argument2 ex:chord_root ;
+                                                    ns1:propertyPredicate mto:hasPerfectFourthInterval ] ;
+                                            rdf:rest [ a ns1:AtomList ;
+                                                    rdf:first [ a ns1:IndividualPropertyAtom ;
+                                                            ns1:argument1 ex:chord ;
+                                                            ns1:argument2 ex:chord_root ;
+                                                            ns1:propertyPredicate chord:root ] ;
+                                                    rdf:rest () ] ] ] ] ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 ex:mode ;
+                    ns1:argument2 ex:chord ;
+                    ns1:propertyPredicate mto:hasSubdominant ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:ClassAtom ;
+                    ns1:argument1 ex:mode ;
+                    ns1:classPredicate :PhrygianMode ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:IndividualPropertyAtom ;
+                            ns1:argument1 ex:mode ;
+                            ns1:argument2 ex:mode_root ;
+                            ns1:propertyPredicate mto:hasRootNote ] ;
+                    rdf:rest [ a ns1:AtomList ;
+                            rdf:first [ a ns1:IndividualPropertyAtom ;
+                                    ns1:argument1 ex:mode_root ;
+                                    ns1:argument2 ex:tonic_root ;
+                                    ns1:propertyPredicate mto:hasMajorThirdInterval ] ;
+                            rdf:rest [ a ns1:AtomList ;
+                                    rdf:first [ a ns1:ClassAtom ;
+                                            ns1:argument1 ex:chord ;
+                                            ns1:classPredicate mto:MinorTriad ] ;
+                                    rdf:rest [ a ns1:AtomList ;
+                                            rdf:first [ a ns1:IndividualPropertyAtom ;
+                                                    ns1:argument1 ex:tonic_root ;
+                                                    ns1:argument2 ex:chord_root ;
+                                                    ns1:propertyPredicate mto:hasPerfectUnisonInterval ] ;
+                                            rdf:rest [ a ns1:AtomList ;
+                                                    rdf:first [ a ns1:IndividualPropertyAtom ;
+                                                            ns1:argument1 ex:chord ;
+                                                            ns1:argument2 ex:chord_root ;
+                                                            ns1:propertyPredicate chord:root ] ;
+                                                    rdf:rest () ] ] ] ] ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 ex:mode ;
+                    ns1:argument2 ex:chord ;
+                    ns1:propertyPredicate mto:hasTonic ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:ClassAtom ;
+                    ns1:argument1 ex:mode ;
+                    ns1:classPredicate :AeolianMode ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:IndividualPropertyAtom ;
+                            ns1:argument1 ex:mode ;
+                            ns1:argument2 ex:mode_root ;
+                            ns1:propertyPredicate mto:hasRootNote ] ;
+                    rdf:rest [ a ns1:AtomList ;
+                            rdf:first [ a ns1:IndividualPropertyAtom ;
+                                    ns1:argument1 ex:mode_root ;
+                                    ns1:argument2 ex:tonic_root ;
+                                    ns1:propertyPredicate mto:hasMajorSixthInterval ] ;
+                            rdf:rest [ a ns1:AtomList ;
+                                    rdf:first [ a ns1:ClassAtom ;
+                                            ns1:argument1 ex:chord ;
+                                            ns1:classPredicate mto:MinorTriad ] ;
+                                    rdf:rest [ a ns1:AtomList ;
+                                            rdf:first [ a ns1:IndividualPropertyAtom ;
+                                                    ns1:argument1 ex:tonic_root ;
+                                                    ns1:argument2 ex:chord_root ;
+                                                    ns1:propertyPredicate mto:hasPerfectFourthInterval ] ;
+                                            rdf:rest [ a ns1:AtomList ;
+                                                    rdf:first [ a ns1:IndividualPropertyAtom ;
+                                                            ns1:argument1 ex:chord ;
+                                                            ns1:argument2 ex:chord_root ;
+                                                            ns1:propertyPredicate chord:root ] ;
+                                                    rdf:rest () ] ] ] ] ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 ex:mode ;
+                    ns1:argument2 ex:chord ;
+                    ns1:propertyPredicate mto:hasSubdominant ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:ClassAtom ;
+                    ns1:argument1 ex:mode ;
+                    ns1:classPredicate :AeolianMode ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:IndividualPropertyAtom ;
+                            ns1:argument1 ex:mode ;
+                            ns1:argument2 ex:mode_root ;
+                            ns1:propertyPredicate mto:hasRootNote ] ;
+                    rdf:rest [ a ns1:AtomList ;
+                            rdf:first [ a ns1:IndividualPropertyAtom ;
+                                    ns1:argument1 ex:mode_root ;
+                                    ns1:argument2 ex:tonic_root ;
+                                    ns1:propertyPredicate mto:hasMajorSixthInterval ] ;
+                            rdf:rest [ a ns1:AtomList ;
+                                    rdf:first [ a ns1:ClassAtom ;
+                                            ns1:argument1 ex:chord ;
+                                            ns1:classPredicate mto:MinorTriad ] ;
+                                    rdf:rest [ a ns1:AtomList ;
+                                            rdf:first [ a ns1:IndividualPropertyAtom ;
+                                                    ns1:argument1 ex:tonic_root ;
+                                                    ns1:argument2 ex:chord_root ;
+                                                    ns1:propertyPredicate mto:hasPerfectUnisonInterval ] ;
+                                            rdf:rest [ a ns1:AtomList ;
+                                                    rdf:first [ a ns1:IndividualPropertyAtom ;
+                                                            ns1:argument1 ex:chord ;
+                                                            ns1:argument2 ex:chord_root ;
+                                                            ns1:propertyPredicate chord:root ] ;
+                                                    rdf:rest () ] ] ] ] ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 ex:mode ;
+                    ns1:argument2 ex:chord ;
+                    ns1:propertyPredicate mto:hasTonic ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:ClassAtom ;
+                    ns1:argument1 ex:mode ;
+                    ns1:classPredicate :AeolianMode ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:IndividualPropertyAtom ;
+                            ns1:argument1 ex:mode ;
+                            ns1:argument2 ex:mode_root ;
+                            ns1:propertyPredicate mto:hasRootNote ] ;
+                    rdf:rest [ a ns1:AtomList ;
+                            rdf:first [ a ns1:IndividualPropertyAtom ;
+                                    ns1:argument1 ex:mode_root ;
+                                    ns1:argument2 ex:tonic_root ;
+                                    ns1:propertyPredicate mto:hasMajorSixthInterval ] ;
+                            rdf:rest [ a ns1:AtomList ;
+                                    rdf:first [ a ns1:ClassAtom ;
+                                            ns1:argument1 ex:chord ;
+                                            ns1:classPredicate mto:MajorTriad ] ;
+                                    rdf:rest [ a ns1:AtomList ;
+                                            rdf:first [ a ns1:IndividualPropertyAtom ;
+                                                    ns1:argument1 ex:tonic_root ;
+                                                    ns1:argument2 ex:chord_root ;
+                                                    ns1:propertyPredicate mto:hasMinorSeventhInterval ] ;
+                                            rdf:rest [ a ns1:AtomList ;
+                                                    rdf:first [ a ns1:IndividualPropertyAtom ;
+                                                            ns1:argument1 ex:chord ;
+                                                            ns1:argument2 ex:chord_root ;
+                                                            ns1:propertyPredicate chord:root ] ;
+                                                    rdf:rest () ] ] ] ] ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 ex:mode ;
+                    ns1:argument2 ex:chord ;
+                    ns1:propertyPredicate mto:hasLeadingtone ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:ClassAtom ;
+                    ns1:argument1 ex:mode ;
+                    ns1:classPredicate :DorianMode ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:IndividualPropertyAtom ;
+                            ns1:argument1 ex:mode ;
+                            ns1:argument2 ex:mode_root ;
+                            ns1:propertyPredicate mto:hasRootNote ] ;
+                    rdf:rest [ a ns1:AtomList ;
+                            rdf:first [ a ns1:IndividualPropertyAtom ;
+                                    ns1:argument1 ex:mode_root ;
+                                    ns1:argument2 ex:tonic_root ;
+                                    ns1:propertyPredicate mto:hasMajorSecondInterval ] ;
+                            rdf:rest [ a ns1:AtomList ;
+                                    rdf:first [ a ns1:ClassAtom ;
+                                            ns1:argument1 ex:chord ;
+                                            ns1:classPredicate mto:MinorTriad ] ;
+                                    rdf:rest [ a ns1:AtomList ;
+                                            rdf:first [ a ns1:IndividualPropertyAtom ;
+                                                    ns1:argument1 ex:tonic_root ;
+                                                    ns1:argument2 ex:chord_root ;
+                                                    ns1:propertyPredicate mto:hasMajorSecondInterval ] ;
+                                            rdf:rest [ a ns1:AtomList ;
+                                                    rdf:first [ a ns1:IndividualPropertyAtom ;
+                                                            ns1:argument1 ex:chord ;
+                                                            ns1:argument2 ex:chord_root ;
+                                                            ns1:propertyPredicate chord:root ] ;
+                                                    rdf:rest () ] ] ] ] ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 ex:mode ;
+                    ns1:argument2 ex:chord ;
+                    ns1:propertyPredicate mto:hasSupertonic ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:ClassAtom ;
+                    ns1:argument1 ex:mode ;
+                    ns1:classPredicate :DorianMode ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:IndividualPropertyAtom ;
+                            ns1:argument1 ex:mode ;
+                            ns1:argument2 ex:mode_root ;
+                            ns1:propertyPredicate mto:hasRootNote ] ;
+                    rdf:rest [ a ns1:AtomList ;
+                            rdf:first [ a ns1:IndividualPropertyAtom ;
+                                    ns1:argument1 ex:mode_root ;
+                                    ns1:argument2 ex:tonic_root ;
+                                    ns1:propertyPredicate mto:hasMajorSecondInterval ] ;
+                            rdf:rest [ a ns1:AtomList ;
+                                    rdf:first [ a ns1:ClassAtom ;
+                                            ns1:argument1 ex:chord ;
+                                            ns1:classPredicate mto:DiminishedTriad ] ;
+                                    rdf:rest [ a ns1:AtomList ;
+                                            rdf:first [ a ns1:IndividualPropertyAtom ;
+                                                    ns1:argument1 ex:tonic_root ;
+                                                    ns1:argument2 ex:chord_root ;
+                                                    ns1:propertyPredicate mto:hasMajorSixthInterval ] ;
+                                            rdf:rest [ a ns1:AtomList ;
+                                                    rdf:first [ a ns1:IndividualPropertyAtom ;
+                                                            ns1:argument1 ex:chord ;
+                                                            ns1:argument2 ex:chord_root ;
+                                                            ns1:propertyPredicate chord:root ] ;
+                                                    rdf:rest () ] ] ] ] ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 ex:mode ;
+                    ns1:argument2 ex:chord ;
+                    ns1:propertyPredicate mto:hasSubmediant ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:ClassAtom ;
+                    ns1:argument1 ex:mode ;
+                    ns1:classPredicate :IonianMode ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:IndividualPropertyAtom ;
+                            ns1:argument1 ex:mode ;
+                            ns1:argument2 ex:mode_root ;
+                            ns1:propertyPredicate mto:hasRootNote ] ;
+                    rdf:rest [ a ns1:AtomList ;
+                            rdf:first [ a ns1:IndividualPropertyAtom ;
+                                    ns1:argument1 ex:mode_root ;
+                                    ns1:argument2 ex:tonic_root ;
+                                    ns1:propertyPredicate mto:hasPerfectUnisonInterval ] ;
+                            rdf:rest [ a ns1:AtomList ;
+                                    rdf:first [ a ns1:ClassAtom ;
+                                            ns1:argument1 ex:chord ;
+                                            ns1:classPredicate mto:MajorTriad ] ;
+                                    rdf:rest [ a ns1:AtomList ;
+                                            rdf:first [ a ns1:IndividualPropertyAtom ;
+                                                    ns1:argument1 ex:tonic_root ;
+                                                    ns1:argument2 ex:chord_root ;
+                                                    ns1:propertyPredicate mto:hasPerfectFourthInterval ] ;
+                                            rdf:rest [ a ns1:AtomList ;
+                                                    rdf:first [ a ns1:IndividualPropertyAtom ;
+                                                            ns1:argument1 ex:chord ;
+                                                            ns1:argument2 ex:chord_root ;
+                                                            ns1:propertyPredicate chord:root ] ;
+                                                    rdf:rest () ] ] ] ] ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 ex:mode ;
+                    ns1:argument2 ex:chord ;
+                    ns1:propertyPredicate mto:hasSubdominant ] ;
+            rdf:rest () ] .
+
+
