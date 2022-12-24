@@ -109,6 +109,1902 @@
     rdfs:subPropertyOf :hasChord ;
     owl:propertyChainAxiom ( :hasTonality [ owl:inverseOf chord:root ] ) .
 
+kb:AFlat_AeolianModeScale a :AeolianModeScale ;
+    rdfs:label "Ab Aeolian Mode" ;
+    :hasDominantNote mto-kb:E- ;
+    :hasLeadingtoneNote mto-kb:G- ;
+    :hasMediantNote mto-kb:C- ;
+    :hasSubdominantNote mto-kb:D- ;
+    :hasSubmediantNote mto-kb:F- ;
+    :hasSupertonicNote mto-kb:B- ;
+    :hasTonality mto-kb:AFlat ;
+    :hasTonicNote mto-kb:A- ;
+    rdfs:comment "Aeolian modal scale with tonic note Ab" ;
+    owl:sameAs kb:F_MinorScale .
+
+kb:AFlat_DorianModeScale a :DorianModeScale ;
+    rdfs:label "Ab Dorian Mode" ;
+    :hasDominantNote mto-kb:E- ;
+    :hasLeadingtoneNote mto-kb:G- ;
+    :hasMediantNote mto-kb:C- ;
+    :hasSubdominantNote mto-kb:D- ;
+    :hasSubmediantNote mto-kb:F ;
+    :hasSupertonicNote mto-kb:B- ;
+    :hasTonality mto-kb:AFlat ;
+    :hasTonicNote mto-kb:A- ;
+    rdfs:comment "Dorian modal scale with tonic note Ab" .
+
+kb:AFlat_IonianModeScale a :IonianModeScale ;
+    rdfs:label "Ab Ionian Mode" ;
+    :hasDominantNote mto-kb:E- ;
+    :hasLeadingtoneNote mto-kb:G ;
+    :hasMediantNote mto-kb:C ;
+    :hasSubdominantNote mto-kb:D- ;
+    :hasSubmediantNote mto-kb:F ;
+    :hasSupertonicNote mto-kb:B- ;
+    :hasTonality mto-kb:AFlat ;
+    :hasTonicNote mto-kb:A- ;
+    rdfs:comment "Ionian modal scale with tonic note Ab" ;
+    owl:sameAs kb:AFlat_MajorScale .
+
+kb:AFlat_LocrianModeScale a :LocrianModeScale ;
+    rdfs:label "Ab Locrian Mode" ;
+    :hasDominantNote mto-kb:E-- ;
+    :hasLeadingtoneNote mto-kb:G- ;
+    :hasMediantNote mto-kb:C- ;
+    :hasSubdominantNote mto-kb:D- ;
+    :hasSubmediantNote mto-kb:F- ;
+    :hasSupertonicNote mto-kb:B-- ;
+    :hasTonality mto-kb:AFlat ;
+    :hasTonicNote mto-kb:A- ;
+    rdfs:comment "Locrian modal scale with tonic note Ab" .
+
+kb:AFlat_LydianModeScale a :LydianModeScale ;
+    rdfs:label "Ab Lydian Mode" ;
+    :hasDominantNote mto-kb:E- ;
+    :hasLeadingtoneNote mto-kb:G ;
+    :hasMediantNote mto-kb:C ;
+    :hasSubdominantNote mto-kb:D ;
+    :hasSubmediantNote mto-kb:F ;
+    :hasSupertonicNote mto-kb:B- ;
+    :hasTonality mto-kb:AFlat ;
+    :hasTonicNote mto-kb:A- ;
+    rdfs:comment "Lydian modal scale with tonic note Ab" .
+
+kb:AFlat_MixolydianModeScale a :MixolydianModeScale ;
+    rdfs:label "Ab Mixolydian Mode" ;
+    :hasDominantNote mto-kb:E- ;
+    :hasLeadingtoneNote mto-kb:G- ;
+    :hasMediantNote mto-kb:C ;
+    :hasSubdominantNote mto-kb:D- ;
+    :hasSubmediantNote mto-kb:F ;
+    :hasSupertonicNote mto-kb:B- ;
+    :hasTonality mto-kb:AFlat ;
+    :hasTonicNote mto-kb:A- ;
+    rdfs:comment "Mixolydian modal scale with tonic note Ab" .
+
+kb:AFlat_PhrygianModeScale a :PhrygianModeScale ;
+    rdfs:label "Ab Phrygian Mode" ;
+    :hasDominantNote mto-kb:E- ;
+    :hasLeadingtoneNote mto-kb:G- ;
+    :hasMediantNote mto-kb:C- ;
+    :hasSubdominantNote mto-kb:D- ;
+    :hasSubmediantNote mto-kb:F- ;
+    :hasSupertonicNote mto-kb:B-- ;
+    :hasTonality mto-kb:AFlat ;
+    :hasTonicNote mto-kb:A- ;
+    rdfs:comment "Phrygian modal scale with tonic note Ab" .
+
+kb:ASharp_AeolianModeScale a :AeolianModeScale ;
+    rdfs:label "A# Aeolian Mode" ;
+    :hasDominantNote mto-kb:ESharp ;
+    :hasLeadingtoneNote mto-kb:GSharp ;
+    :hasMediantNote mto-kb:CSharp ;
+    :hasSubdominantNote mto-kb:DSharp ;
+    :hasSubmediantNote mto-kb:FSharp ;
+    :hasSupertonicNote mto-kb:BSharp ;
+    :hasTonality mto-kb:ASharp ;
+    :hasTonicNote mto-kb:ASharp ;
+    rdfs:comment "Aeolian modal scale with tonic note A#" ;
+    owl:sameAs kb:G_MinorScale .
+
+kb:ASharp_DorianModeScale a :DorianModeScale ;
+    rdfs:label "A# Dorian Mode" ;
+    :hasDominantNote mto-kb:ESharp ;
+    :hasLeadingtoneNote mto-kb:GSharp ;
+    :hasMediantNote mto-kb:CSharp ;
+    :hasSubdominantNote mto-kb:DSharp ;
+    :hasSubmediantNote mto-kb:FDouFlatleSharp ;
+    :hasSupertonicNote mto-kb:BSharp ;
+    :hasTonality mto-kb:ASharp ;
+    :hasTonicNote mto-kb:ASharp ;
+    rdfs:comment "Dorian modal scale with tonic note A#" .
+
+kb:ASharp_IonianModeScale a :IonianModeScale ;
+    rdfs:label "A# Ionian Mode" ;
+    :hasDominantNote mto-kb:ESharp ;
+    :hasLeadingtoneNote mto-kb:GDouFlatleSharp ;
+    :hasMediantNote mto-kb:CDouFlatleSharp ;
+    :hasSubdominantNote mto-kb:DSharp ;
+    :hasSubmediantNote mto-kb:FDouFlatleSharp ;
+    :hasSupertonicNote mto-kb:BSharp ;
+    :hasTonality mto-kb:ASharp ;
+    :hasTonicNote mto-kb:ASharp ;
+    rdfs:comment "Ionian modal scale with tonic note A#" ;
+    owl:sameAs kb:ASharp_MajorScale .
+
+kb:ASharp_LocrianModeScale a :LocrianModeScale ;
+    rdfs:label "A# Locrian Mode" ;
+    :hasDominantNote mto-kb:E ;
+    :hasLeadingtoneNote mto-kb:GSharp ;
+    :hasMediantNote mto-kb:CSharp ;
+    :hasSubdominantNote mto-kb:DSharp ;
+    :hasSubmediantNote mto-kb:FSharp ;
+    :hasSupertonicNote mto-kb:B ;
+    :hasTonality mto-kb:ASharp ;
+    :hasTonicNote mto-kb:ASharp ;
+    rdfs:comment "Locrian modal scale with tonic note A#" .
+
+kb:ASharp_LydianModeScale a :LydianModeScale ;
+    rdfs:label "A# Lydian Mode" ;
+    :hasDominantNote mto-kb:ESharp ;
+    :hasLeadingtoneNote mto-kb:GDouFlatleSharp ;
+    :hasMediantNote mto-kb:CDouFlatleSharp ;
+    :hasSubdominantNote mto-kb:DDouFlatleSharp ;
+    :hasSubmediantNote mto-kb:FDouFlatleSharp ;
+    :hasSupertonicNote mto-kb:BSharp ;
+    :hasTonality mto-kb:ASharp ;
+    :hasTonicNote mto-kb:ASharp ;
+    rdfs:comment "Lydian modal scale with tonic note A#" .
+
+kb:ASharp_MinorScale a mto:MinorScale ;
+    rdfs:label "A# Minor Scale" ;
+    mto:hasRootNote mto-kb:ASharp ;
+    rdfs:comment "Minor scale with tonic note A#" .
+
+kb:ASharp_MixolydianModeScale a :MixolydianModeScale ;
+    rdfs:label "A# Mixolydian Mode" ;
+    :hasDominantNote mto-kb:ESharp ;
+    :hasLeadingtoneNote mto-kb:GSharp ;
+    :hasMediantNote mto-kb:CDouFlatleSharp ;
+    :hasSubdominantNote mto-kb:DSharp ;
+    :hasSubmediantNote mto-kb:FDouFlatleSharp ;
+    :hasSupertonicNote mto-kb:BSharp ;
+    :hasTonality mto-kb:ASharp ;
+    :hasTonicNote mto-kb:ASharp ;
+    rdfs:comment "Mixolydian modal scale with tonic note A#" .
+
+kb:ASharp_PhrygianModeScale a :PhrygianModeScale ;
+    rdfs:label "A# Phrygian Mode" ;
+    :hasDominantNote mto-kb:ESharp ;
+    :hasLeadingtoneNote mto-kb:GSharp ;
+    :hasMediantNote mto-kb:CSharp ;
+    :hasSubdominantNote mto-kb:DSharp ;
+    :hasSubmediantNote mto-kb:FSharp ;
+    :hasSupertonicNote mto-kb:B ;
+    :hasTonality mto-kb:ASharp ;
+    :hasTonicNote mto-kb:ASharp ;
+    rdfs:comment "Phrygian modal scale with tonic note A#" .
+
+kb:A_AeolianModeScale a :AeolianModeScale ;
+    rdfs:label "A Aeolian Mode" ;
+    :hasDominantNote mto-kb:E ;
+    :hasLeadingtoneNote mto-kb:G ;
+    :hasMediantNote mto-kb:C ;
+    :hasSubdominantNote mto-kb:D ;
+    :hasSubmediantNote mto-kb:F ;
+    :hasSupertonicNote mto-kb:B ;
+    :hasTonality mto-kb:A ;
+    :hasTonicNote mto-kb:A ;
+    rdfs:comment "Aeolian modal scale with tonic note A" ;
+    owl:sameAs kb:FSharp_MinorScale .
+
+kb:A_DorianModeScale a :DorianModeScale ;
+    rdfs:label "A Dorian Mode" ;
+    :hasDominantNote mto-kb:E ;
+    :hasLeadingtoneNote mto-kb:G ;
+    :hasMediantNote mto-kb:C ;
+    :hasSubdominantNote mto-kb:D ;
+    :hasSubmediantNote mto-kb:FSharp ;
+    :hasSupertonicNote mto-kb:B ;
+    :hasTonality mto-kb:A ;
+    :hasTonicNote mto-kb:A ;
+    rdfs:comment "Dorian modal scale with tonic note A" .
+
+kb:A_IonianModeScale a :IonianModeScale ;
+    rdfs:label "A Ionian Mode" ;
+    :hasDominantNote mto-kb:E ;
+    :hasLeadingtoneNote mto-kb:GSharp ;
+    :hasMediantNote mto-kb:CSharp ;
+    :hasSubdominantNote mto-kb:D ;
+    :hasSubmediantNote mto-kb:FSharp ;
+    :hasSupertonicNote mto-kb:B ;
+    :hasTonality mto-kb:A ;
+    :hasTonicNote mto-kb:A ;
+    rdfs:comment "Ionian modal scale with tonic note A" ;
+    owl:sameAs kb:A_MajorScale .
+
+kb:A_LocrianModeScale a :LocrianModeScale ;
+    rdfs:label "A Locrian Mode" ;
+    :hasDominantNote mto-kb:E- ;
+    :hasLeadingtoneNote mto-kb:G ;
+    :hasMediantNote mto-kb:C ;
+    :hasSubdominantNote mto-kb:D ;
+    :hasSubmediantNote mto-kb:F ;
+    :hasSupertonicNote mto-kb:B- ;
+    :hasTonality mto-kb:A ;
+    :hasTonicNote mto-kb:A ;
+    rdfs:comment "Locrian modal scale with tonic note A" .
+
+kb:A_LydianModeScale a :LydianModeScale ;
+    rdfs:label "A Lydian Mode" ;
+    :hasDominantNote mto-kb:E ;
+    :hasLeadingtoneNote mto-kb:GSharp ;
+    :hasMediantNote mto-kb:CSharp ;
+    :hasSubdominantNote mto-kb:DSharp ;
+    :hasSubmediantNote mto-kb:FSharp ;
+    :hasSupertonicNote mto-kb:B ;
+    :hasTonality mto-kb:A ;
+    :hasTonicNote mto-kb:A ;
+    rdfs:comment "Lydian modal scale with tonic note A" .
+
+kb:A_MixolydianModeScale a :MixolydianModeScale ;
+    rdfs:label "A Mixolydian Mode" ;
+    :hasDominantNote mto-kb:E ;
+    :hasLeadingtoneNote mto-kb:G ;
+    :hasMediantNote mto-kb:CSharp ;
+    :hasSubdominantNote mto-kb:D ;
+    :hasSubmediantNote mto-kb:FSharp ;
+    :hasSupertonicNote mto-kb:B ;
+    :hasTonality mto-kb:A ;
+    :hasTonicNote mto-kb:A ;
+    rdfs:comment "Mixolydian modal scale with tonic note A" .
+
+kb:A_PhrygianModeScale a :PhrygianModeScale ;
+    rdfs:label "A Phrygian Mode" ;
+    :hasDominantNote mto-kb:E ;
+    :hasLeadingtoneNote mto-kb:G ;
+    :hasMediantNote mto-kb:C ;
+    :hasSubdominantNote mto-kb:D ;
+    :hasSubmediantNote mto-kb:F ;
+    :hasSupertonicNote mto-kb:B- ;
+    :hasTonality mto-kb:A ;
+    :hasTonicNote mto-kb:A ;
+    rdfs:comment "Phrygian modal scale with tonic note A" .
+
+kb:Ab_MajorScale a mto:MajorScale ;
+    rdfs:label "Ab Major Scale" ;
+    mto:hasRootNote mto-kb:AFlat ;
+    rdfs:comment "Major scale with tonic note Ab" .
+
+kb:Ab_MinorScale a mto:MinorScale ;
+    rdfs:label "Ab Minor Scale" ;
+    mto:hasRootNote mto-kb:AFlat ;
+    rdfs:comment "Minor scale with tonic note Ab" .
+
+kb:BFlat_AeolianModeScale a :AeolianModeScale ;
+    rdfs:label "Bb Aeolian Mode" ;
+    :hasDominantNote mto-kb:F ;
+    :hasLeadingtoneNote mto-kb:A- ;
+    :hasMediantNote mto-kb:D- ;
+    :hasSubdominantNote mto-kb:E- ;
+    :hasSubmediantNote mto-kb:G- ;
+    :hasSupertonicNote mto-kb:C ;
+    :hasTonality mto-kb:BFlat ;
+    :hasTonicNote mto-kb:B- ;
+    rdfs:comment "Aeolian modal scale with tonic note Bb" ;
+    owl:sameAs kb:G_MinorScale .
+
+kb:BFlat_DorianModeScale a :DorianModeScale ;
+    rdfs:label "Bb Dorian Mode" ;
+    :hasDominantNote mto-kb:F ;
+    :hasLeadingtoneNote mto-kb:A- ;
+    :hasMediantNote mto-kb:D- ;
+    :hasSubdominantNote mto-kb:E- ;
+    :hasSubmediantNote mto-kb:G ;
+    :hasSupertonicNote mto-kb:C ;
+    :hasTonality mto-kb:BFlat ;
+    :hasTonicNote mto-kb:B- ;
+    rdfs:comment "Dorian modal scale with tonic note Bb" .
+
+kb:BFlat_IonianModeScale a :IonianModeScale ;
+    rdfs:label "Bb Ionian Mode" ;
+    :hasDominantNote mto-kb:F ;
+    :hasLeadingtoneNote mto-kb:A ;
+    :hasMediantNote mto-kb:D ;
+    :hasSubdominantNote mto-kb:E- ;
+    :hasSubmediantNote mto-kb:G ;
+    :hasSupertonicNote mto-kb:C ;
+    :hasTonality mto-kb:BFlat ;
+    :hasTonicNote mto-kb:B- ;
+    rdfs:comment "Ionian modal scale with tonic note Bb" ;
+    owl:sameAs kb:BFlat_MajorScale .
+
+kb:BFlat_LocrianModeScale a :LocrianModeScale ;
+    rdfs:label "Bb Locrian Mode" ;
+    :hasDominantNote mto-kb:F- ;
+    :hasLeadingtoneNote mto-kb:A- ;
+    :hasMediantNote mto-kb:D- ;
+    :hasSubdominantNote mto-kb:E- ;
+    :hasSubmediantNote mto-kb:G- ;
+    :hasSupertonicNote mto-kb:C- ;
+    :hasTonality mto-kb:BFlat ;
+    :hasTonicNote mto-kb:B- ;
+    rdfs:comment "Locrian modal scale with tonic note Bb" .
+
+kb:BFlat_LydianModeScale a :LydianModeScale ;
+    rdfs:label "Bb Lydian Mode" ;
+    :hasDominantNote mto-kb:F ;
+    :hasLeadingtoneNote mto-kb:A ;
+    :hasMediantNote mto-kb:D ;
+    :hasSubdominantNote mto-kb:E ;
+    :hasSubmediantNote mto-kb:G ;
+    :hasSupertonicNote mto-kb:C ;
+    :hasTonality mto-kb:BFlat ;
+    :hasTonicNote mto-kb:B- ;
+    rdfs:comment "Lydian modal scale with tonic note Bb" .
+
+kb:BFlat_MixolydianModeScale a :MixolydianModeScale ;
+    rdfs:label "Bb Mixolydian Mode" ;
+    :hasDominantNote mto-kb:F ;
+    :hasLeadingtoneNote mto-kb:A- ;
+    :hasMediantNote mto-kb:D ;
+    :hasSubdominantNote mto-kb:E- ;
+    :hasSubmediantNote mto-kb:G ;
+    :hasSupertonicNote mto-kb:C ;
+    :hasTonality mto-kb:BFlat ;
+    :hasTonicNote mto-kb:B- ;
+    rdfs:comment "Mixolydian modal scale with tonic note Bb" .
+
+kb:BFlat_PhrygianModeScale a :PhrygianModeScale ;
+    rdfs:label "Bb Phrygian Mode" ;
+    :hasDominantNote mto-kb:F ;
+    :hasLeadingtoneNote mto-kb:A- ;
+    :hasMediantNote mto-kb:D- ;
+    :hasSubdominantNote mto-kb:E- ;
+    :hasSubmediantNote mto-kb:G- ;
+    :hasSupertonicNote mto-kb:C- ;
+    :hasTonality mto-kb:BFlat ;
+    :hasTonicNote mto-kb:B- ;
+    rdfs:comment "Phrygian modal scale with tonic note Bb" .
+
+kb:BSharp_AeolianModeScale a :AeolianModeScale ;
+    rdfs:label "B# Aeolian Mode" ;
+    :hasDominantNote mto-kb:FDouFlatleSharp ;
+    :hasLeadingtoneNote mto-kb:ASharp ;
+    :hasMediantNote mto-kb:DSharp ;
+    :hasSubdominantNote mto-kb:ESharp ;
+    :hasSubmediantNote mto-kb:GSharp ;
+    :hasSupertonicNote mto-kb:CDouFlatleSharp ;
+    :hasTonality mto-kb:BSharp ;
+    :hasTonicNote mto-kb:BSharp ;
+    rdfs:comment "Aeolian modal scale with tonic note B#" ;
+    owl:sameAs kb:A_MinorScale .
+
+kb:BSharp_DorianModeScale a :DorianModeScale ;
+    rdfs:label "B# Dorian Mode" ;
+    :hasDominantNote mto-kb:FDouFlatleSharp ;
+    :hasLeadingtoneNote mto-kb:ASharp ;
+    :hasMediantNote mto-kb:DSharp ;
+    :hasSubdominantNote mto-kb:ESharp ;
+    :hasSubmediantNote mto-kb:GDouFlatleSharp ;
+    :hasSupertonicNote mto-kb:CDouFlatleSharp ;
+    :hasTonality mto-kb:BSharp ;
+    :hasTonicNote mto-kb:BSharp ;
+    rdfs:comment "Dorian modal scale with tonic note B#" .
+
+kb:BSharp_IonianModeScale a :IonianModeScale ;
+    rdfs:label "B# Ionian Mode" ;
+    :hasDominantNote mto-kb:FDouFlatleSharp ;
+    :hasLeadingtoneNote mto-kb:ADouFlatleSharp ;
+    :hasMediantNote mto-kb:DDouFlatleSharp ;
+    :hasSubdominantNote mto-kb:ESharp ;
+    :hasSubmediantNote mto-kb:GDouFlatleSharp ;
+    :hasSupertonicNote mto-kb:CDouFlatleSharp ;
+    :hasTonality mto-kb:BSharp ;
+    :hasTonicNote mto-kb:BSharp ;
+    rdfs:comment "Ionian modal scale with tonic note B#" ;
+    owl:sameAs kb:BSharp_MajorScale .
+
+kb:BSharp_LocrianModeScale a :LocrianModeScale ;
+    rdfs:label "B# Locrian Mode" ;
+    :hasDominantNote mto-kb:FSharp ;
+    :hasLeadingtoneNote mto-kb:ASharp ;
+    :hasMediantNote mto-kb:DSharp ;
+    :hasSubdominantNote mto-kb:ESharp ;
+    :hasSubmediantNote mto-kb:GSharp ;
+    :hasSupertonicNote mto-kb:CSharp ;
+    :hasTonality mto-kb:BSharp ;
+    :hasTonicNote mto-kb:BSharp ;
+    rdfs:comment "Locrian modal scale with tonic note B#" .
+
+kb:BSharp_LydianModeScale a :LydianModeScale ;
+    rdfs:label "B# Lydian Mode" ;
+    :hasDominantNote mto-kb:FDouFlatleSharp ;
+    :hasLeadingtoneNote mto-kb:ADouFlatleSharp ;
+    :hasMediantNote mto-kb:DDouFlatleSharp ;
+    :hasSubdominantNote mto-kb:EDouFlatleSharp ;
+    :hasSubmediantNote mto-kb:GDouFlatleSharp ;
+    :hasSupertonicNote mto-kb:CDouFlatleSharp ;
+    :hasTonality mto-kb:BSharp ;
+    :hasTonicNote mto-kb:BSharp ;
+    rdfs:comment "Lydian modal scale with tonic note B#" .
+
+kb:BSharp_MinorScale a mto:MinorScale ;
+    rdfs:label "B# Minor Scale" ;
+    mto:hasRootNote mto-kb:BSharp ;
+    rdfs:comment "Minor scale with tonic note B#" .
+
+kb:BSharp_MixolydianModeScale a :MixolydianModeScale ;
+    rdfs:label "B# Mixolydian Mode" ;
+    :hasDominantNote mto-kb:FDouFlatleSharp ;
+    :hasLeadingtoneNote mto-kb:ASharp ;
+    :hasMediantNote mto-kb:DDouFlatleSharp ;
+    :hasSubdominantNote mto-kb:ESharp ;
+    :hasSubmediantNote mto-kb:GDouFlatleSharp ;
+    :hasSupertonicNote mto-kb:CDouFlatleSharp ;
+    :hasTonality mto-kb:BSharp ;
+    :hasTonicNote mto-kb:BSharp ;
+    rdfs:comment "Mixolydian modal scale with tonic note B#" .
+
+kb:BSharp_PhrygianModeScale a :PhrygianModeScale ;
+    rdfs:label "B# Phrygian Mode" ;
+    :hasDominantNote mto-kb:FDouFlatleSharp ;
+    :hasLeadingtoneNote mto-kb:ASharp ;
+    :hasMediantNote mto-kb:DSharp ;
+    :hasSubdominantNote mto-kb:ESharp ;
+    :hasSubmediantNote mto-kb:GSharp ;
+    :hasSupertonicNote mto-kb:CSharp ;
+    :hasTonality mto-kb:BSharp ;
+    :hasTonicNote mto-kb:BSharp ;
+    rdfs:comment "Phrygian modal scale with tonic note B#" .
+
+kb:B_AeolianModeScale a :AeolianModeScale ;
+    rdfs:label "B Aeolian Mode" ;
+    :hasDominantNote mto-kb:FSharp ;
+    :hasLeadingtoneNote mto-kb:A ;
+    :hasMediantNote mto-kb:D ;
+    :hasSubdominantNote mto-kb:E ;
+    :hasSubmediantNote mto-kb:G ;
+    :hasSupertonicNote mto-kb:CSharp ;
+    :hasTonality mto-kb:B ;
+    :hasTonicNote mto-kb:B ;
+    rdfs:comment "Aeolian modal scale with tonic note B" ;
+    owl:sameAs kb:GSharp_MinorScale .
+
+kb:B_DorianModeScale a :DorianModeScale ;
+    rdfs:label "B Dorian Mode" ;
+    :hasDominantNote mto-kb:FSharp ;
+    :hasLeadingtoneNote mto-kb:A ;
+    :hasMediantNote mto-kb:D ;
+    :hasSubdominantNote mto-kb:E ;
+    :hasSubmediantNote mto-kb:GSharp ;
+    :hasSupertonicNote mto-kb:CSharp ;
+    :hasTonality mto-kb:B ;
+    :hasTonicNote mto-kb:B ;
+    rdfs:comment "Dorian modal scale with tonic note B" .
+
+kb:B_IonianModeScale a :IonianModeScale ;
+    rdfs:label "B Ionian Mode" ;
+    :hasDominantNote mto-kb:FSharp ;
+    :hasLeadingtoneNote mto-kb:ASharp ;
+    :hasMediantNote mto-kb:DSharp ;
+    :hasSubdominantNote mto-kb:E ;
+    :hasSubmediantNote mto-kb:GSharp ;
+    :hasSupertonicNote mto-kb:CSharp ;
+    :hasTonality mto-kb:B ;
+    :hasTonicNote mto-kb:B ;
+    rdfs:comment "Ionian modal scale with tonic note B" ;
+    owl:sameAs kb:B_MajorScale .
+
+kb:B_LocrianModeScale a :LocrianModeScale ;
+    rdfs:label "B Locrian Mode" ;
+    :hasDominantNote mto-kb:F ;
+    :hasLeadingtoneNote mto-kb:A ;
+    :hasMediantNote mto-kb:D ;
+    :hasSubdominantNote mto-kb:E ;
+    :hasSubmediantNote mto-kb:G ;
+    :hasSupertonicNote mto-kb:C ;
+    :hasTonality mto-kb:B ;
+    :hasTonicNote mto-kb:B ;
+    rdfs:comment "Locrian modal scale with tonic note B" .
+
+kb:B_LydianModeScale a :LydianModeScale ;
+    rdfs:label "B Lydian Mode" ;
+    :hasDominantNote mto-kb:FSharp ;
+    :hasLeadingtoneNote mto-kb:ASharp ;
+    :hasMediantNote mto-kb:DSharp ;
+    :hasSubdominantNote mto-kb:ESharp ;
+    :hasSubmediantNote mto-kb:GSharp ;
+    :hasSupertonicNote mto-kb:CSharp ;
+    :hasTonality mto-kb:B ;
+    :hasTonicNote mto-kb:B ;
+    rdfs:comment "Lydian modal scale with tonic note B" .
+
+kb:B_MixolydianModeScale a :MixolydianModeScale ;
+    rdfs:label "B Mixolydian Mode" ;
+    :hasDominantNote mto-kb:FSharp ;
+    :hasLeadingtoneNote mto-kb:A ;
+    :hasMediantNote mto-kb:DSharp ;
+    :hasSubdominantNote mto-kb:E ;
+    :hasSubmediantNote mto-kb:GSharp ;
+    :hasSupertonicNote mto-kb:CSharp ;
+    :hasTonality mto-kb:B ;
+    :hasTonicNote mto-kb:B ;
+    rdfs:comment "Mixolydian modal scale with tonic note B" .
+
+kb:B_PhrygianModeScale a :PhrygianModeScale ;
+    rdfs:label "B Phrygian Mode" ;
+    :hasDominantNote mto-kb:FSharp ;
+    :hasLeadingtoneNote mto-kb:A ;
+    :hasMediantNote mto-kb:D ;
+    :hasSubdominantNote mto-kb:E ;
+    :hasSubmediantNote mto-kb:G ;
+    :hasSupertonicNote mto-kb:C ;
+    :hasTonality mto-kb:B ;
+    :hasTonicNote mto-kb:B ;
+    rdfs:comment "Phrygian modal scale with tonic note B" .
+
+kb:Bb_MajorScale a mto:MajorScale ;
+    rdfs:label "Bb Major Scale" ;
+    mto:hasRootNote mto-kb:BFlat ;
+    rdfs:comment "Major scale with tonic note Bb" .
+
+kb:Bb_MinorScale a mto:MinorScale ;
+    rdfs:label "Bb Minor Scale" ;
+    mto:hasRootNote mto-kb:BFlat ;
+    rdfs:comment "Minor scale with tonic note Bb" .
+
+kb:CFlat_AeolianModeScale a :AeolianModeScale ;
+    rdfs:label "Cb Aeolian Mode" ;
+    :hasDominantNote mto-kb:G- ;
+    :hasLeadingtoneNote mto-kb:B-- ;
+    :hasMediantNote mto-kb:E-- ;
+    :hasSubdominantNote mto-kb:F- ;
+    :hasSubmediantNote mto-kb:A-- ;
+    :hasSupertonicNote mto-kb:D- ;
+    :hasTonality mto-kb:CFlat ;
+    :hasTonicNote mto-kb:C- ;
+    rdfs:comment "Aeolian modal scale with tonic note Cb" ;
+    owl:sameAs kb:GSharp_MinorScale .
+
+kb:CFlat_DorianModeScale a :DorianModeScale ;
+    rdfs:label "Cb Dorian Mode" ;
+    :hasDominantNote mto-kb:G- ;
+    :hasLeadingtoneNote mto-kb:B-- ;
+    :hasMediantNote mto-kb:E-- ;
+    :hasSubdominantNote mto-kb:F- ;
+    :hasSubmediantNote mto-kb:A- ;
+    :hasSupertonicNote mto-kb:D- ;
+    :hasTonality mto-kb:CFlat ;
+    :hasTonicNote mto-kb:C- ;
+    rdfs:comment "Dorian modal scale with tonic note Cb" .
+
+kb:CFlat_IonianModeScale a :IonianModeScale ;
+    rdfs:label "Cb Ionian Mode" ;
+    :hasDominantNote mto-kb:G- ;
+    :hasLeadingtoneNote mto-kb:B- ;
+    :hasMediantNote mto-kb:E- ;
+    :hasSubdominantNote mto-kb:F- ;
+    :hasSubmediantNote mto-kb:A- ;
+    :hasSupertonicNote mto-kb:D- ;
+    :hasTonality mto-kb:CFlat ;
+    :hasTonicNote mto-kb:C- ;
+    rdfs:comment "Ionian modal scale with tonic note Cb" ;
+    owl:sameAs kb:CFlat_MajorScale .
+
+kb:CFlat_LocrianModeScale a :LocrianModeScale ;
+    rdfs:label "Cb Locrian Mode" ;
+    :hasDominantNote mto-kb:G-- ;
+    :hasLeadingtoneNote mto-kb:B-- ;
+    :hasMediantNote mto-kb:E-- ;
+    :hasSubdominantNote mto-kb:F- ;
+    :hasSubmediantNote mto-kb:A-- ;
+    :hasSupertonicNote mto-kb:D-- ;
+    :hasTonality mto-kb:CFlat ;
+    :hasTonicNote mto-kb:C- ;
+    rdfs:comment "Locrian modal scale with tonic note Cb" .
+
+kb:CFlat_LydianModeScale a :LydianModeScale ;
+    rdfs:label "Cb Lydian Mode" ;
+    :hasDominantNote mto-kb:G- ;
+    :hasLeadingtoneNote mto-kb:B- ;
+    :hasMediantNote mto-kb:E- ;
+    :hasSubdominantNote mto-kb:F ;
+    :hasSubmediantNote mto-kb:A- ;
+    :hasSupertonicNote mto-kb:D- ;
+    :hasTonality mto-kb:CFlat ;
+    :hasTonicNote mto-kb:C- ;
+    rdfs:comment "Lydian modal scale with tonic note Cb" .
+
+kb:CFlat_MixolydianModeScale a :MixolydianModeScale ;
+    rdfs:label "Cb Mixolydian Mode" ;
+    :hasDominantNote mto-kb:G- ;
+    :hasLeadingtoneNote mto-kb:B-- ;
+    :hasMediantNote mto-kb:E- ;
+    :hasSubdominantNote mto-kb:F- ;
+    :hasSubmediantNote mto-kb:A- ;
+    :hasSupertonicNote mto-kb:D- ;
+    :hasTonality mto-kb:CFlat ;
+    :hasTonicNote mto-kb:C- ;
+    rdfs:comment "Mixolydian modal scale with tonic note Cb" .
+
+kb:CFlat_PhrygianModeScale a :PhrygianModeScale ;
+    rdfs:label "Cb Phrygian Mode" ;
+    :hasDominantNote mto-kb:G- ;
+    :hasLeadingtoneNote mto-kb:B-- ;
+    :hasMediantNote mto-kb:E-- ;
+    :hasSubdominantNote mto-kb:F- ;
+    :hasSubmediantNote mto-kb:A-- ;
+    :hasSupertonicNote mto-kb:D-- ;
+    :hasTonality mto-kb:CFlat ;
+    :hasTonicNote mto-kb:C- ;
+    rdfs:comment "Phrygian modal scale with tonic note Cb" .
+
+kb:CSharp_AeolianModeScale a :AeolianModeScale ;
+    rdfs:label "C# Aeolian Mode" ;
+    :hasDominantNote mto-kb:GSharp ;
+    :hasLeadingtoneNote mto-kb:B ;
+    :hasMediantNote mto-kb:E ;
+    :hasSubdominantNote mto-kb:FSharp ;
+    :hasSubmediantNote mto-kb:A ;
+    :hasSupertonicNote mto-kb:DSharp ;
+    :hasTonality mto-kb:CSharp ;
+    :hasTonicNote mto-kb:CSharp ;
+    rdfs:comment "Aeolian modal scale with tonic note C#" ;
+    owl:sameAs kb:BFlat_MinorScale .
+
+kb:CSharp_DorianModeScale a :DorianModeScale ;
+    rdfs:label "C# Dorian Mode" ;
+    :hasDominantNote mto-kb:GSharp ;
+    :hasLeadingtoneNote mto-kb:B ;
+    :hasMediantNote mto-kb:E ;
+    :hasSubdominantNote mto-kb:FSharp ;
+    :hasSubmediantNote mto-kb:ASharp ;
+    :hasSupertonicNote mto-kb:DSharp ;
+    :hasTonality mto-kb:CSharp ;
+    :hasTonicNote mto-kb:CSharp ;
+    rdfs:comment "Dorian modal scale with tonic note C#" .
+
+kb:CSharp_IonianModeScale a :IonianModeScale ;
+    rdfs:label "C# Ionian Mode" ;
+    :hasDominantNote mto-kb:GSharp ;
+    :hasLeadingtoneNote mto-kb:BSharp ;
+    :hasMediantNote mto-kb:ESharp ;
+    :hasSubdominantNote mto-kb:FSharp ;
+    :hasSubmediantNote mto-kb:ASharp ;
+    :hasSupertonicNote mto-kb:DSharp ;
+    :hasTonality mto-kb:CSharp ;
+    :hasTonicNote mto-kb:CSharp ;
+    rdfs:comment "Ionian modal scale with tonic note C#" ;
+    owl:sameAs kb:CSharp_MajorScale .
+
+kb:CSharp_LocrianModeScale a :LocrianModeScale ;
+    rdfs:label "C# Locrian Mode" ;
+    :hasDominantNote mto-kb:G ;
+    :hasLeadingtoneNote mto-kb:B ;
+    :hasMediantNote mto-kb:E ;
+    :hasSubdominantNote mto-kb:FSharp ;
+    :hasSubmediantNote mto-kb:A ;
+    :hasSupertonicNote mto-kb:D ;
+    :hasTonality mto-kb:CSharp ;
+    :hasTonicNote mto-kb:CSharp ;
+    rdfs:comment "Locrian modal scale with tonic note C#" .
+
+kb:CSharp_LydianModeScale a :LydianModeScale ;
+    rdfs:label "C# Lydian Mode" ;
+    :hasDominantNote mto-kb:GSharp ;
+    :hasLeadingtoneNote mto-kb:BSharp ;
+    :hasMediantNote mto-kb:ESharp ;
+    :hasSubdominantNote mto-kb:FDouFlatleSharp ;
+    :hasSubmediantNote mto-kb:ASharp ;
+    :hasSupertonicNote mto-kb:DSharp ;
+    :hasTonality mto-kb:CSharp ;
+    :hasTonicNote mto-kb:CSharp ;
+    rdfs:comment "Lydian modal scale with tonic note C#" .
+
+kb:CSharp_MixolydianModeScale a :MixolydianModeScale ;
+    rdfs:label "C# Mixolydian Mode" ;
+    :hasDominantNote mto-kb:GSharp ;
+    :hasLeadingtoneNote mto-kb:B ;
+    :hasMediantNote mto-kb:ESharp ;
+    :hasSubdominantNote mto-kb:FSharp ;
+    :hasSubmediantNote mto-kb:ASharp ;
+    :hasSupertonicNote mto-kb:DSharp ;
+    :hasTonality mto-kb:CSharp ;
+    :hasTonicNote mto-kb:CSharp ;
+    rdfs:comment "Mixolydian modal scale with tonic note C#" .
+
+kb:CSharp_PhrygianModeScale a :PhrygianModeScale ;
+    rdfs:label "C# Phrygian Mode" ;
+    :hasDominantNote mto-kb:GSharp ;
+    :hasLeadingtoneNote mto-kb:B ;
+    :hasMediantNote mto-kb:E ;
+    :hasSubdominantNote mto-kb:FSharp ;
+    :hasSubmediantNote mto-kb:A ;
+    :hasSupertonicNote mto-kb:D ;
+    :hasTonality mto-kb:CSharp ;
+    :hasTonicNote mto-kb:CSharp ;
+    rdfs:comment "Phrygian modal scale with tonic note C#" .
+
+kb:C_AeolianModeScale a :AeolianModeScale ;
+    rdfs:label "C Aeolian Mode" ;
+    :hasDominantNote mto-kb:G ;
+    :hasLeadingtoneNote mto-kb:B- ;
+    :hasMediantNote mto-kb:E- ;
+    :hasSubdominantNote mto-kb:F ;
+    :hasSubmediantNote mto-kb:A- ;
+    :hasSupertonicNote mto-kb:D ;
+    :hasTonality mto-kb:C ;
+    :hasTonicNote mto-kb:C ;
+    rdfs:comment "Aeolian modal scale with tonic note C" ;
+    owl:sameAs kb:A_MinorScale .
+
+kb:C_DorianModeScale a :DorianModeScale ;
+    rdfs:label "C Dorian Mode" ;
+    :hasDominantNote mto-kb:G ;
+    :hasLeadingtoneNote mto-kb:B- ;
+    :hasMediantNote mto-kb:E- ;
+    :hasSubdominantNote mto-kb:F ;
+    :hasSubmediantNote mto-kb:A ;
+    :hasSupertonicNote mto-kb:D ;
+    :hasTonality mto-kb:C ;
+    :hasTonicNote mto-kb:C ;
+    rdfs:comment "Dorian modal scale with tonic note C" .
+
+kb:C_IonianModeScale a :IonianModeScale ;
+    rdfs:label "C Ionian Mode" ;
+    :hasDominantNote mto-kb:G ;
+    :hasLeadingtoneNote mto-kb:B ;
+    :hasMediantNote mto-kb:E ;
+    :hasSubdominantNote mto-kb:F ;
+    :hasSubmediantNote mto-kb:A ;
+    :hasSupertonicNote mto-kb:D ;
+    :hasTonality mto-kb:C ;
+    :hasTonicNote mto-kb:C ;
+    rdfs:comment "Ionian modal scale with tonic note C" ;
+    owl:sameAs kb:C_MajorScale .
+
+kb:C_LocrianModeScale a :LocrianModeScale ;
+    rdfs:label "C Locrian Mode" ;
+    :hasDominantNote mto-kb:G- ;
+    :hasLeadingtoneNote mto-kb:B- ;
+    :hasMediantNote mto-kb:E- ;
+    :hasSubdominantNote mto-kb:F ;
+    :hasSubmediantNote mto-kb:A- ;
+    :hasSupertonicNote mto-kb:D- ;
+    :hasTonality mto-kb:C ;
+    :hasTonicNote mto-kb:C ;
+    rdfs:comment "Locrian modal scale with tonic note C" .
+
+kb:C_LydianModeScale a :LydianModeScale ;
+    rdfs:label "C Lydian Mode" ;
+    :hasDominantNote mto-kb:G ;
+    :hasLeadingtoneNote mto-kb:B ;
+    :hasMediantNote mto-kb:E ;
+    :hasSubdominantNote mto-kb:FSharp ;
+    :hasSubmediantNote mto-kb:A ;
+    :hasSupertonicNote mto-kb:D ;
+    :hasTonality mto-kb:C ;
+    :hasTonicNote mto-kb:C ;
+    rdfs:comment "Lydian modal scale with tonic note C" .
+
+kb:C_MixolydianModeScale a :MixolydianModeScale ;
+    rdfs:label "C Mixolydian Mode" ;
+    :hasDominantNote mto-kb:G ;
+    :hasLeadingtoneNote mto-kb:B- ;
+    :hasMediantNote mto-kb:E ;
+    :hasSubdominantNote mto-kb:F ;
+    :hasSubmediantNote mto-kb:A ;
+    :hasSupertonicNote mto-kb:D ;
+    :hasTonality mto-kb:C ;
+    :hasTonicNote mto-kb:C ;
+    rdfs:comment "Mixolydian modal scale with tonic note C" .
+
+kb:C_PhrygianModeScale a :PhrygianModeScale ;
+    rdfs:label "C Phrygian Mode" ;
+    :hasDominantNote mto-kb:G ;
+    :hasLeadingtoneNote mto-kb:B- ;
+    :hasMediantNote mto-kb:E- ;
+    :hasSubdominantNote mto-kb:F ;
+    :hasSubmediantNote mto-kb:A- ;
+    :hasSupertonicNote mto-kb:D- ;
+    :hasTonality mto-kb:C ;
+    :hasTonicNote mto-kb:C ;
+    rdfs:comment "Phrygian modal scale with tonic note C" .
+
+kb:Cb_MajorScale a mto:MajorScale ;
+    rdfs:label "Cb Major Scale" ;
+    mto:hasRootNote mto-kb:CFlat ;
+    rdfs:comment "Major scale with tonic note Cb" .
+
+kb:Cb_MinorScale a mto:MinorScale ;
+    rdfs:label "Cb Minor Scale" ;
+    mto:hasRootNote mto-kb:CFlat ;
+    rdfs:comment "Minor scale with tonic note Cb" .
+
+kb:DFlat_AeolianModeScale a :AeolianModeScale ;
+    rdfs:label "Db Aeolian Mode" ;
+    :hasDominantNote mto-kb:A- ;
+    :hasLeadingtoneNote mto-kb:C- ;
+    :hasMediantNote mto-kb:F- ;
+    :hasSubdominantNote mto-kb:G- ;
+    :hasSubmediantNote mto-kb:B-- ;
+    :hasSupertonicNote mto-kb:E- ;
+    :hasTonality mto-kb:DFlat ;
+    :hasTonicNote mto-kb:D- ;
+    rdfs:comment "Aeolian modal scale with tonic note Db" ;
+    owl:sameAs kb:BFlat_MinorScale .
+
+kb:DFlat_DorianModeScale a :DorianModeScale ;
+    rdfs:label "Db Dorian Mode" ;
+    :hasDominantNote mto-kb:A- ;
+    :hasLeadingtoneNote mto-kb:C- ;
+    :hasMediantNote mto-kb:F- ;
+    :hasSubdominantNote mto-kb:G- ;
+    :hasSubmediantNote mto-kb:B- ;
+    :hasSupertonicNote mto-kb:E- ;
+    :hasTonality mto-kb:DFlat ;
+    :hasTonicNote mto-kb:D- ;
+    rdfs:comment "Dorian modal scale with tonic note Db" .
+
+kb:DFlat_IonianModeScale a :IonianModeScale ;
+    rdfs:label "Db Ionian Mode" ;
+    :hasDominantNote mto-kb:A- ;
+    :hasLeadingtoneNote mto-kb:C ;
+    :hasMediantNote mto-kb:F ;
+    :hasSubdominantNote mto-kb:G- ;
+    :hasSubmediantNote mto-kb:B- ;
+    :hasSupertonicNote mto-kb:E- ;
+    :hasTonality mto-kb:DFlat ;
+    :hasTonicNote mto-kb:D- ;
+    rdfs:comment "Ionian modal scale with tonic note Db" ;
+    owl:sameAs kb:DFlat_MajorScale .
+
+kb:DFlat_LocrianModeScale a :LocrianModeScale ;
+    rdfs:label "Db Locrian Mode" ;
+    :hasDominantNote mto-kb:A-- ;
+    :hasLeadingtoneNote mto-kb:C- ;
+    :hasMediantNote mto-kb:F- ;
+    :hasSubdominantNote mto-kb:G- ;
+    :hasSubmediantNote mto-kb:B-- ;
+    :hasSupertonicNote mto-kb:E-- ;
+    :hasTonality mto-kb:DFlat ;
+    :hasTonicNote mto-kb:D- ;
+    rdfs:comment "Locrian modal scale with tonic note Db" .
+
+kb:DFlat_LydianModeScale a :LydianModeScale ;
+    rdfs:label "Db Lydian Mode" ;
+    :hasDominantNote mto-kb:A- ;
+    :hasLeadingtoneNote mto-kb:C ;
+    :hasMediantNote mto-kb:F ;
+    :hasSubdominantNote mto-kb:G ;
+    :hasSubmediantNote mto-kb:B- ;
+    :hasSupertonicNote mto-kb:E- ;
+    :hasTonality mto-kb:DFlat ;
+    :hasTonicNote mto-kb:D- ;
+    rdfs:comment "Lydian modal scale with tonic note Db" .
+
+kb:DFlat_MixolydianModeScale a :MixolydianModeScale ;
+    rdfs:label "Db Mixolydian Mode" ;
+    :hasDominantNote mto-kb:A- ;
+    :hasLeadingtoneNote mto-kb:C- ;
+    :hasMediantNote mto-kb:F ;
+    :hasSubdominantNote mto-kb:G- ;
+    :hasSubmediantNote mto-kb:B- ;
+    :hasSupertonicNote mto-kb:E- ;
+    :hasTonality mto-kb:DFlat ;
+    :hasTonicNote mto-kb:D- ;
+    rdfs:comment "Mixolydian modal scale with tonic note Db" .
+
+kb:DFlat_PhrygianModeScale a :PhrygianModeScale ;
+    rdfs:label "Db Phrygian Mode" ;
+    :hasDominantNote mto-kb:A- ;
+    :hasLeadingtoneNote mto-kb:C- ;
+    :hasMediantNote mto-kb:F- ;
+    :hasSubdominantNote mto-kb:G- ;
+    :hasSubmediantNote mto-kb:B-- ;
+    :hasSupertonicNote mto-kb:E-- ;
+    :hasTonality mto-kb:DFlat ;
+    :hasTonicNote mto-kb:D- ;
+    rdfs:comment "Phrygian modal scale with tonic note Db" .
+
+kb:DSharp_AeolianModeScale a :AeolianModeScale ;
+    rdfs:label "D# Aeolian Mode" ;
+    :hasDominantNote mto-kb:ASharp ;
+    :hasLeadingtoneNote mto-kb:CSharp ;
+    :hasMediantNote mto-kb:FSharp ;
+    :hasSubdominantNote mto-kb:GSharp ;
+    :hasSubmediantNote mto-kb:B ;
+    :hasSupertonicNote mto-kb:ESharp ;
+    :hasTonality mto-kb:DSharp ;
+    :hasTonicNote mto-kb:DSharp ;
+    rdfs:comment "Aeolian modal scale with tonic note D#" ;
+    owl:sameAs kb:C_MinorScale .
+
+kb:DSharp_DorianModeScale a :DorianModeScale ;
+    rdfs:label "D# Dorian Mode" ;
+    :hasDominantNote mto-kb:ASharp ;
+    :hasLeadingtoneNote mto-kb:CSharp ;
+    :hasMediantNote mto-kb:FSharp ;
+    :hasSubdominantNote mto-kb:GSharp ;
+    :hasSubmediantNote mto-kb:BSharp ;
+    :hasSupertonicNote mto-kb:ESharp ;
+    :hasTonality mto-kb:DSharp ;
+    :hasTonicNote mto-kb:DSharp ;
+    rdfs:comment "Dorian modal scale with tonic note D#" .
+
+kb:DSharp_IonianModeScale a :IonianModeScale ;
+    rdfs:label "D# Ionian Mode" ;
+    :hasDominantNote mto-kb:ASharp ;
+    :hasLeadingtoneNote mto-kb:CDouFlatleSharp ;
+    :hasMediantNote mto-kb:FDouFlatleSharp ;
+    :hasSubdominantNote mto-kb:GSharp ;
+    :hasSubmediantNote mto-kb:BSharp ;
+    :hasSupertonicNote mto-kb:ESharp ;
+    :hasTonality mto-kb:DSharp ;
+    :hasTonicNote mto-kb:DSharp ;
+    rdfs:comment "Ionian modal scale with tonic note D#" ;
+    owl:sameAs kb:DSharp_MajorScale .
+
+kb:DSharp_LocrianModeScale a :LocrianModeScale ;
+    rdfs:label "D# Locrian Mode" ;
+    :hasDominantNote mto-kb:A ;
+    :hasLeadingtoneNote mto-kb:CSharp ;
+    :hasMediantNote mto-kb:FSharp ;
+    :hasSubdominantNote mto-kb:GSharp ;
+    :hasSubmediantNote mto-kb:B ;
+    :hasSupertonicNote mto-kb:E ;
+    :hasTonality mto-kb:DSharp ;
+    :hasTonicNote mto-kb:DSharp ;
+    rdfs:comment "Locrian modal scale with tonic note D#" .
+
+kb:DSharp_LydianModeScale a :LydianModeScale ;
+    rdfs:label "D# Lydian Mode" ;
+    :hasDominantNote mto-kb:ASharp ;
+    :hasLeadingtoneNote mto-kb:CDouFlatleSharp ;
+    :hasMediantNote mto-kb:FDouFlatleSharp ;
+    :hasSubdominantNote mto-kb:GDouFlatleSharp ;
+    :hasSubmediantNote mto-kb:BSharp ;
+    :hasSupertonicNote mto-kb:ESharp ;
+    :hasTonality mto-kb:DSharp ;
+    :hasTonicNote mto-kb:DSharp ;
+    rdfs:comment "Lydian modal scale with tonic note D#" .
+
+kb:DSharp_MinorScale a mto:MinorScale ;
+    rdfs:label "D# Minor Scale" ;
+    mto:hasRootNote mto-kb:DSharp ;
+    rdfs:comment "Minor scale with tonic note D#" .
+
+kb:DSharp_MixolydianModeScale a :MixolydianModeScale ;
+    rdfs:label "D# Mixolydian Mode" ;
+    :hasDominantNote mto-kb:ASharp ;
+    :hasLeadingtoneNote mto-kb:CSharp ;
+    :hasMediantNote mto-kb:FDouFlatleSharp ;
+    :hasSubdominantNote mto-kb:GSharp ;
+    :hasSubmediantNote mto-kb:BSharp ;
+    :hasSupertonicNote mto-kb:ESharp ;
+    :hasTonality mto-kb:DSharp ;
+    :hasTonicNote mto-kb:DSharp ;
+    rdfs:comment "Mixolydian modal scale with tonic note D#" .
+
+kb:DSharp_PhrygianModeScale a :PhrygianModeScale ;
+    rdfs:label "D# Phrygian Mode" ;
+    :hasDominantNote mto-kb:ASharp ;
+    :hasLeadingtoneNote mto-kb:CSharp ;
+    :hasMediantNote mto-kb:FSharp ;
+    :hasSubdominantNote mto-kb:GSharp ;
+    :hasSubmediantNote mto-kb:B ;
+    :hasSupertonicNote mto-kb:E ;
+    :hasTonality mto-kb:DSharp ;
+    :hasTonicNote mto-kb:DSharp ;
+    rdfs:comment "Phrygian modal scale with tonic note D#" .
+
+kb:D_AeolianModeScale a :AeolianModeScale ;
+    rdfs:label "D Aeolian Mode" ;
+    :hasDominantNote mto-kb:A ;
+    :hasLeadingtoneNote mto-kb:C ;
+    :hasMediantNote mto-kb:F ;
+    :hasSubdominantNote mto-kb:G ;
+    :hasSubmediantNote mto-kb:B- ;
+    :hasSupertonicNote mto-kb:E ;
+    :hasTonality mto-kb:D ;
+    :hasTonicNote mto-kb:D ;
+    rdfs:comment "Aeolian modal scale with tonic note D" ;
+    owl:sameAs kb:B_MinorScale .
+
+kb:D_DorianModeScale a :DorianModeScale ;
+    rdfs:label "D Dorian Mode" ;
+    :hasDominantNote mto-kb:A ;
+    :hasLeadingtoneNote mto-kb:C ;
+    :hasMediantNote mto-kb:F ;
+    :hasSubdominantNote mto-kb:G ;
+    :hasSubmediantNote mto-kb:B ;
+    :hasSupertonicNote mto-kb:E ;
+    :hasTonality mto-kb:D ;
+    :hasTonicNote mto-kb:D ;
+    rdfs:comment "Dorian modal scale with tonic note D" .
+
+kb:D_IonianModeScale a :IonianModeScale ;
+    rdfs:label "D Ionian Mode" ;
+    :hasDominantNote mto-kb:A ;
+    :hasLeadingtoneNote mto-kb:CSharp ;
+    :hasMediantNote mto-kb:FSharp ;
+    :hasSubdominantNote mto-kb:G ;
+    :hasSubmediantNote mto-kb:B ;
+    :hasSupertonicNote mto-kb:E ;
+    :hasTonality mto-kb:D ;
+    :hasTonicNote mto-kb:D ;
+    rdfs:comment "Ionian modal scale with tonic note D" ;
+    owl:sameAs kb:D_MajorScale .
+
+kb:D_LocrianModeScale a :LocrianModeScale ;
+    rdfs:label "D Locrian Mode" ;
+    :hasDominantNote mto-kb:A- ;
+    :hasLeadingtoneNote mto-kb:C ;
+    :hasMediantNote mto-kb:F ;
+    :hasSubdominantNote mto-kb:G ;
+    :hasSubmediantNote mto-kb:B- ;
+    :hasSupertonicNote mto-kb:E- ;
+    :hasTonality mto-kb:D ;
+    :hasTonicNote mto-kb:D ;
+    rdfs:comment "Locrian modal scale with tonic note D" .
+
+kb:D_LydianModeScale a :LydianModeScale ;
+    rdfs:label "D Lydian Mode" ;
+    :hasDominantNote mto-kb:A ;
+    :hasLeadingtoneNote mto-kb:CSharp ;
+    :hasMediantNote mto-kb:FSharp ;
+    :hasSubdominantNote mto-kb:GSharp ;
+    :hasSubmediantNote mto-kb:B ;
+    :hasSupertonicNote mto-kb:E ;
+    :hasTonality mto-kb:D ;
+    :hasTonicNote mto-kb:D ;
+    rdfs:comment "Lydian modal scale with tonic note D" .
+
+kb:D_MixolydianModeScale a :MixolydianModeScale ;
+    rdfs:label "D Mixolydian Mode" ;
+    :hasDominantNote mto-kb:A ;
+    :hasLeadingtoneNote mto-kb:C ;
+    :hasMediantNote mto-kb:FSharp ;
+    :hasSubdominantNote mto-kb:G ;
+    :hasSubmediantNote mto-kb:B ;
+    :hasSupertonicNote mto-kb:E ;
+    :hasTonality mto-kb:D ;
+    :hasTonicNote mto-kb:D ;
+    rdfs:comment "Mixolydian modal scale with tonic note D" .
+
+kb:D_PhrygianModeScale a :PhrygianModeScale ;
+    rdfs:label "D Phrygian Mode" ;
+    :hasDominantNote mto-kb:A ;
+    :hasLeadingtoneNote mto-kb:C ;
+    :hasMediantNote mto-kb:F ;
+    :hasSubdominantNote mto-kb:G ;
+    :hasSubmediantNote mto-kb:B- ;
+    :hasSupertonicNote mto-kb:E- ;
+    :hasTonality mto-kb:D ;
+    :hasTonicNote mto-kb:D ;
+    rdfs:comment "Phrygian modal scale with tonic note D" .
+
+kb:Db_MajorScale a mto:MajorScale ;
+    rdfs:label "Db Major Scale" ;
+    mto:hasRootNote mto-kb:DFlat ;
+    rdfs:comment "Major scale with tonic note Db" .
+
+kb:Db_MinorScale a mto:MinorScale ;
+    rdfs:label "Db Minor Scale" ;
+    mto:hasRootNote mto-kb:DFlat ;
+    rdfs:comment "Minor scale with tonic note Db" .
+
+kb:EFlat_AeolianModeScale a :AeolianModeScale ;
+    rdfs:label "Eb Aeolian Mode" ;
+    :hasDominantNote mto-kb:B- ;
+    :hasLeadingtoneNote mto-kb:D- ;
+    :hasMediantNote mto-kb:G- ;
+    :hasSubdominantNote mto-kb:A- ;
+    :hasSubmediantNote mto-kb:C- ;
+    :hasSupertonicNote mto-kb:F ;
+    :hasTonality mto-kb:EFlat ;
+    :hasTonicNote mto-kb:E- ;
+    rdfs:comment "Aeolian modal scale with tonic note Eb" ;
+    owl:sameAs kb:C_MinorScale .
+
+kb:EFlat_DorianModeScale a :DorianModeScale ;
+    rdfs:label "Eb Dorian Mode" ;
+    :hasDominantNote mto-kb:B- ;
+    :hasLeadingtoneNote mto-kb:D- ;
+    :hasMediantNote mto-kb:G- ;
+    :hasSubdominantNote mto-kb:A- ;
+    :hasSubmediantNote mto-kb:C ;
+    :hasSupertonicNote mto-kb:F ;
+    :hasTonality mto-kb:EFlat ;
+    :hasTonicNote mto-kb:E- ;
+    rdfs:comment "Dorian modal scale with tonic note Eb" .
+
+kb:EFlat_IonianModeScale a :IonianModeScale ;
+    rdfs:label "Eb Ionian Mode" ;
+    :hasDominantNote mto-kb:B- ;
+    :hasLeadingtoneNote mto-kb:D ;
+    :hasMediantNote mto-kb:G ;
+    :hasSubdominantNote mto-kb:A- ;
+    :hasSubmediantNote mto-kb:C ;
+    :hasSupertonicNote mto-kb:F ;
+    :hasTonality mto-kb:EFlat ;
+    :hasTonicNote mto-kb:E- ;
+    rdfs:comment "Ionian modal scale with tonic note Eb" ;
+    owl:sameAs kb:EFlat_MajorScale .
+
+kb:EFlat_LocrianModeScale a :LocrianModeScale ;
+    rdfs:label "Eb Locrian Mode" ;
+    :hasDominantNote mto-kb:B-- ;
+    :hasLeadingtoneNote mto-kb:D- ;
+    :hasMediantNote mto-kb:G- ;
+    :hasSubdominantNote mto-kb:A- ;
+    :hasSubmediantNote mto-kb:C- ;
+    :hasSupertonicNote mto-kb:F- ;
+    :hasTonality mto-kb:EFlat ;
+    :hasTonicNote mto-kb:E- ;
+    rdfs:comment "Locrian modal scale with tonic note Eb" .
+
+kb:EFlat_LydianModeScale a :LydianModeScale ;
+    rdfs:label "Eb Lydian Mode" ;
+    :hasDominantNote mto-kb:B- ;
+    :hasLeadingtoneNote mto-kb:D ;
+    :hasMediantNote mto-kb:G ;
+    :hasSubdominantNote mto-kb:A ;
+    :hasSubmediantNote mto-kb:C ;
+    :hasSupertonicNote mto-kb:F ;
+    :hasTonality mto-kb:EFlat ;
+    :hasTonicNote mto-kb:E- ;
+    rdfs:comment "Lydian modal scale with tonic note Eb" .
+
+kb:EFlat_MixolydianModeScale a :MixolydianModeScale ;
+    rdfs:label "Eb Mixolydian Mode" ;
+    :hasDominantNote mto-kb:B- ;
+    :hasLeadingtoneNote mto-kb:D- ;
+    :hasMediantNote mto-kb:G ;
+    :hasSubdominantNote mto-kb:A- ;
+    :hasSubmediantNote mto-kb:C ;
+    :hasSupertonicNote mto-kb:F ;
+    :hasTonality mto-kb:EFlat ;
+    :hasTonicNote mto-kb:E- ;
+    rdfs:comment "Mixolydian modal scale with tonic note Eb" .
+
+kb:EFlat_PhrygianModeScale a :PhrygianModeScale ;
+    rdfs:label "Eb Phrygian Mode" ;
+    :hasDominantNote mto-kb:B- ;
+    :hasLeadingtoneNote mto-kb:D- ;
+    :hasMediantNote mto-kb:G- ;
+    :hasSubdominantNote mto-kb:A- ;
+    :hasSubmediantNote mto-kb:C- ;
+    :hasSupertonicNote mto-kb:F- ;
+    :hasTonality mto-kb:EFlat ;
+    :hasTonicNote mto-kb:E- ;
+    rdfs:comment "Phrygian modal scale with tonic note Eb" .
+
+kb:ESharp_AeolianModeScale a :AeolianModeScale ;
+    rdfs:label "E# Aeolian Mode" ;
+    :hasDominantNote mto-kb:BSharp ;
+    :hasLeadingtoneNote mto-kb:DSharp ;
+    :hasMediantNote mto-kb:GSharp ;
+    :hasSubdominantNote mto-kb:ASharp ;
+    :hasSubmediantNote mto-kb:CSharp ;
+    :hasSupertonicNote mto-kb:FDouFlatleSharp ;
+    :hasTonality mto-kb:ESharp ;
+    :hasTonicNote mto-kb:ESharp ;
+    rdfs:comment "Aeolian modal scale with tonic note E#" ;
+    owl:sameAs kb:D_MinorScale .
+
+kb:ESharp_DorianModeScale a :DorianModeScale ;
+    rdfs:label "E# Dorian Mode" ;
+    :hasDominantNote mto-kb:BSharp ;
+    :hasLeadingtoneNote mto-kb:DSharp ;
+    :hasMediantNote mto-kb:GSharp ;
+    :hasSubdominantNote mto-kb:ASharp ;
+    :hasSubmediantNote mto-kb:CDouFlatleSharp ;
+    :hasSupertonicNote mto-kb:FDouFlatleSharp ;
+    :hasTonality mto-kb:ESharp ;
+    :hasTonicNote mto-kb:ESharp ;
+    rdfs:comment "Dorian modal scale with tonic note E#" .
+
+kb:ESharp_IonianModeScale a :IonianModeScale ;
+    rdfs:label "E# Ionian Mode" ;
+    :hasDominantNote mto-kb:BSharp ;
+    :hasLeadingtoneNote mto-kb:DDouFlatleSharp ;
+    :hasMediantNote mto-kb:GDouFlatleSharp ;
+    :hasSubdominantNote mto-kb:ASharp ;
+    :hasSubmediantNote mto-kb:CDouFlatleSharp ;
+    :hasSupertonicNote mto-kb:FDouFlatleSharp ;
+    :hasTonality mto-kb:ESharp ;
+    :hasTonicNote mto-kb:ESharp ;
+    rdfs:comment "Ionian modal scale with tonic note E#" ;
+    owl:sameAs kb:ESharp_MajorScale .
+
+kb:ESharp_LocrianModeScale a :LocrianModeScale ;
+    rdfs:label "E# Locrian Mode" ;
+    :hasDominantNote mto-kb:B ;
+    :hasLeadingtoneNote mto-kb:DSharp ;
+    :hasMediantNote mto-kb:GSharp ;
+    :hasSubdominantNote mto-kb:ASharp ;
+    :hasSubmediantNote mto-kb:CSharp ;
+    :hasSupertonicNote mto-kb:FSharp ;
+    :hasTonality mto-kb:ESharp ;
+    :hasTonicNote mto-kb:ESharp ;
+    rdfs:comment "Locrian modal scale with tonic note E#" .
+
+kb:ESharp_LydianModeScale a :LydianModeScale ;
+    rdfs:label "E# Lydian Mode" ;
+    :hasDominantNote mto-kb:BSharp ;
+    :hasLeadingtoneNote mto-kb:DDouFlatleSharp ;
+    :hasMediantNote mto-kb:GDouFlatleSharp ;
+    :hasSubdominantNote mto-kb:ADouFlatleSharp ;
+    :hasSubmediantNote mto-kb:CDouFlatleSharp ;
+    :hasSupertonicNote mto-kb:FDouFlatleSharp ;
+    :hasTonality mto-kb:ESharp ;
+    :hasTonicNote mto-kb:ESharp ;
+    rdfs:comment "Lydian modal scale with tonic note E#" .
+
+kb:ESharp_MinorScale a mto:MinorScale ;
+    rdfs:label "E# Minor Scale" ;
+    mto:hasRootNote mto-kb:ESharp ;
+    rdfs:comment "Minor scale with tonic note E#" .
+
+kb:ESharp_MixolydianModeScale a :MixolydianModeScale ;
+    rdfs:label "E# Mixolydian Mode" ;
+    :hasDominantNote mto-kb:BSharp ;
+    :hasLeadingtoneNote mto-kb:DSharp ;
+    :hasMediantNote mto-kb:GDouFlatleSharp ;
+    :hasSubdominantNote mto-kb:ASharp ;
+    :hasSubmediantNote mto-kb:CDouFlatleSharp ;
+    :hasSupertonicNote mto-kb:FDouFlatleSharp ;
+    :hasTonality mto-kb:ESharp ;
+    :hasTonicNote mto-kb:ESharp ;
+    rdfs:comment "Mixolydian modal scale with tonic note E#" .
+
+kb:ESharp_PhrygianModeScale a :PhrygianModeScale ;
+    rdfs:label "E# Phrygian Mode" ;
+    :hasDominantNote mto-kb:BSharp ;
+    :hasLeadingtoneNote mto-kb:DSharp ;
+    :hasMediantNote mto-kb:GSharp ;
+    :hasSubdominantNote mto-kb:ASharp ;
+    :hasSubmediantNote mto-kb:CSharp ;
+    :hasSupertonicNote mto-kb:FSharp ;
+    :hasTonality mto-kb:ESharp ;
+    :hasTonicNote mto-kb:ESharp ;
+    rdfs:comment "Phrygian modal scale with tonic note E#" .
+
+kb:E_AeolianModeScale a :AeolianModeScale ;
+    rdfs:label "E Aeolian Mode" ;
+    :hasDominantNote mto-kb:B ;
+    :hasLeadingtoneNote mto-kb:D ;
+    :hasMediantNote mto-kb:G ;
+    :hasSubdominantNote mto-kb:A ;
+    :hasSubmediantNote mto-kb:C ;
+    :hasSupertonicNote mto-kb:FSharp ;
+    :hasTonality mto-kb:E ;
+    :hasTonicNote mto-kb:E ;
+    rdfs:comment "Aeolian modal scale with tonic note E" ;
+    owl:sameAs kb:CSharp_MinorScale .
+
+kb:E_DorianModeScale a :DorianModeScale ;
+    rdfs:label "E Dorian Mode" ;
+    :hasDominantNote mto-kb:B ;
+    :hasLeadingtoneNote mto-kb:D ;
+    :hasMediantNote mto-kb:G ;
+    :hasSubdominantNote mto-kb:A ;
+    :hasSubmediantNote mto-kb:CSharp ;
+    :hasSupertonicNote mto-kb:FSharp ;
+    :hasTonality mto-kb:E ;
+    :hasTonicNote mto-kb:E ;
+    rdfs:comment "Dorian modal scale with tonic note E" .
+
+kb:E_IonianModeScale a :IonianModeScale ;
+    rdfs:label "E Ionian Mode" ;
+    :hasDominantNote mto-kb:B ;
+    :hasLeadingtoneNote mto-kb:DSharp ;
+    :hasMediantNote mto-kb:GSharp ;
+    :hasSubdominantNote mto-kb:A ;
+    :hasSubmediantNote mto-kb:CSharp ;
+    :hasSupertonicNote mto-kb:FSharp ;
+    :hasTonality mto-kb:E ;
+    :hasTonicNote mto-kb:E ;
+    rdfs:comment "Ionian modal scale with tonic note E" ;
+    owl:sameAs kb:E_MajorScale .
+
+kb:E_LocrianModeScale a :LocrianModeScale ;
+    rdfs:label "E Locrian Mode" ;
+    :hasDominantNote mto-kb:B- ;
+    :hasLeadingtoneNote mto-kb:D ;
+    :hasMediantNote mto-kb:G ;
+    :hasSubdominantNote mto-kb:A ;
+    :hasSubmediantNote mto-kb:C ;
+    :hasSupertonicNote mto-kb:F ;
+    :hasTonality mto-kb:E ;
+    :hasTonicNote mto-kb:E ;
+    rdfs:comment "Locrian modal scale with tonic note E" .
+
+kb:E_LydianModeScale a :LydianModeScale ;
+    rdfs:label "E Lydian Mode" ;
+    :hasDominantNote mto-kb:B ;
+    :hasLeadingtoneNote mto-kb:DSharp ;
+    :hasMediantNote mto-kb:GSharp ;
+    :hasSubdominantNote mto-kb:ASharp ;
+    :hasSubmediantNote mto-kb:CSharp ;
+    :hasSupertonicNote mto-kb:FSharp ;
+    :hasTonality mto-kb:E ;
+    :hasTonicNote mto-kb:E ;
+    rdfs:comment "Lydian modal scale with tonic note E" .
+
+kb:E_MixolydianModeScale a :MixolydianModeScale ;
+    rdfs:label "E Mixolydian Mode" ;
+    :hasDominantNote mto-kb:B ;
+    :hasLeadingtoneNote mto-kb:D ;
+    :hasMediantNote mto-kb:GSharp ;
+    :hasSubdominantNote mto-kb:A ;
+    :hasSubmediantNote mto-kb:CSharp ;
+    :hasSupertonicNote mto-kb:FSharp ;
+    :hasTonality mto-kb:E ;
+    :hasTonicNote mto-kb:E ;
+    rdfs:comment "Mixolydian modal scale with tonic note E" .
+
+kb:E_PhrygianModeScale a :PhrygianModeScale ;
+    rdfs:label "E Phrygian Mode" ;
+    :hasDominantNote mto-kb:B ;
+    :hasLeadingtoneNote mto-kb:D ;
+    :hasMediantNote mto-kb:G ;
+    :hasSubdominantNote mto-kb:A ;
+    :hasSubmediantNote mto-kb:C ;
+    :hasSupertonicNote mto-kb:F ;
+    :hasTonality mto-kb:E ;
+    :hasTonicNote mto-kb:E ;
+    rdfs:comment "Phrygian modal scale with tonic note E" .
+
+kb:Eb_MajorScale a mto:MajorScale ;
+    rdfs:label "Eb Major Scale" ;
+    mto:hasRootNote mto-kb:EFlat ;
+    rdfs:comment "Major scale with tonic note Eb" .
+
+kb:Eb_MinorScale a mto:MinorScale ;
+    rdfs:label "Eb Minor Scale" ;
+    mto:hasRootNote mto-kb:EFlat ;
+    rdfs:comment "Minor scale with tonic note Eb" .
+
+kb:FFlat_AeolianModeScale a :AeolianModeScale ;
+    rdfs:label "Fb Aeolian Mode" ;
+    :hasDominantNote mto-kb:C- ;
+    :hasLeadingtoneNote mto-kb:E-- ;
+    :hasMediantNote mto-kb:A-- ;
+    :hasSubdominantNote mto-kb:B-- ;
+    :hasSubmediantNote mto-kb:D-- ;
+    :hasSupertonicNote mto-kb:G- ;
+    :hasTonality mto-kb:FFlat ;
+    :hasTonicNote mto-kb:F- ;
+    rdfs:comment "Aeolian modal scale with tonic note Fb" ;
+    owl:sameAs kb:CSharp_MinorScale .
+
+kb:FFlat_DorianModeScale a :DorianModeScale ;
+    rdfs:label "Fb Dorian Mode" ;
+    :hasDominantNote mto-kb:C- ;
+    :hasLeadingtoneNote mto-kb:E-- ;
+    :hasMediantNote mto-kb:A-- ;
+    :hasSubdominantNote mto-kb:B-- ;
+    :hasSubmediantNote mto-kb:D- ;
+    :hasSupertonicNote mto-kb:G- ;
+    :hasTonality mto-kb:FFlat ;
+    :hasTonicNote mto-kb:F- ;
+    rdfs:comment "Dorian modal scale with tonic note Fb" .
+
+kb:FFlat_IonianModeScale a :IonianModeScale ;
+    rdfs:label "Fb Ionian Mode" ;
+    :hasDominantNote mto-kb:C- ;
+    :hasLeadingtoneNote mto-kb:E- ;
+    :hasMediantNote mto-kb:A- ;
+    :hasSubdominantNote mto-kb:B-- ;
+    :hasSubmediantNote mto-kb:D- ;
+    :hasSupertonicNote mto-kb:G- ;
+    :hasTonality mto-kb:FFlat ;
+    :hasTonicNote mto-kb:F- ;
+    rdfs:comment "Ionian modal scale with tonic note Fb" ;
+    owl:sameAs kb:FFlat_MajorScale .
+
+kb:FFlat_LocrianModeScale a :LocrianModeScale ;
+    rdfs:label "Fb Locrian Mode" ;
+    :hasDominantNote mto-kb:C-- ;
+    :hasLeadingtoneNote mto-kb:E-- ;
+    :hasMediantNote mto-kb:A-- ;
+    :hasSubdominantNote mto-kb:B-- ;
+    :hasSubmediantNote mto-kb:D-- ;
+    :hasSupertonicNote mto-kb:G-- ;
+    :hasTonality mto-kb:FFlat ;
+    :hasTonicNote mto-kb:F- ;
+    rdfs:comment "Locrian modal scale with tonic note Fb" .
+
+kb:FFlat_LydianModeScale a :LydianModeScale ;
+    rdfs:label "Fb Lydian Mode" ;
+    :hasDominantNote mto-kb:C- ;
+    :hasLeadingtoneNote mto-kb:E- ;
+    :hasMediantNote mto-kb:A- ;
+    :hasSubdominantNote mto-kb:B- ;
+    :hasSubmediantNote mto-kb:D- ;
+    :hasSupertonicNote mto-kb:G- ;
+    :hasTonality mto-kb:FFlat ;
+    :hasTonicNote mto-kb:F- ;
+    rdfs:comment "Lydian modal scale with tonic note Fb" .
+
+kb:FFlat_MixolydianModeScale a :MixolydianModeScale ;
+    rdfs:label "Fb Mixolydian Mode" ;
+    :hasDominantNote mto-kb:C- ;
+    :hasLeadingtoneNote mto-kb:E-- ;
+    :hasMediantNote mto-kb:A- ;
+    :hasSubdominantNote mto-kb:B-- ;
+    :hasSubmediantNote mto-kb:D- ;
+    :hasSupertonicNote mto-kb:G- ;
+    :hasTonality mto-kb:FFlat ;
+    :hasTonicNote mto-kb:F- ;
+    rdfs:comment "Mixolydian modal scale with tonic note Fb" .
+
+kb:FFlat_PhrygianModeScale a :PhrygianModeScale ;
+    rdfs:label "Fb Phrygian Mode" ;
+    :hasDominantNote mto-kb:C- ;
+    :hasLeadingtoneNote mto-kb:E-- ;
+    :hasMediantNote mto-kb:A-- ;
+    :hasSubdominantNote mto-kb:B-- ;
+    :hasSubmediantNote mto-kb:D-- ;
+    :hasSupertonicNote mto-kb:G-- ;
+    :hasTonality mto-kb:FFlat ;
+    :hasTonicNote mto-kb:F- ;
+    rdfs:comment "Phrygian modal scale with tonic note Fb" .
+
+kb:FSharp_AeolianModeScale a :AeolianModeScale ;
+    rdfs:label "F# Aeolian Mode" ;
+    :hasDominantNote mto-kb:CSharp ;
+    :hasLeadingtoneNote mto-kb:E ;
+    :hasMediantNote mto-kb:A ;
+    :hasSubdominantNote mto-kb:B ;
+    :hasSubmediantNote mto-kb:D ;
+    :hasSupertonicNote mto-kb:GSharp ;
+    :hasTonality mto-kb:FSharp ;
+    :hasTonicNote mto-kb:FSharp ;
+    rdfs:comment "Aeolian modal scale with tonic note F#" ;
+    owl:sameAs kb:EFlat_MinorScale .
+
+kb:FSharp_DorianModeScale a :DorianModeScale ;
+    rdfs:label "F# Dorian Mode" ;
+    :hasDominantNote mto-kb:CSharp ;
+    :hasLeadingtoneNote mto-kb:E ;
+    :hasMediantNote mto-kb:A ;
+    :hasSubdominantNote mto-kb:B ;
+    :hasSubmediantNote mto-kb:DSharp ;
+    :hasSupertonicNote mto-kb:GSharp ;
+    :hasTonality mto-kb:FSharp ;
+    :hasTonicNote mto-kb:FSharp ;
+    rdfs:comment "Dorian modal scale with tonic note F#" .
+
+kb:FSharp_IonianModeScale a :IonianModeScale ;
+    rdfs:label "F# Ionian Mode" ;
+    :hasDominantNote mto-kb:CSharp ;
+    :hasLeadingtoneNote mto-kb:ESharp ;
+    :hasMediantNote mto-kb:ASharp ;
+    :hasSubdominantNote mto-kb:B ;
+    :hasSubmediantNote mto-kb:DSharp ;
+    :hasSupertonicNote mto-kb:GSharp ;
+    :hasTonality mto-kb:FSharp ;
+    :hasTonicNote mto-kb:FSharp ;
+    rdfs:comment "Ionian modal scale with tonic note F#" ;
+    owl:sameAs kb:FSharp_MajorScale .
+
+kb:FSharp_LocrianModeScale a :LocrianModeScale ;
+    rdfs:label "F# Locrian Mode" ;
+    :hasDominantNote mto-kb:C ;
+    :hasLeadingtoneNote mto-kb:E ;
+    :hasMediantNote mto-kb:A ;
+    :hasSubdominantNote mto-kb:B ;
+    :hasSubmediantNote mto-kb:D ;
+    :hasSupertonicNote mto-kb:G ;
+    :hasTonality mto-kb:FSharp ;
+    :hasTonicNote mto-kb:FSharp ;
+    rdfs:comment "Locrian modal scale with tonic note F#" .
+
+kb:FSharp_LydianModeScale a :LydianModeScale ;
+    rdfs:label "F# Lydian Mode" ;
+    :hasDominantNote mto-kb:CSharp ;
+    :hasLeadingtoneNote mto-kb:ESharp ;
+    :hasMediantNote mto-kb:ASharp ;
+    :hasSubdominantNote mto-kb:BSharp ;
+    :hasSubmediantNote mto-kb:DSharp ;
+    :hasSupertonicNote mto-kb:GSharp ;
+    :hasTonality mto-kb:FSharp ;
+    :hasTonicNote mto-kb:FSharp ;
+    rdfs:comment "Lydian modal scale with tonic note F#" .
+
+kb:FSharp_MixolydianModeScale a :MixolydianModeScale ;
+    rdfs:label "F# Mixolydian Mode" ;
+    :hasDominantNote mto-kb:CSharp ;
+    :hasLeadingtoneNote mto-kb:E ;
+    :hasMediantNote mto-kb:ASharp ;
+    :hasSubdominantNote mto-kb:B ;
+    :hasSubmediantNote mto-kb:DSharp ;
+    :hasSupertonicNote mto-kb:GSharp ;
+    :hasTonality mto-kb:FSharp ;
+    :hasTonicNote mto-kb:FSharp ;
+    rdfs:comment "Mixolydian modal scale with tonic note F#" .
+
+kb:FSharp_PhrygianModeScale a :PhrygianModeScale ;
+    rdfs:label "F# Phrygian Mode" ;
+    :hasDominantNote mto-kb:CSharp ;
+    :hasLeadingtoneNote mto-kb:E ;
+    :hasMediantNote mto-kb:A ;
+    :hasSubdominantNote mto-kb:B ;
+    :hasSubmediantNote mto-kb:D ;
+    :hasSupertonicNote mto-kb:G ;
+    :hasTonality mto-kb:FSharp ;
+    :hasTonicNote mto-kb:FSharp ;
+    rdfs:comment "Phrygian modal scale with tonic note F#" .
+
+kb:F_AeolianModeScale a :AeolianModeScale ;
+    rdfs:label "F Aeolian Mode" ;
+    :hasDominantNote mto-kb:C ;
+    :hasLeadingtoneNote mto-kb:E- ;
+    :hasMediantNote mto-kb:A- ;
+    :hasSubdominantNote mto-kb:B- ;
+    :hasSubmediantNote mto-kb:D- ;
+    :hasSupertonicNote mto-kb:G ;
+    :hasTonality mto-kb:F ;
+    :hasTonicNote mto-kb:F ;
+    rdfs:comment "Aeolian modal scale with tonic note F" ;
+    owl:sameAs kb:D_MinorScale .
+
+kb:F_DorianModeScale a :DorianModeScale ;
+    rdfs:label "F Dorian Mode" ;
+    :hasDominantNote mto-kb:C ;
+    :hasLeadingtoneNote mto-kb:E- ;
+    :hasMediantNote mto-kb:A- ;
+    :hasSubdominantNote mto-kb:B- ;
+    :hasSubmediantNote mto-kb:D ;
+    :hasSupertonicNote mto-kb:G ;
+    :hasTonality mto-kb:F ;
+    :hasTonicNote mto-kb:F ;
+    rdfs:comment "Dorian modal scale with tonic note F" .
+
+kb:F_IonianModeScale a :IonianModeScale ;
+    rdfs:label "F Ionian Mode" ;
+    :hasDominantNote mto-kb:C ;
+    :hasLeadingtoneNote mto-kb:E ;
+    :hasMediantNote mto-kb:A ;
+    :hasSubdominantNote mto-kb:B- ;
+    :hasSubmediantNote mto-kb:D ;
+    :hasSupertonicNote mto-kb:G ;
+    :hasTonality mto-kb:F ;
+    :hasTonicNote mto-kb:F ;
+    rdfs:comment "Ionian modal scale with tonic note F" ;
+    owl:sameAs kb:F_MajorScale .
+
+kb:F_LocrianModeScale a :LocrianModeScale ;
+    rdfs:label "F Locrian Mode" ;
+    :hasDominantNote mto-kb:C- ;
+    :hasLeadingtoneNote mto-kb:E- ;
+    :hasMediantNote mto-kb:A- ;
+    :hasSubdominantNote mto-kb:B- ;
+    :hasSubmediantNote mto-kb:D- ;
+    :hasSupertonicNote mto-kb:G- ;
+    :hasTonality mto-kb:F ;
+    :hasTonicNote mto-kb:F ;
+    rdfs:comment "Locrian modal scale with tonic note F" .
+
+kb:F_LydianModeScale a :LydianModeScale ;
+    rdfs:label "F Lydian Mode" ;
+    :hasDominantNote mto-kb:C ;
+    :hasLeadingtoneNote mto-kb:E ;
+    :hasMediantNote mto-kb:A ;
+    :hasSubdominantNote mto-kb:B ;
+    :hasSubmediantNote mto-kb:D ;
+    :hasSupertonicNote mto-kb:G ;
+    :hasTonality mto-kb:F ;
+    :hasTonicNote mto-kb:F ;
+    rdfs:comment "Lydian modal scale with tonic note F" .
+
+kb:F_MixolydianModeScale a :MixolydianModeScale ;
+    rdfs:label "F Mixolydian Mode" ;
+    :hasDominantNote mto-kb:C ;
+    :hasLeadingtoneNote mto-kb:E- ;
+    :hasMediantNote mto-kb:A ;
+    :hasSubdominantNote mto-kb:B- ;
+    :hasSubmediantNote mto-kb:D ;
+    :hasSupertonicNote mto-kb:G ;
+    :hasTonality mto-kb:F ;
+    :hasTonicNote mto-kb:F ;
+    rdfs:comment "Mixolydian modal scale with tonic note F" .
+
+kb:F_PhrygianModeScale a :PhrygianModeScale ;
+    rdfs:label "F Phrygian Mode" ;
+    :hasDominantNote mto-kb:C ;
+    :hasLeadingtoneNote mto-kb:E- ;
+    :hasMediantNote mto-kb:A- ;
+    :hasSubdominantNote mto-kb:B- ;
+    :hasSubmediantNote mto-kb:D- ;
+    :hasSupertonicNote mto-kb:G- ;
+    :hasTonality mto-kb:F ;
+    :hasTonicNote mto-kb:F ;
+    rdfs:comment "Phrygian modal scale with tonic note F" .
+
+kb:Fb_MajorScale a mto:MajorScale ;
+    rdfs:label "Fb Major Scale" ;
+    mto:hasRootNote mto-kb:FFlat ;
+    rdfs:comment "Major scale with tonic note Fb" .
+
+kb:Fb_MinorScale a mto:MinorScale ;
+    rdfs:label "Fb Minor Scale" ;
+    mto:hasRootNote mto-kb:FFlat ;
+    rdfs:comment "Minor scale with tonic note Fb" .
+
+kb:GFlat_AeolianModeScale a :AeolianModeScale ;
+    rdfs:label "Gb Aeolian Mode" ;
+    :hasDominantNote mto-kb:D- ;
+    :hasLeadingtoneNote mto-kb:F- ;
+    :hasMediantNote mto-kb:B-- ;
+    :hasSubdominantNote mto-kb:C- ;
+    :hasSubmediantNote mto-kb:E-- ;
+    :hasSupertonicNote mto-kb:A- ;
+    :hasTonality mto-kb:GFlat ;
+    :hasTonicNote mto-kb:G- ;
+    rdfs:comment "Aeolian modal scale with tonic note Gb" ;
+    owl:sameAs kb:EFlat_MinorScale .
+
+kb:GFlat_DorianModeScale a :DorianModeScale ;
+    rdfs:label "Gb Dorian Mode" ;
+    :hasDominantNote mto-kb:D- ;
+    :hasLeadingtoneNote mto-kb:F- ;
+    :hasMediantNote mto-kb:B-- ;
+    :hasSubdominantNote mto-kb:C- ;
+    :hasSubmediantNote mto-kb:E- ;
+    :hasSupertonicNote mto-kb:A- ;
+    :hasTonality mto-kb:GFlat ;
+    :hasTonicNote mto-kb:G- ;
+    rdfs:comment "Dorian modal scale with tonic note Gb" .
+
+kb:GFlat_IonianModeScale a :IonianModeScale ;
+    rdfs:label "Gb Ionian Mode" ;
+    :hasDominantNote mto-kb:D- ;
+    :hasLeadingtoneNote mto-kb:F ;
+    :hasMediantNote mto-kb:B- ;
+    :hasSubdominantNote mto-kb:C- ;
+    :hasSubmediantNote mto-kb:E- ;
+    :hasSupertonicNote mto-kb:A- ;
+    :hasTonality mto-kb:GFlat ;
+    :hasTonicNote mto-kb:G- ;
+    rdfs:comment "Ionian modal scale with tonic note Gb" ;
+    owl:sameAs kb:GFlat_MajorScale .
+
+kb:GFlat_LocrianModeScale a :LocrianModeScale ;
+    rdfs:label "Gb Locrian Mode" ;
+    :hasDominantNote mto-kb:D-- ;
+    :hasLeadingtoneNote mto-kb:F- ;
+    :hasMediantNote mto-kb:B-- ;
+    :hasSubdominantNote mto-kb:C- ;
+    :hasSubmediantNote mto-kb:E-- ;
+    :hasSupertonicNote mto-kb:A-- ;
+    :hasTonality mto-kb:GFlat ;
+    :hasTonicNote mto-kb:G- ;
+    rdfs:comment "Locrian modal scale with tonic note Gb" .
+
+kb:GFlat_LydianModeScale a :LydianModeScale ;
+    rdfs:label "Gb Lydian Mode" ;
+    :hasDominantNote mto-kb:D- ;
+    :hasLeadingtoneNote mto-kb:F ;
+    :hasMediantNote mto-kb:B- ;
+    :hasSubdominantNote mto-kb:C ;
+    :hasSubmediantNote mto-kb:E- ;
+    :hasSupertonicNote mto-kb:A- ;
+    :hasTonality mto-kb:GFlat ;
+    :hasTonicNote mto-kb:G- ;
+    rdfs:comment "Lydian modal scale with tonic note Gb" .
+
+kb:GFlat_MixolydianModeScale a :MixolydianModeScale ;
+    rdfs:label "Gb Mixolydian Mode" ;
+    :hasDominantNote mto-kb:D- ;
+    :hasLeadingtoneNote mto-kb:F- ;
+    :hasMediantNote mto-kb:B- ;
+    :hasSubdominantNote mto-kb:C- ;
+    :hasSubmediantNote mto-kb:E- ;
+    :hasSupertonicNote mto-kb:A- ;
+    :hasTonality mto-kb:GFlat ;
+    :hasTonicNote mto-kb:G- ;
+    rdfs:comment "Mixolydian modal scale with tonic note Gb" .
+
+kb:GFlat_PhrygianModeScale a :PhrygianModeScale ;
+    rdfs:label "Gb Phrygian Mode" ;
+    :hasDominantNote mto-kb:D- ;
+    :hasLeadingtoneNote mto-kb:F- ;
+    :hasMediantNote mto-kb:B-- ;
+    :hasSubdominantNote mto-kb:C- ;
+    :hasSubmediantNote mto-kb:E-- ;
+    :hasSupertonicNote mto-kb:A-- ;
+    :hasTonality mto-kb:GFlat ;
+    :hasTonicNote mto-kb:G- ;
+    rdfs:comment "Phrygian modal scale with tonic note Gb" .
+
+kb:GSharp_AeolianModeScale a :AeolianModeScale ;
+    rdfs:label "G# Aeolian Mode" ;
+    :hasDominantNote mto-kb:DSharp ;
+    :hasLeadingtoneNote mto-kb:FSharp ;
+    :hasMediantNote mto-kb:B ;
+    :hasSubdominantNote mto-kb:CSharp ;
+    :hasSubmediantNote mto-kb:E ;
+    :hasSupertonicNote mto-kb:ASharp ;
+    :hasTonality mto-kb:GSharp ;
+    :hasTonicNote mto-kb:GSharp ;
+    rdfs:comment "Aeolian modal scale with tonic note G#" ;
+    owl:sameAs kb:F_MinorScale .
+
+kb:GSharp_DorianModeScale a :DorianModeScale ;
+    rdfs:label "G# Dorian Mode" ;
+    :hasDominantNote mto-kb:DSharp ;
+    :hasLeadingtoneNote mto-kb:FSharp ;
+    :hasMediantNote mto-kb:B ;
+    :hasSubdominantNote mto-kb:CSharp ;
+    :hasSubmediantNote mto-kb:ESharp ;
+    :hasSupertonicNote mto-kb:ASharp ;
+    :hasTonality mto-kb:GSharp ;
+    :hasTonicNote mto-kb:GSharp ;
+    rdfs:comment "Dorian modal scale with tonic note G#" .
+
+kb:GSharp_IonianModeScale a :IonianModeScale ;
+    rdfs:label "G# Ionian Mode" ;
+    :hasDominantNote mto-kb:DSharp ;
+    :hasLeadingtoneNote mto-kb:FDouFlatleSharp ;
+    :hasMediantNote mto-kb:BSharp ;
+    :hasSubdominantNote mto-kb:CSharp ;
+    :hasSubmediantNote mto-kb:ESharp ;
+    :hasSupertonicNote mto-kb:ASharp ;
+    :hasTonality mto-kb:GSharp ;
+    :hasTonicNote mto-kb:GSharp ;
+    rdfs:comment "Ionian modal scale with tonic note G#" ;
+    owl:sameAs kb:GSharp_MajorScale .
+
+kb:GSharp_LocrianModeScale a :LocrianModeScale ;
+    rdfs:label "G# Locrian Mode" ;
+    :hasDominantNote mto-kb:D ;
+    :hasLeadingtoneNote mto-kb:FSharp ;
+    :hasMediantNote mto-kb:B ;
+    :hasSubdominantNote mto-kb:CSharp ;
+    :hasSubmediantNote mto-kb:E ;
+    :hasSupertonicNote mto-kb:A ;
+    :hasTonality mto-kb:GSharp ;
+    :hasTonicNote mto-kb:GSharp ;
+    rdfs:comment "Locrian modal scale with tonic note G#" .
+
+kb:GSharp_LydianModeScale a :LydianModeScale ;
+    rdfs:label "G# Lydian Mode" ;
+    :hasDominantNote mto-kb:DSharp ;
+    :hasLeadingtoneNote mto-kb:FDouFlatleSharp ;
+    :hasMediantNote mto-kb:BSharp ;
+    :hasSubdominantNote mto-kb:CDouFlatleSharp ;
+    :hasSubmediantNote mto-kb:ESharp ;
+    :hasSupertonicNote mto-kb:ASharp ;
+    :hasTonality mto-kb:GSharp ;
+    :hasTonicNote mto-kb:GSharp ;
+    rdfs:comment "Lydian modal scale with tonic note G#" .
+
+kb:GSharp_MixolydianModeScale a :MixolydianModeScale ;
+    rdfs:label "G# Mixolydian Mode" ;
+    :hasDominantNote mto-kb:DSharp ;
+    :hasLeadingtoneNote mto-kb:FSharp ;
+    :hasMediantNote mto-kb:BSharp ;
+    :hasSubdominantNote mto-kb:CSharp ;
+    :hasSubmediantNote mto-kb:ESharp ;
+    :hasSupertonicNote mto-kb:ASharp ;
+    :hasTonality mto-kb:GSharp ;
+    :hasTonicNote mto-kb:GSharp ;
+    rdfs:comment "Mixolydian modal scale with tonic note G#" .
+
+kb:GSharp_PhrygianModeScale a :PhrygianModeScale ;
+    rdfs:label "G# Phrygian Mode" ;
+    :hasDominantNote mto-kb:DSharp ;
+    :hasLeadingtoneNote mto-kb:FSharp ;
+    :hasMediantNote mto-kb:B ;
+    :hasSubdominantNote mto-kb:CSharp ;
+    :hasSubmediantNote mto-kb:E ;
+    :hasSupertonicNote mto-kb:A ;
+    :hasTonality mto-kb:GSharp ;
+    :hasTonicNote mto-kb:GSharp ;
+    rdfs:comment "Phrygian modal scale with tonic note G#" .
+
+kb:G_AeolianModeScale a :AeolianModeScale ;
+    rdfs:label "G Aeolian Mode" ;
+    :hasDominantNote mto-kb:D ;
+    :hasLeadingtoneNote mto-kb:F ;
+    :hasMediantNote mto-kb:B- ;
+    :hasSubdominantNote mto-kb:C ;
+    :hasSubmediantNote mto-kb:E- ;
+    :hasSupertonicNote mto-kb:A ;
+    :hasTonality mto-kb:G ;
+    :hasTonicNote mto-kb:G ;
+    rdfs:comment "Aeolian modal scale with tonic note G" ;
+    owl:sameAs kb:E_MinorScale .
+
+kb:G_DorianModeScale a :DorianModeScale ;
+    rdfs:label "G Dorian Mode" ;
+    :hasDominantNote mto-kb:D ;
+    :hasLeadingtoneNote mto-kb:F ;
+    :hasMediantNote mto-kb:B- ;
+    :hasSubdominantNote mto-kb:C ;
+    :hasSubmediantNote mto-kb:E ;
+    :hasSupertonicNote mto-kb:A ;
+    :hasTonality mto-kb:G ;
+    :hasTonicNote mto-kb:G ;
+    rdfs:comment "Dorian modal scale with tonic note G" .
+
+kb:G_IonianModeScale a :IonianModeScale ;
+    rdfs:label "G Ionian Mode" ;
+    :hasDominantNote mto-kb:D ;
+    :hasLeadingtoneNote mto-kb:FSharp ;
+    :hasMediantNote mto-kb:B ;
+    :hasSubdominantNote mto-kb:C ;
+    :hasSubmediantNote mto-kb:E ;
+    :hasSupertonicNote mto-kb:A ;
+    :hasTonality mto-kb:G ;
+    :hasTonicNote mto-kb:G ;
+    rdfs:comment "Ionian modal scale with tonic note G" ;
+    owl:sameAs kb:G_MajorScale .
+
+kb:G_LocrianModeScale a :LocrianModeScale ;
+    rdfs:label "G Locrian Mode" ;
+    :hasDominantNote mto-kb:D- ;
+    :hasLeadingtoneNote mto-kb:F ;
+    :hasMediantNote mto-kb:B- ;
+    :hasSubdominantNote mto-kb:C ;
+    :hasSubmediantNote mto-kb:E- ;
+    :hasSupertonicNote mto-kb:A- ;
+    :hasTonality mto-kb:G ;
+    :hasTonicNote mto-kb:G ;
+    rdfs:comment "Locrian modal scale with tonic note G" .
+
+kb:G_LydianModeScale a :LydianModeScale ;
+    rdfs:label "G Lydian Mode" ;
+    :hasDominantNote mto-kb:D ;
+    :hasLeadingtoneNote mto-kb:FSharp ;
+    :hasMediantNote mto-kb:B ;
+    :hasSubdominantNote mto-kb:CSharp ;
+    :hasSubmediantNote mto-kb:E ;
+    :hasSupertonicNote mto-kb:A ;
+    :hasTonality mto-kb:G ;
+    :hasTonicNote mto-kb:G ;
+    rdfs:comment "Lydian modal scale with tonic note G" .
+
+kb:G_MixolydianModeScale a :MixolydianModeScale ;
+    rdfs:label "G Mixolydian Mode" ;
+    :hasDominantNote mto-kb:D ;
+    :hasLeadingtoneNote mto-kb:F ;
+    :hasMediantNote mto-kb:B ;
+    :hasSubdominantNote mto-kb:C ;
+    :hasSubmediantNote mto-kb:E ;
+    :hasSupertonicNote mto-kb:A ;
+    :hasTonality mto-kb:G ;
+    :hasTonicNote mto-kb:G ;
+    rdfs:comment "Mixolydian modal scale with tonic note G" .
+
+kb:G_PhrygianModeScale a :PhrygianModeScale ;
+    rdfs:label "G Phrygian Mode" ;
+    :hasDominantNote mto-kb:D ;
+    :hasLeadingtoneNote mto-kb:F ;
+    :hasMediantNote mto-kb:B- ;
+    :hasSubdominantNote mto-kb:C ;
+    :hasSubmediantNote mto-kb:E- ;
+    :hasSupertonicNote mto-kb:A- ;
+    :hasTonality mto-kb:G ;
+    :hasTonicNote mto-kb:G ;
+    rdfs:comment "Phrygian modal scale with tonic note G" .
+
+kb:Gb_MajorScale a mto:MajorScale ;
+    rdfs:label "Gb Major Scale" ;
+    mto:hasRootNote mto-kb:GFlat ;
+    rdfs:comment "Major scale with tonic note Gb" .
+
+kb:Gb_MinorScale a mto:MinorScale ;
+    rdfs:label "Gb Minor Scale" ;
+    mto:hasRootNote mto-kb:GFlat ;
+    rdfs:comment "Minor scale with tonic note Gb" .
+
 chord:interval a owl:ObjectProperty .
 
 mto:hasRootNote a owl:ObjectProperty .
@@ -123,11 +2019,129 @@ xsd:boolean a rdfs:Datatype .
 
 xsd:string a rdfs:Datatype .
 
+kb:ASharp_MajorScale a mto:MajorScale ;
+    rdfs:label "A# Major Scale" ;
+    mto:hasRootNote mto-kb:ASharp ;
+    rdfs:comment "Major scale with tonic note A#" .
+
+kb:A_MajorScale a mto:MajorScale ;
+    rdfs:label "A Major Scale" ;
+    mto:hasRootNote mto-kb:A ;
+    rdfs:comment "Major scale with tonic note A" .
+
+kb:BSharp_MajorScale a mto:MajorScale ;
+    rdfs:label "B# Major Scale" ;
+    mto:hasRootNote mto-kb:BSharp ;
+    rdfs:comment "Major scale with tonic note B#" .
+
+kb:B_MajorScale a mto:MajorScale ;
+    rdfs:label "B Major Scale" ;
+    mto:hasRootNote mto-kb:B ;
+    rdfs:comment "Major scale with tonic note B" .
+
+kb:B_MinorScale a mto:MinorScale ;
+    rdfs:label "B Minor Scale" ;
+    mto:hasRootNote mto-kb:B ;
+    rdfs:comment "Minor scale with tonic note B" .
+
+kb:CSharp_MajorScale a mto:MajorScale ;
+    rdfs:label "C# Major Scale" ;
+    mto:hasRootNote mto-kb:CSharp ;
+    rdfs:comment "Major scale with tonic note C#" .
+
+kb:C_MajorScale a mto:MajorScale ;
+    rdfs:label "C Major Scale" ;
+    mto:hasRootNote mto-kb:C ;
+    rdfs:comment "Major scale with tonic note C" .
+
+kb:DSharp_MajorScale a mto:MajorScale ;
+    rdfs:label "D# Major Scale" ;
+    mto:hasRootNote mto-kb:DSharp ;
+    rdfs:comment "Major scale with tonic note D#" .
+
+kb:D_MajorScale a mto:MajorScale ;
+    rdfs:label "D Major Scale" ;
+    mto:hasRootNote mto-kb:D ;
+    rdfs:comment "Major scale with tonic note D" .
+
+kb:ESharp_MajorScale a mto:MajorScale ;
+    rdfs:label "E# Major Scale" ;
+    mto:hasRootNote mto-kb:ESharp ;
+    rdfs:comment "Major scale with tonic note E#" .
+
+kb:E_MajorScale a mto:MajorScale ;
+    rdfs:label "E Major Scale" ;
+    mto:hasRootNote mto-kb:E ;
+    rdfs:comment "Major scale with tonic note E" .
+
+kb:E_MinorScale a mto:MinorScale ;
+    rdfs:label "E Minor Scale" ;
+    mto:hasRootNote mto-kb:E ;
+    rdfs:comment "Minor scale with tonic note E" .
+
+kb:FSharp_MajorScale a mto:MajorScale ;
+    rdfs:label "F# Major Scale" ;
+    mto:hasRootNote mto-kb:FSharp ;
+    rdfs:comment "Major scale with tonic note F#" .
+
+kb:FSharp_MinorScale a mto:MinorScale ;
+    rdfs:label "F# Minor Scale" ;
+    mto:hasRootNote mto-kb:FSharp ;
+    rdfs:comment "Minor scale with tonic note F#" .
+
+kb:F_MajorScale a mto:MajorScale ;
+    rdfs:label "F Major Scale" ;
+    mto:hasRootNote mto-kb:F ;
+    rdfs:comment "Major scale with tonic note F" .
+
+kb:GSharp_MajorScale a mto:MajorScale ;
+    rdfs:label "G# Major Scale" ;
+    mto:hasRootNote mto-kb:GSharp ;
+    rdfs:comment "Major scale with tonic note G#" .
+
+kb:G_MajorScale a mto:MajorScale ;
+    rdfs:label "G Major Scale" ;
+    mto:hasRootNote mto-kb:G ;
+    rdfs:comment "Major scale with tonic note G" .
+
 mto:HeptatonicScale a owl:Class .
 
-mto:MajorScale a owl:Class .
-
 mto:NaturalMinorScale a owl:Class .
+
+kb:A_MinorScale a mto:MinorScale ;
+    rdfs:label "A Minor Scale" ;
+    mto:hasRootNote mto-kb:A ;
+    rdfs:comment "Minor scale with tonic note A" .
+
+kb:CSharp_MinorScale a mto:MinorScale ;
+    rdfs:label "C# Minor Scale" ;
+    mto:hasRootNote mto-kb:CSharp ;
+    rdfs:comment "Minor scale with tonic note C#" .
+
+kb:C_MinorScale a mto:MinorScale ;
+    rdfs:label "C Minor Scale" ;
+    mto:hasRootNote mto-kb:C ;
+    rdfs:comment "Minor scale with tonic note C" .
+
+kb:D_MinorScale a mto:MinorScale ;
+    rdfs:label "D Minor Scale" ;
+    mto:hasRootNote mto-kb:D ;
+    rdfs:comment "Minor scale with tonic note D" .
+
+kb:F_MinorScale a mto:MinorScale ;
+    rdfs:label "F Minor Scale" ;
+    mto:hasRootNote mto-kb:F ;
+    rdfs:comment "Minor scale with tonic note F" .
+
+kb:GSharp_MinorScale a mto:MinorScale ;
+    rdfs:label "G# Minor Scale" ;
+    mto:hasRootNote mto-kb:GSharp ;
+    rdfs:comment "Minor scale with tonic note G#" .
+
+kb:G_MinorScale a mto:MinorScale ;
+    rdfs:label "G Minor Scale" ;
+    mto:hasRootNote mto-kb:G ;
+    rdfs:comment "Minor scale with tonic note G" .
 
 mto:MajorTriad a owl:Class .
 
@@ -188,3 +2202,7 @@ mto:Scale a owl:Class .
     rdfs:label "Phrygian Mode Scale"^^xsd:string ;
     rdfs:comment "Mode formed starting from the third degree of a major scale."^^xsd:string ;
     rdfs:subClassOf :ModeScale .
+
+mto:MajorScale a owl:Class .
+
+
