@@ -11,7 +11,8 @@
 @base <http://example.org/fho/> .
 
 <http://example.org/fho/> rdf:type owl:Ontology ;
-                           owl:imports <http://purl.org/ontology/mto/0.9> .
+                           owl:imports <file:/home/n28div/university/thesis/functionalharmonyontology/data/small_chords.ttl> ,
+                                       <http://purl.org/ontology/mto/0.9> .
 
 #################################################################
 #    Annotation properties
@@ -41,11 +42,57 @@ xsd:string rdf:type rdfs:Datatype .
 #    Object Properties
 #################################################################
 
+###  http://example.org/fho/R_AeolianModeScale
+:R_AeolianModeScale rdf:type owl:ObjectProperty .
+
+
+###  http://example.org/fho/R_DiminishedTriad
+:R_DiminishedTriad rdf:type owl:ObjectProperty .
+
+
+###  http://example.org/fho/R_DorianModeScale
+:R_DorianModeScale rdf:type owl:ObjectProperty .
+
+
+###  http://example.org/fho/R_IonianModeScale
+:R_IonianModeScale rdf:type owl:ObjectProperty .
+
+
+###  http://example.org/fho/R_LocrianModeScale
+:R_LocrianModeScale rdf:type owl:ObjectProperty .
+
+
+###  http://example.org/fho/R_LydianModeScale
+:R_LydianModeScale rdf:type owl:ObjectProperty .
+
+
+###  http://example.org/fho/R_MajorTriad
+:R_MajorTriad rdf:type owl:ObjectProperty .
+
+
+###  http://example.org/fho/R_MinorTriad
+:R_MinorTriad rdf:type owl:ObjectProperty .
+
+
+###  http://example.org/fho/R_MixolydianModeScale
+:R_MixolydianModeScale rdf:type owl:ObjectProperty .
+
+
+###  http://example.org/fho/R_PhrygianModeScale
+:R_PhrygianModeScale rdf:type owl:ObjectProperty .
+
+
 ###  http://example.org/fho/hasAeolianDominantChord
 :hasAeolianDominantChord rdf:type owl:ObjectProperty ;
                          rdfs:subPropertyOf :hasDominantChord ;
                          rdfs:domain :AeolianModeScale ;
                          rdfs:range mto:MinorTriad ;
+                         owl:propertyChainAxiom ( :R_AeolianModeScale
+                                                  :hasDominantNote
+                                                  [ owl:inverseOf chord:root
+                                                  ]
+                                                  :R_MinorTriad
+                                                ) ;
                          rdfs:comment "Property to assign the chord with dominant degree to a Aeolian mode scale"^^xsd:string ;
                          rdfs:label "has dominant chord in Aeolian mode" .
 
@@ -55,6 +102,12 @@ xsd:string rdf:type rdfs:Datatype .
                             rdfs:subPropertyOf :hasLeadingtoneChord ;
                             rdfs:domain :AeolianModeScale ;
                             rdfs:range mto:MajorTriad ;
+                            owl:propertyChainAxiom ( :R_AeolianModeScale
+                                                     :hasLeadingtoneNote
+                                                     [ owl:inverseOf chord:root
+                                                     ]
+                                                     :R_MajorTriad
+                                                   ) ;
                             rdfs:comment "Property to assign the chord with leadingtone degree to a Aeolian mode scale"^^xsd:string ;
                             rdfs:label "has leadingtone chord in Aeolian mode" .
 
@@ -64,6 +117,12 @@ xsd:string rdf:type rdfs:Datatype .
                         rdfs:subPropertyOf :hasMediantChord ;
                         rdfs:domain :AeolianModeScale ;
                         rdfs:range mto:MajorTriad ;
+                        owl:propertyChainAxiom ( :R_AeolianModeScale
+                                                 :hasMediantNote
+                                                 [ owl:inverseOf chord:root
+                                                 ]
+                                                 :R_MajorTriad
+                                               ) ;
                         rdfs:comment "Property to assign the chord with mediant degree to a Aeolian mode scale"^^xsd:string ;
                         rdfs:label "has mediant chord in Aeolian mode" .
 
@@ -73,6 +132,12 @@ xsd:string rdf:type rdfs:Datatype .
                             rdfs:subPropertyOf :hasSubdominantChord ;
                             rdfs:domain :AeolianModeScale ;
                             rdfs:range mto:MinorTriad ;
+                            owl:propertyChainAxiom ( :R_AeolianModeScale
+                                                     :hasSubdominantNote
+                                                     [ owl:inverseOf chord:root
+                                                     ]
+                                                     :R_MinorTriad
+                                                   ) ;
                             rdfs:comment "Property to assign the chord with subdominant degree to a Aeolian mode scale"^^xsd:string ;
                             rdfs:label "has subdominant chord in Aeolian mode" .
 
@@ -82,6 +147,12 @@ xsd:string rdf:type rdfs:Datatype .
                            rdfs:subPropertyOf :hasSubmediantChord ;
                            rdfs:domain :AeolianModeScale ;
                            rdfs:range mto:MajorTriad ;
+                           owl:propertyChainAxiom ( :R_AeolianModeScale
+                                                    :hasSubmediantNote
+                                                    [ owl:inverseOf chord:root
+                                                    ]
+                                                    :R_MajorTriad
+                                                  ) ;
                            rdfs:comment "Property to assign the chord with submediant degree to a Aeolian mode scale"^^xsd:string ;
                            rdfs:label "has submediant chord in Aeolian mode" .
 
@@ -91,6 +162,12 @@ xsd:string rdf:type rdfs:Datatype .
                            rdfs:subPropertyOf :hasSupertonicChord ;
                            rdfs:domain :AeolianModeScale ;
                            rdfs:range mto:DiminishedTriad ;
+                           owl:propertyChainAxiom ( :R_AeolianModeScale
+                                                    :hasSupertonicNote
+                                                    [ owl:inverseOf chord:root
+                                                    ]
+                                                    :R_DiminishedTriad
+                                                  ) ;
                            rdfs:comment "Property to assign the chord with supertonic degree to a Aeolian mode scale"^^xsd:string ;
                            rdfs:label "has supertonic chord in Aeolian mode" .
 
@@ -100,6 +177,12 @@ xsd:string rdf:type rdfs:Datatype .
                       rdfs:subPropertyOf :hasTonicChord ;
                       rdfs:domain :AeolianModeScale ;
                       rdfs:range mto:MinorTriad ;
+                      owl:propertyChainAxiom ( :R_AeolianModeScale
+                                               :hasTonicNote
+                                               [ owl:inverseOf chord:root
+                                               ]
+                                               :R_MinorTriad
+                                             ) ;
                       rdfs:comment "Property to assign the chord with tonic degree to a Aeolian mode scale"^^xsd:string ;
                       rdfs:label "has tonic chord in Aeolian mode" .
 
@@ -114,10 +197,6 @@ xsd:string rdf:type rdfs:Datatype .
                   rdfs:subPropertyOf :hasChord ;
                   rdfs:domain mto:Scale ;
                   rdfs:range mto:Chord ;
-                  owl:propertyChainAxiom ( :hasDominantNote
-                                           [ owl:inverseOf chord:root
-                                           ]
-                                         ) ;
                   rdfs:comment "Property to assign the chord with dominant degree to a scale"^^xsd:string ;
                   rdfs:label "has dominant chord" .
 
@@ -136,6 +215,12 @@ xsd:string rdf:type rdfs:Datatype .
                         rdfs:subPropertyOf :hasDominantChord ;
                         rdfs:domain :DorianModeScale ;
                         rdfs:range mto:MinorTriad ;
+                        owl:propertyChainAxiom ( :R_DorianModeScale
+                                                 :hasDominantNote
+                                                 [ owl:inverseOf chord:root
+                                                 ]
+                                                 :R_MinorTriad
+                                               ) ;
                         rdfs:comment "Property to assign the chord with dominant degree to a Dorian mode scale"^^xsd:string ;
                         rdfs:label "has dominant chord in Dorian mode" .
 
@@ -145,6 +230,12 @@ xsd:string rdf:type rdfs:Datatype .
                            rdfs:subPropertyOf :hasLeadingtoneChord ;
                            rdfs:domain :DorianModeScale ;
                            rdfs:range mto:MajorTriad ;
+                           owl:propertyChainAxiom ( :R_DorianModeScale
+                                                    :hasLeadingtoneNote
+                                                    [ owl:inverseOf chord:root
+                                                    ]
+                                                    :R_MajorTriad
+                                                  ) ;
                            rdfs:comment "Property to assign the chord with leadingtone degree to a Dorian mode scale"^^xsd:string ;
                            rdfs:label "has leadingtone chord in Dorian mode" .
 
@@ -154,6 +245,12 @@ xsd:string rdf:type rdfs:Datatype .
                        rdfs:subPropertyOf :hasMediantChord ;
                        rdfs:domain :DorianModeScale ;
                        rdfs:range mto:MajorTriad ;
+                       owl:propertyChainAxiom ( :R_DorianModeScale
+                                                :hasMediantNote
+                                                [ owl:inverseOf chord:root
+                                                ]
+                                                :R_MajorTriad
+                                              ) ;
                        rdfs:comment "Property to assign the chord with mediant degree to a Dorian mode scale"^^xsd:string ;
                        rdfs:label "has mediant chord in Dorian mode" .
 
@@ -163,6 +260,12 @@ xsd:string rdf:type rdfs:Datatype .
                            rdfs:subPropertyOf :hasSubdominantChord ;
                            rdfs:domain :DorianModeScale ;
                            rdfs:range mto:MajorTriad ;
+                           owl:propertyChainAxiom ( :R_DorianModeScale
+                                                    :hasSubdominantNote
+                                                    [ owl:inverseOf chord:root
+                                                    ]
+                                                    :R_MajorTriad
+                                                  ) ;
                            rdfs:comment "Property to assign the chord with subdominant degree to a Dorian mode scale"^^xsd:string ;
                            rdfs:label "has subdominant chord in Dorian mode" .
 
@@ -172,6 +275,12 @@ xsd:string rdf:type rdfs:Datatype .
                           rdfs:subPropertyOf :hasSubmediantChord ;
                           rdfs:domain :DorianModeScale ;
                           rdfs:range mto:DiminishedTriad ;
+                          owl:propertyChainAxiom ( :R_DorianModeScale
+                                                   :hasSubmediantNote
+                                                   [ owl:inverseOf chord:root
+                                                   ]
+                                                   :R_DiminishedTriad
+                                                 ) ;
                           rdfs:comment "Property to assign the chord with submediant degree to a Dorian mode scale"^^xsd:string ;
                           rdfs:label "has submediant chord in Dorian mode" .
 
@@ -181,6 +290,12 @@ xsd:string rdf:type rdfs:Datatype .
                           rdfs:subPropertyOf :hasSupertonicChord ;
                           rdfs:domain :DorianModeScale ;
                           rdfs:range mto:MinorTriad ;
+                          owl:propertyChainAxiom ( :R_DorianModeScale
+                                                   :hasSupertonicNote
+                                                   [ owl:inverseOf chord:root
+                                                   ]
+                                                   :R_MinorTriad
+                                                 ) ;
                           rdfs:comment "Property to assign the chord with supertonic degree to a Dorian mode scale"^^xsd:string ;
                           rdfs:label "has supertonic chord in Dorian mode" .
 
@@ -190,6 +305,12 @@ xsd:string rdf:type rdfs:Datatype .
                      rdfs:subPropertyOf :hasTonicChord ;
                      rdfs:domain :DorianModeScale ;
                      rdfs:range mto:MinorTriad ;
+                     owl:propertyChainAxiom ( :R_DorianModeScale
+                                              :hasTonicNote
+                                              [ owl:inverseOf chord:root
+                                              ]
+                                              :R_MinorTriad
+                                            ) ;
                      rdfs:comment "Property to assign the chord with tonic degree to a Dorian mode scale"^^xsd:string ;
                      rdfs:label "has tonic chord in Dorian mode" .
 
@@ -199,6 +320,12 @@ xsd:string rdf:type rdfs:Datatype .
                         rdfs:subPropertyOf :hasDominantChord ;
                         rdfs:domain :IonianModeScale ;
                         rdfs:range mto:MajorTriad ;
+                        owl:propertyChainAxiom ( :R_IonianModeScale
+                                                 :hasDominantNote
+                                                 [ owl:inverseOf chord:root
+                                                 ]
+                                                 :R_MajorTriad
+                                               ) ;
                         rdfs:comment "Property to assign the chord with dominant degree to a Ionian mode scale"^^xsd:string ;
                         rdfs:label "has dominant chord in Ionian mode" .
 
@@ -208,6 +335,12 @@ xsd:string rdf:type rdfs:Datatype .
                            rdfs:subPropertyOf :hasLeadingtoneChord ;
                            rdfs:domain :IonianModeScale ;
                            rdfs:range mto:DiminishedTriad ;
+                           owl:propertyChainAxiom ( :R_IonianModeScale
+                                                    :hasLeadingtoneNote
+                                                    [ owl:inverseOf chord:root
+                                                    ]
+                                                    :R_DiminishedTriad
+                                                  ) ;
                            rdfs:comment "Property to assign the chord with leadingtone degree to a Ionian mode scale"^^xsd:string ;
                            rdfs:label "has leadingtone chord in Ionian mode" .
 
@@ -217,6 +350,12 @@ xsd:string rdf:type rdfs:Datatype .
                        rdfs:subPropertyOf :hasMediantChord ;
                        rdfs:domain :IonianModeScale ;
                        rdfs:range mto:MinorTriad ;
+                       owl:propertyChainAxiom ( :R_IonianModeScale
+                                                :hasMediantNote
+                                                [ owl:inverseOf chord:root
+                                                ]
+                                                :R_MinorTriad
+                                              ) ;
                        rdfs:comment "Property to assign the chord with mediant degree to a Ionian mode scale"^^xsd:string ;
                        rdfs:label "has mediant chord in Ionian mode" .
 
@@ -226,6 +365,12 @@ xsd:string rdf:type rdfs:Datatype .
                            rdfs:subPropertyOf :hasSubdominantChord ;
                            rdfs:domain :IonianModeScale ;
                            rdfs:range mto:MajorTriad ;
+                           owl:propertyChainAxiom ( :R_IonianModeScale
+                                                    :hasSubdominantNote
+                                                    [ owl:inverseOf chord:root
+                                                    ]
+                                                    :R_MajorTriad
+                                                  ) ;
                            rdfs:comment "Property to assign the chord with subdominant degree to a Ionian mode scale"^^xsd:string ;
                            rdfs:label "has subdominant chord in Ionian mode" .
 
@@ -235,6 +380,12 @@ xsd:string rdf:type rdfs:Datatype .
                           rdfs:subPropertyOf :hasSubmediantChord ;
                           rdfs:domain :IonianModeScale ;
                           rdfs:range mto:MinorTriad ;
+                          owl:propertyChainAxiom ( :R_IonianModeScale
+                                                   :hasSubmediantNote
+                                                   [ owl:inverseOf chord:root
+                                                   ]
+                                                   :R_MinorTriad
+                                                 ) ;
                           rdfs:comment "Property to assign the chord with submediant degree to a Ionian mode scale"^^xsd:string ;
                           rdfs:label "has submediant chord in Ionian mode" .
 
@@ -244,6 +395,12 @@ xsd:string rdf:type rdfs:Datatype .
                           rdfs:subPropertyOf :hasSupertonicChord ;
                           rdfs:domain :IonianModeScale ;
                           rdfs:range mto:MinorTriad ;
+                          owl:propertyChainAxiom ( :R_IonianModeScale
+                                                   :hasSupertonicNote
+                                                   [ owl:inverseOf chord:root
+                                                   ]
+                                                   :R_MinorTriad
+                                                 ) ;
                           rdfs:comment "Property to assign the chord with supertonic degree to a Ionian mode scale"^^xsd:string ;
                           rdfs:label "has supertonic chord in Ionian mode" .
 
@@ -253,6 +410,12 @@ xsd:string rdf:type rdfs:Datatype .
                      rdfs:subPropertyOf :hasTonicChord ;
                      rdfs:domain :IonianModeScale ;
                      rdfs:range mto:MajorTriad ;
+                     owl:propertyChainAxiom ( :R_IonianModeScale
+                                              :hasTonicNote
+                                              [ owl:inverseOf chord:root
+                                              ]
+                                              :R_MajorTriad
+                                            ) ;
                      rdfs:comment "Property to assign the chord with tonic degree to a Ionian mode scale"^^xsd:string ;
                      rdfs:label "has tonic chord in Ionian mode" .
 
@@ -262,10 +425,6 @@ xsd:string rdf:type rdfs:Datatype .
                      rdfs:subPropertyOf :hasChord ;
                      rdfs:domain mto:Scale ;
                      rdfs:range mto:Chord ;
-                     owl:propertyChainAxiom ( :hasLeadingtoneNote
-                                              [ owl:inverseOf chord:root
-                                              ]
-                                            ) ;
                      rdfs:comment "Property to assign the chord with leading degree degree to a scale"^^xsd:string ;
                      rdfs:label "has leading tone chord" .
 
@@ -284,6 +443,12 @@ xsd:string rdf:type rdfs:Datatype .
                          rdfs:subPropertyOf :hasDominantChord ;
                          rdfs:domain :LocrianModeScale ;
                          rdfs:range mto:MajorTriad ;
+                         owl:propertyChainAxiom ( :R_LocrianModeScale
+                                                  :hasDominantNote
+                                                  [ owl:inverseOf chord:root
+                                                  ]
+                                                  :R_MajorTriad
+                                                ) ;
                          rdfs:comment "Property to assign the chord with dominant degree to a Locrian mode scale"^^xsd:string ;
                          rdfs:label "has dominant chord in Locrian mode" .
 
@@ -293,6 +458,12 @@ xsd:string rdf:type rdfs:Datatype .
                             rdfs:subPropertyOf :hasLeadingtoneChord ;
                             rdfs:domain :LocrianModeScale ;
                             rdfs:range mto:MinorTriad ;
+                            owl:propertyChainAxiom ( :R_LocrianModeScale
+                                                     :hasLeadingtoneNote
+                                                     [ owl:inverseOf chord:root
+                                                     ]
+                                                     :R_MinorTriad
+                                                   ) ;
                             rdfs:comment "Property to assign the chord with leadingtone degree to a Locrian mode scale"^^xsd:string ;
                             rdfs:label "has leadingtone chord in Locrian mode" .
 
@@ -302,6 +473,12 @@ xsd:string rdf:type rdfs:Datatype .
                         rdfs:subPropertyOf :hasMediantChord ;
                         rdfs:domain :LocrianModeScale ;
                         rdfs:range mto:MinorTriad ;
+                        owl:propertyChainAxiom ( :R_LocrianModeScale
+                                                 :hasMediantNote
+                                                 [ owl:inverseOf chord:root
+                                                 ]
+                                                 :R_MinorTriad
+                                               ) ;
                         rdfs:comment "Property to assign the chord with mediant degree to a Locrian mode scale"^^xsd:string ;
                         rdfs:label "has mediant chord in Locrian mode" .
 
@@ -311,6 +488,12 @@ xsd:string rdf:type rdfs:Datatype .
                             rdfs:subPropertyOf :hasSubdominantChord ;
                             rdfs:domain :LocrianModeScale ;
                             rdfs:range mto:MinorTriad ;
+                            owl:propertyChainAxiom ( :R_LocrianModeScale
+                                                     :hasSubdominantNote
+                                                     [ owl:inverseOf chord:root
+                                                     ]
+                                                     :R_MinorTriad
+                                                   ) ;
                             rdfs:comment "Property to assign the chord with subdominant degree to a Locrian mode scale"^^xsd:string ;
                             rdfs:label "has subdominant chord in Locrian mode" .
 
@@ -320,6 +503,12 @@ xsd:string rdf:type rdfs:Datatype .
                            rdfs:subPropertyOf :hasSubmediantChord ;
                            rdfs:domain :LocrianModeScale ;
                            rdfs:range mto:MajorTriad ;
+                           owl:propertyChainAxiom ( :R_LocrianModeScale
+                                                    :hasSubmediantNote
+                                                    [ owl:inverseOf chord:root
+                                                    ]
+                                                    :R_MajorTriad
+                                                  ) ;
                            rdfs:comment "Property to assign the chord with submediant degree to a Locrian mode scale"^^xsd:string ;
                            rdfs:label "has submediant chord in Locrian mode" .
 
@@ -329,6 +518,12 @@ xsd:string rdf:type rdfs:Datatype .
                            rdfs:subPropertyOf :hasSupertonicChord ;
                            rdfs:domain :LocrianModeScale ;
                            rdfs:range mto:MajorTriad ;
+                           owl:propertyChainAxiom ( :R_LocrianModeScale
+                                                    :hasSupertonicNote
+                                                    [ owl:inverseOf chord:root
+                                                    ]
+                                                    :R_MajorTriad
+                                                  ) ;
                            rdfs:comment "Property to assign the chord with supertonic degree to a Locrian mode scale"^^xsd:string ;
                            rdfs:label "has supertonic chord in Locrian mode" .
 
@@ -338,6 +533,12 @@ xsd:string rdf:type rdfs:Datatype .
                       rdfs:subPropertyOf :hasTonicChord ;
                       rdfs:domain :LocrianModeScale ;
                       rdfs:range mto:DiminishedTriad ;
+                      owl:propertyChainAxiom ( :R_LocrianModeScale
+                                               :hasTonicNote
+                                               [ owl:inverseOf chord:root
+                                               ]
+                                               :R_DiminishedTriad
+                                             ) ;
                       rdfs:comment "Property to assign the chord with tonic degree to a Locrian mode scale"^^xsd:string ;
                       rdfs:label "has tonic chord in Locrian mode" .
 
@@ -347,6 +548,12 @@ xsd:string rdf:type rdfs:Datatype .
                         rdfs:subPropertyOf :hasDominantChord ;
                         rdfs:domain :LydianModeScale ;
                         rdfs:range mto:MajorTriad ;
+                        owl:propertyChainAxiom ( :R_LydianModeScale
+                                                 :hasDominantNote
+                                                 [ owl:inverseOf chord:root
+                                                 ]
+                                                 :R_MajorTriad
+                                               ) ;
                         rdfs:comment "Property to assign the chord with dominant degree to a Lydian mode scale"^^xsd:string ;
                         rdfs:label "has dominant chord in Lydian mode" .
 
@@ -356,6 +563,12 @@ xsd:string rdf:type rdfs:Datatype .
                            rdfs:subPropertyOf :hasLeadingtoneChord ;
                            rdfs:domain :LydianModeScale ;
                            rdfs:range mto:MinorTriad ;
+                           owl:propertyChainAxiom ( :R_LydianModeScale
+                                                    :hasLeadingtoneNote
+                                                    [ owl:inverseOf chord:root
+                                                    ]
+                                                    :R_MinorTriad
+                                                  ) ;
                            rdfs:comment "Property to assign the chord with leadingtone degree to a Lydian mode scale"^^xsd:string ;
                            rdfs:label "has leadingtone chord in Lydian mode" .
 
@@ -365,6 +578,12 @@ xsd:string rdf:type rdfs:Datatype .
                        rdfs:subPropertyOf :hasMediantChord ;
                        rdfs:domain :LydianModeScale ;
                        rdfs:range mto:MinorTriad ;
+                       owl:propertyChainAxiom ( :R_LydianModeScale
+                                                :hasMediantNote
+                                                [ owl:inverseOf chord:root
+                                                ]
+                                                :R_MinorTriad
+                                              ) ;
                        rdfs:comment "Property to assign the chord with mediant degree to a Lydian mode scale"^^xsd:string ;
                        rdfs:label "has mediant chord in Lydian mode" .
 
@@ -374,6 +593,12 @@ xsd:string rdf:type rdfs:Datatype .
                            rdfs:subPropertyOf :hasSubdominantChord ;
                            rdfs:domain :LydianModeScale ;
                            rdfs:range mto:DiminishedTriad ;
+                           owl:propertyChainAxiom ( :R_LydianModeScale
+                                                    :hasSubdominantNote
+                                                    [ owl:inverseOf chord:root
+                                                    ]
+                                                    :R_DiminishedTriad
+                                                  ) ;
                            rdfs:comment "Property to assign the chord with subdominant degree to a Lydian mode scale"^^xsd:string ;
                            rdfs:label "has subdominant chord in Lydian mode" .
 
@@ -383,6 +608,12 @@ xsd:string rdf:type rdfs:Datatype .
                           rdfs:subPropertyOf :hasSubmediantChord ;
                           rdfs:domain :LydianModeScale ;
                           rdfs:range mto:MinorTriad ;
+                          owl:propertyChainAxiom ( :R_LydianModeScale
+                                                   :hasSubmediantNote
+                                                   [ owl:inverseOf chord:root
+                                                   ]
+                                                   :R_MinorTriad
+                                                 ) ;
                           rdfs:comment "Property to assign the chord with submediant degree to a Lydian mode scale"^^xsd:string ;
                           rdfs:label "has submediant chord in Lydian mode" .
 
@@ -392,6 +623,12 @@ xsd:string rdf:type rdfs:Datatype .
                           rdfs:subPropertyOf :hasSupertonicChord ;
                           rdfs:domain :LydianModeScale ;
                           rdfs:range mto:MajorTriad ;
+                          owl:propertyChainAxiom ( :R_LydianModeScale
+                                                   :hasSupertonicNote
+                                                   [ owl:inverseOf chord:root
+                                                   ]
+                                                   :R_MajorTriad
+                                                 ) ;
                           rdfs:comment "Property to assign the chord with supertonic degree to a Lydian mode scale"^^xsd:string ;
                           rdfs:label "has supertonic chord in Lydian mode" .
 
@@ -401,6 +638,12 @@ xsd:string rdf:type rdfs:Datatype .
                      rdfs:subPropertyOf :hasTonicChord ;
                      rdfs:domain :LydianModeScale ;
                      rdfs:range mto:MajorTriad ;
+                     owl:propertyChainAxiom ( :R_LydianModeScale
+                                              :hasTonicNote
+                                              [ owl:inverseOf chord:root
+                                              ]
+                                              :R_MajorTriad
+                                            ) ;
                      rdfs:comment "Property to assign the chord with tonic degree to a Lydian mode scale"^^xsd:string ;
                      rdfs:label "has tonic chord in Lydian mode" .
 
@@ -410,10 +653,6 @@ xsd:string rdf:type rdfs:Datatype .
                  rdfs:subPropertyOf :hasChord ;
                  rdfs:domain mto:Scale ;
                  rdfs:range mto:Chord ;
-                 owl:propertyChainAxiom ( :hasMediantNote
-                                          [ owl:inverseOf chord:root
-                                          ]
-                                        ) ;
                  rdfs:comment "Property to assign the chord with mediant degree to a scale"^^xsd:string ;
                  rdfs:label "has dominant chord" .
 
@@ -432,6 +671,12 @@ xsd:string rdf:type rdfs:Datatype .
                             rdfs:subPropertyOf :hasDominantChord ;
                             rdfs:domain :MixolydianModeScale ;
                             rdfs:range mto:MinorTriad ;
+                            owl:propertyChainAxiom ( :R_MixolydianModeScale
+                                                     :hasDominantNote
+                                                     [ owl:inverseOf chord:root
+                                                     ]
+                                                     :R_MinorTriad
+                                                   ) ;
                             rdfs:comment "Property to assign the chord with dominant degree to a Mixolydian mode scale"^^xsd:string ;
                             rdfs:label "has dominant chord in Mixolydian mode" .
 
@@ -441,6 +686,12 @@ xsd:string rdf:type rdfs:Datatype .
                                rdfs:subPropertyOf :hasLeadingtoneChord ;
                                rdfs:domain :MixolydianModeScale ;
                                rdfs:range mto:MajorTriad ;
+                               owl:propertyChainAxiom ( :R_MixolydianModeScale
+                                                        :hasLeadingtoneNote
+                                                        [ owl:inverseOf chord:root
+                                                        ]
+                                                        :R_MajorTriad
+                                                      ) ;
                                rdfs:comment "Property to assign the chord with leadingtone degree to a Mixolydian mode scale"^^xsd:string ;
                                rdfs:label "has leadingtone chord in Mixolydian mode" .
 
@@ -450,6 +701,12 @@ xsd:string rdf:type rdfs:Datatype .
                            rdfs:subPropertyOf :hasMediantChord ;
                            rdfs:domain :MixolydianModeScale ;
                            rdfs:range mto:DiminishedTriad ;
+                           owl:propertyChainAxiom ( :R_MixolydianModeScale
+                                                    :hasMediantNote
+                                                    [ owl:inverseOf chord:root
+                                                    ]
+                                                    :R_DiminishedTriad
+                                                  ) ;
                            rdfs:comment "Property to assign the chord with mediant degree to a Mixolydian mode scale"^^xsd:string ;
                            rdfs:label "has mediant chord in Mixolydian mode" .
 
@@ -459,6 +716,12 @@ xsd:string rdf:type rdfs:Datatype .
                                rdfs:subPropertyOf :hasSubdominantChord ;
                                rdfs:domain :MixolydianModeScale ;
                                rdfs:range mto:MajorTriad ;
+                               owl:propertyChainAxiom ( :R_MixolydianModeScale
+                                                        :hasSubdominantNote
+                                                        [ owl:inverseOf chord:root
+                                                        ]
+                                                        :R_MajorTriad
+                                                      ) ;
                                rdfs:comment "Property to assign the chord with subdominant degree to a Mixolydian mode scale"^^xsd:string ;
                                rdfs:label "has subdominant chord in Mixolydian mode" .
 
@@ -468,6 +731,12 @@ xsd:string rdf:type rdfs:Datatype .
                               rdfs:subPropertyOf :hasSubmediantChord ;
                               rdfs:domain :MixolydianModeScale ;
                               rdfs:range mto:MinorTriad ;
+                              owl:propertyChainAxiom ( :R_MixolydianModeScale
+                                                       :hasSubmediantNote
+                                                       [ owl:inverseOf chord:root
+                                                       ]
+                                                       :R_MinorTriad
+                                                     ) ;
                               rdfs:comment "Property to assign the chord with submediant degree to a Mixolydian mode scale"^^xsd:string ;
                               rdfs:label "has submediant chord in Mixolydian mode" .
 
@@ -477,6 +746,12 @@ xsd:string rdf:type rdfs:Datatype .
                               rdfs:subPropertyOf :hasSupertonicChord ;
                               rdfs:domain :MixolydianModeScale ;
                               rdfs:range mto:MinorTriad ;
+                              owl:propertyChainAxiom ( :R_MixolydianModeScale
+                                                       :hasSupertonicNote
+                                                       [ owl:inverseOf chord:root
+                                                       ]
+                                                       :R_MinorTriad
+                                                     ) ;
                               rdfs:comment "Property to assign the chord with supertonic degree to a Mixolydian mode scale"^^xsd:string ;
                               rdfs:label "has supertonic chord in Mixolydian mode" .
 
@@ -486,6 +761,12 @@ xsd:string rdf:type rdfs:Datatype .
                          rdfs:subPropertyOf :hasTonicChord ;
                          rdfs:domain :MixolydianModeScale ;
                          rdfs:range mto:MajorTriad ;
+                         owl:propertyChainAxiom ( :R_MixolydianModeScale
+                                                  :hasTonicNote
+                                                  [ owl:inverseOf chord:root
+                                                  ]
+                                                  :R_MajorTriad
+                                                ) ;
                          rdfs:comment "Property to assign the chord with tonic degree to a Mixolydian mode scale"^^xsd:string ;
                          rdfs:label "has tonic chord in Mixolydian mode" .
 
@@ -495,6 +776,12 @@ xsd:string rdf:type rdfs:Datatype .
                           rdfs:subPropertyOf :hasDominantChord ;
                           rdfs:domain :PhrygianModeScale ;
                           rdfs:range mto:DiminishedTriad ;
+                          owl:propertyChainAxiom ( :R_PhrygianModeScale
+                                                   :hasDominantNote
+                                                   [ owl:inverseOf chord:root
+                                                   ]
+                                                   :R_DiminishedTriad
+                                                 ) ;
                           rdfs:comment "Property to assign the chord with dominant degree to a Phrygian mode scale"^^xsd:string ;
                           rdfs:label "has dominant chord in Phrygian mode" .
 
@@ -504,6 +791,12 @@ xsd:string rdf:type rdfs:Datatype .
                              rdfs:subPropertyOf :hasLeadingtoneChord ;
                              rdfs:domain :PhrygianModeScale ;
                              rdfs:range mto:MinorTriad ;
+                             owl:propertyChainAxiom ( :R_PhrygianModeScale
+                                                      :hasLeadingtoneNote
+                                                      [ owl:inverseOf chord:root
+                                                      ]
+                                                      :R_MinorTriad
+                                                    ) ;
                              rdfs:comment "Property to assign the chord with leadingtone degree to a Phrygian mode scale"^^xsd:string ;
                              rdfs:label "has leadingtone chord in Phrygian mode" .
 
@@ -513,6 +806,12 @@ xsd:string rdf:type rdfs:Datatype .
                          rdfs:subPropertyOf :hasMediantChord ;
                          rdfs:domain :PhrygianModeScale ;
                          rdfs:range mto:MajorTriad ;
+                         owl:propertyChainAxiom ( :R_PhrygianModeScale
+                                                  :hasMediantNote
+                                                  [ owl:inverseOf chord:root
+                                                  ]
+                                                  :R_MajorTriad
+                                                ) ;
                          rdfs:comment "Property to assign the chord with mediant degree to a Phrygian mode scale"^^xsd:string ;
                          rdfs:label "has mediant chord in Phrygian mode" .
 
@@ -522,6 +821,12 @@ xsd:string rdf:type rdfs:Datatype .
                              rdfs:subPropertyOf :hasSubdominantChord ;
                              rdfs:domain :PhrygianModeScale ;
                              rdfs:range mto:MinorTriad ;
+                             owl:propertyChainAxiom ( :R_PhrygianModeScale
+                                                      :hasSubdominantNote
+                                                      [ owl:inverseOf chord:root
+                                                      ]
+                                                      :R_MinorTriad
+                                                    ) ;
                              rdfs:comment "Property to assign the chord with subdominant degree to a Phrygian mode scale"^^xsd:string ;
                              rdfs:label "has subdominant chord in Phrygian mode" .
 
@@ -531,6 +836,12 @@ xsd:string rdf:type rdfs:Datatype .
                             rdfs:subPropertyOf :hasSubmediantChord ;
                             rdfs:domain :PhrygianModeScale ;
                             rdfs:range mto:MajorTriad ;
+                            owl:propertyChainAxiom ( :R_PhrygianModeScale
+                                                     :hasSubmediantNote
+                                                     [ owl:inverseOf chord:root
+                                                     ]
+                                                     :R_MajorTriad
+                                                   ) ;
                             rdfs:comment "Property to assign the chord with submediant degree to a Phrygian mode scale"^^xsd:string ;
                             rdfs:label "has submediant chord in Phrygian mode" .
 
@@ -540,6 +851,12 @@ xsd:string rdf:type rdfs:Datatype .
                             rdfs:subPropertyOf :hasSupertonicChord ;
                             rdfs:domain :PhrygianModeScale ;
                             rdfs:range mto:MajorTriad ;
+                            owl:propertyChainAxiom ( :R_PhrygianModeScale
+                                                     :hasSupertonicNote
+                                                     [ owl:inverseOf chord:root
+                                                     ]
+                                                     :R_MajorTriad
+                                                   ) ;
                             rdfs:comment "Property to assign the chord with supertonic degree to a Phrygian mode scale"^^xsd:string ;
                             rdfs:label "has supertonic chord in Phrygian mode" .
 
@@ -549,6 +866,12 @@ xsd:string rdf:type rdfs:Datatype .
                        rdfs:subPropertyOf :hasTonicChord ;
                        rdfs:domain :PhrygianModeScale ;
                        rdfs:range mto:MinorTriad ;
+                       owl:propertyChainAxiom ( :R_PhrygianModeScale
+                                                :hasTonicNote
+                                                [ owl:inverseOf chord:root
+                                                ]
+                                                :R_MinorTriad
+                                              ) ;
                        rdfs:comment "Property to assign the chord with tonic degree to a Phrygian mode scale"^^xsd:string ;
                        rdfs:label "has tonic chord in Phrygian mode" .
 
@@ -558,10 +881,6 @@ xsd:string rdf:type rdfs:Datatype .
                      rdfs:subPropertyOf :hasChord ;
                      rdfs:domain mto:Scale ;
                      rdfs:range mto:Chord ;
-                     owl:propertyChainAxiom ( :hasSubdominantNote
-                                              [ owl:inverseOf chord:root
-                                              ]
-                                            ) ;
                      rdfs:comment "Property to assign the chord with subdominant degree to a scale"^^xsd:string ;
                      rdfs:label "has subdominant chord" .
 
@@ -580,10 +899,6 @@ xsd:string rdf:type rdfs:Datatype .
                     rdfs:subPropertyOf :hasChord ;
                     rdfs:domain mto:Scale ;
                     rdfs:range mto:Chord ;
-                    owl:propertyChainAxiom ( :hasSubmediantNote
-                                             [ owl:inverseOf chord:root
-                                             ]
-                                           ) ;
                     rdfs:comment "Property to assign the chord with submediant degree to a scale"^^xsd:string ;
                     rdfs:label "has submediant chord" .
 
@@ -602,10 +917,6 @@ xsd:string rdf:type rdfs:Datatype .
                     rdfs:subPropertyOf :hasChord ;
                     rdfs:domain mto:Scale ;
                     rdfs:range mto:Chord ;
-                    owl:propertyChainAxiom ( :hasSupertonicNote
-                                             [ owl:inverseOf chord:root
-                                             ]
-                                           ) ;
                     rdfs:comment "Property to assign the chord with supertonic degree to a scale"^^xsd:string ;
                     rdfs:label "has supertonic chord" .
 
@@ -624,10 +935,6 @@ xsd:string rdf:type rdfs:Datatype .
                rdfs:subPropertyOf :hasChord ;
                rdfs:domain mto:Scale ;
                rdfs:range mto:Chord ;
-               owl:propertyChainAxiom ( :hasTonicNote
-                                        [ owl:inverseOf chord:root
-                                        ]
-                                      ) ;
                rdfs:comment "Property to assign the chord with tonic degree to a scale"^^xsd:string ;
                rdfs:label "has tonic chord" .
 
@@ -659,7 +966,11 @@ mto:hasNote rdf:type owl:ObjectProperty .
 
 ###  http://example.org/fho/AeolianModeScale
 :AeolianModeScale rdf:type owl:Class ;
-                  owl:equivalentClass mto:NaturalMinorScale ;
+                  owl:equivalentClass mto:NaturalMinorScale ,
+                                      [ rdf:type owl:Restriction ;
+                                        owl:onProperty :R_AeolianModeScale ;
+                                        owl:hasSelf "true"^^xsd:boolean
+                                      ] ;
                   rdfs:subClassOf :ModeScale ;
                   rdfs:comment "Mode formed starting from the sixth degree of a major scale."^^xsd:string ;
                   rdfs:label "Aeolian Mode Scale"^^xsd:string .
@@ -667,6 +978,10 @@ mto:hasNote rdf:type owl:ObjectProperty .
 
 ###  http://example.org/fho/DorianModeScale
 :DorianModeScale rdf:type owl:Class ;
+                 owl:equivalentClass [ rdf:type owl:Restriction ;
+                                       owl:onProperty :R_DorianModeScale ;
+                                       owl:hasSelf "true"^^xsd:boolean
+                                     ] ;
                  rdfs:subClassOf :ModeScale ;
                  rdfs:comment "Mode formed starting from the second degree of a major scale."^^xsd:string ;
                  rdfs:label "Dorian Mode Scale"^^xsd:string .
@@ -674,7 +989,11 @@ mto:hasNote rdf:type owl:ObjectProperty .
 
 ###  http://example.org/fho/IonianModeScale
 :IonianModeScale rdf:type owl:Class ;
-                 owl:equivalentClass mto:MajorScale ;
+                 owl:equivalentClass mto:MajorScale ,
+                                     [ rdf:type owl:Restriction ;
+                                       owl:onProperty :R_IonianModeScale ;
+                                       owl:hasSelf "true"^^xsd:boolean
+                                     ] ;
                  rdfs:subClassOf :ModeScale ;
                  rdfs:comment "Mode formed starting from the first degree of a major scale."^^xsd:string ;
                  rdfs:label "Ionian Mode Scale"^^xsd:string .
@@ -682,6 +1001,10 @@ mto:hasNote rdf:type owl:ObjectProperty .
 
 ###  http://example.org/fho/LocrianModeScale
 :LocrianModeScale rdf:type owl:Class ;
+                  owl:equivalentClass [ rdf:type owl:Restriction ;
+                                        owl:onProperty :R_LocrianModeScale ;
+                                        owl:hasSelf "true"^^xsd:boolean
+                                      ] ;
                   rdfs:subClassOf :ModeScale ;
                   rdfs:comment "Mode formed starting from the seventh degree of a major scale."^^xsd:string ;
                   rdfs:label "Locrian Mode Scale"^^xsd:string .
@@ -689,6 +1012,10 @@ mto:hasNote rdf:type owl:ObjectProperty .
 
 ###  http://example.org/fho/LydianModeScale
 :LydianModeScale rdf:type owl:Class ;
+                 owl:equivalentClass [ rdf:type owl:Restriction ;
+                                       owl:onProperty :R_LydianModeScale ;
+                                       owl:hasSelf "true"^^xsd:boolean
+                                     ] ;
                  rdfs:subClassOf :ModeScale ;
                  rdfs:comment "Mode formed starting from the fourth degree of a major scale."^^xsd:string ;
                  rdfs:label "Lydian Mode Scale"^^xsd:string .
@@ -696,6 +1023,10 @@ mto:hasNote rdf:type owl:ObjectProperty .
 
 ###  http://example.org/fho/MixolydianModeScale
 :MixolydianModeScale rdf:type owl:Class ;
+                     owl:equivalentClass [ rdf:type owl:Restriction ;
+                                           owl:onProperty :R_MixolydianModeScale ;
+                                           owl:hasSelf "true"^^xsd:boolean
+                                         ] ;
                      rdfs:subClassOf :ModeScale ;
                      rdfs:comment "Mode formed starting from the fifth degree of a major scale."^^xsd:string ;
                      rdfs:label "Mixolydian Mode Scale"^^xsd:string .
@@ -710,6 +1041,10 @@ mto:hasNote rdf:type owl:ObjectProperty .
 
 ###  http://example.org/fho/PhrygianModeScale
 :PhrygianModeScale rdf:type owl:Class ;
+                   owl:equivalentClass [ rdf:type owl:Restriction ;
+                                         owl:onProperty :R_PhrygianModeScale ;
+                                         owl:hasSelf "true"^^xsd:boolean
+                                       ] ;
                    rdfs:subClassOf :ModeScale ;
                    rdfs:comment "Mode formed starting from the third degree of a major scale."^^xsd:string ;
                    rdfs:label "Phrygian Mode Scale"^^xsd:string .
@@ -724,7 +1059,11 @@ mto:Chord rdf:type owl:Class .
 
 
 ###  http://purl.org/ontology/mto/DiminishedTriad
-mto:DiminishedTriad rdf:type owl:Class .
+mto:DiminishedTriad rdf:type owl:Class ;
+                    owl:equivalentClass [ rdf:type owl:Restriction ;
+                                          owl:onProperty :R_DiminishedTriad ;
+                                          owl:hasSelf "true"^^xsd:boolean
+                                        ] .
 
 
 ###  http://purl.org/ontology/mto/HeptatonicScale
@@ -736,7 +1075,11 @@ mto:MajorScale rdf:type owl:Class .
 
 
 ###  http://purl.org/ontology/mto/MajorTriad
-mto:MajorTriad rdf:type owl:Class .
+mto:MajorTriad rdf:type owl:Class ;
+               owl:equivalentClass [ rdf:type owl:Restriction ;
+                                     owl:onProperty :R_MajorTriad ;
+                                     owl:hasSelf "true"^^xsd:boolean
+                                   ] .
 
 
 ###  http://purl.org/ontology/mto/MinorScale
@@ -744,7 +1087,11 @@ mto:MinorScale rdf:type owl:Class .
 
 
 ###  http://purl.org/ontology/mto/MinorTriad
-mto:MinorTriad rdf:type owl:Class .
+mto:MinorTriad rdf:type owl:Class ;
+               owl:equivalentClass [ rdf:type owl:Restriction ;
+                                     owl:onProperty :R_MinorTriad ;
+                                     owl:hasSelf "true"^^xsd:boolean
+                                   ] .
 
 
 ###  http://purl.org/ontology/mto/NaturalMinorScale

@@ -62,12 +62,12 @@ if __name__ == "__main__":
   # add owl:sameAs between individuals
   # major scale
   for s, _, _ in fho_graph.triples((None, RDF.type, FHO["IonianModeScale"])):
-    root = str(fho_graph.value(subject=s, predicate=FHO["hasTonality"])).split("/")[-1]
+    root = str(fho_graph.value(subject=s, predicate=MTO["hasRootNote"])).split("/")[-1]
     fho_graph.add((s, OWL.sameAs, FHO_KB[f"{root}_MajorScale"]))
   
   # minor scale
   for s, _, _ in fho_graph.triples((None, RDF.type, FHO["AeolianModeScale"])):
-    root = fho_graph.value(subject=s, predicate=FHO["hasTonality"])
+    root = fho_graph.value(subject=s, predicate=MTO["hasRootNote"])
     # get the relative minor
     rel_minor = str(mto_graph.value(subject=root, predicate=MTO["hasMajorSixthInterval"])).split("/")[-1]
     fho_graph.add((s, OWL.sameAs, FHO_KB[f"{rel_minor}_MinorScale"]))

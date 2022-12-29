@@ -7,7 +7,7 @@ from rdflib import RDF, OWL, RDFS
 import argparse
 import music21
 from itertools import product
-from utils import m21_to_mto_label
+from utils import m21_to_mto_label, m21_to_leadsheet_label
 
 args = argparse.ArgumentParser()
 args.add_argument("--mto", type=str, required=True)
@@ -45,7 +45,7 @@ if __name__ == "__main__":
 
         # create the individual
         graph.add((FHO_KB[scale_name], RDF.type, FHO[f"{scale}Scale"]))
-        graph.add((FHO_KB[scale_name], FHO["hasTonality"], note_mto))
+        graph.add((FHO_KB[scale_name], MTO["hasRootNote"], note_mto))
         
         scale_label = scale.replace("Mode", "")
         graph.add((FHO_KB[scale_name], RDFS.label, rdflib.Literal(f"{note_name} {scale_label} Mode")))
@@ -55,7 +55,7 @@ if __name__ == "__main__":
         m21_scale.tonic = music21.pitch.Pitch(note_name.replace("b", "-"))
 
         for scale_note, scale_note_degree in zip(m21_scale.getPitches(), DEEGREES):
-          scale_note_name = m21_to_mto_label(scale_note.name)
+          scale_note_name = m21_to_mto_label(m21_to_leadsheet_label(scale_note.name))
           graph.add((FHO_KB[scale_name], FHO[f"has{scale_note_degree}Note"], MTO_KB[scale_note_name]))
     
   print(graph.serialize())
