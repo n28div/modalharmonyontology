@@ -1,3 +1,4 @@
+# Use with Stardog - EL Reasoning - Approximate reasoning
 import re
 import rdflib
 from rdflib import OWL, RDF, RDFS

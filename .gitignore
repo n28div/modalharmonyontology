@@ -1,3 +1,5 @@
 .ipynb_checkpoints/
 .docker/stardog/
 choco-data/
+__pycache__/
+.vscode/

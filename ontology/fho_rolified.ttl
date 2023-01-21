@@ -11,8 +11,7 @@
 @base <http://example.org/fho/> .
 
 <http://example.org/fho/> rdf:type owl:Ontology ;
-                           owl:imports <file:/home/n28div/university/thesis/functionalharmonyontology/data/small_chords.ttl> ,
-                                       <http://purl.org/ontology/mto/0.9> .
+                           owl:imports <http://purl.org/ontology/mto/0.9> .
 
 #################################################################
 #    Annotation properties
